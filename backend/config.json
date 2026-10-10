@@ -1,0 +1,14 @@
+{
+  "disease": {
+    "name": "asthma",
+    "efo_id": "EFO_0000270",
+    "label": "asthma"
+  },
+  "gene_limit": 30,
+  "quadrant_cutoff": {
+    "genetic": 0.5,
+    "activity": 0.5
+  },
+  "data_as_of": "2026-10-10",
+  "notes": "Confirm EFO ID in Open Targets before live fetch."
+}
