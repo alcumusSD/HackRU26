@@ -24,10 +24,10 @@ type Props = {
 };
 
 const FILL: Record<Quadrant, string> = {
-  validated: "#0f766e",
-  white_space: "#b45309",
-  caution: "#a16207",
-  deprioritize: "#64748b",
+  validated: "#2dd4bf",
+  white_space: "#f59e0b",
+  caution: "#eab308",
+  deprioritize: "#94a3b8",
 };
 
 function GeneShape(props: {
@@ -43,7 +43,7 @@ function GeneShape(props: {
   const selected = payload.id === selectedId;
   const size = selected ? 11 : payload.protective_variant ? 9 : 7;
   const fill = FILL[payload.quadrant];
-  const stroke = selected ? "#0c1f24" : "#f4f7f6";
+  const stroke = selected ? "#e7f1ef" : "#0b1214";
   const strokeWidth = selected ? 2.5 : 1.25;
   const shape = QUADRANT_META[payload.quadrant].shape;
   const handlers = {
@@ -174,34 +174,34 @@ export function QuadrantMap({
 
       <ResponsiveContainer width="100%" height="100%">
         <ScatterChart margin={{ top: 28, right: 28, bottom: 36, left: 16 }}>
-          <CartesianGrid stroke="rgba(12, 31, 36, 0.08)" strokeDasharray="3 6" />
+          <CartesianGrid stroke="rgba(231, 241, 239, 0.08)" strokeDasharray="3 6" />
           <ReferenceArea
             x1={0}
             x2={QUADRANT_CUTOFF}
             y1={QUADRANT_CUTOFF}
             y2={1}
-            fill="rgba(180, 83, 9, 0.06)"
+            fill="rgba(245, 158, 11, 0.1)"
           />
           <ReferenceArea
             x1={QUADRANT_CUTOFF}
             x2={1}
             y1={QUADRANT_CUTOFF}
             y2={1}
-            fill="rgba(15, 118, 110, 0.07)"
+            fill="rgba(45, 212, 191, 0.1)"
           />
           <ReferenceArea
             x1={0}
             x2={QUADRANT_CUTOFF}
             y1={0}
             y2={QUADRANT_CUTOFF}
-            fill="rgba(100, 116, 139, 0.05)"
+            fill="rgba(148, 163, 184, 0.08)"
           />
           <ReferenceArea
             x1={QUADRANT_CUTOFF}
             x2={1}
             y1={0}
             y2={QUADRANT_CUTOFF}
-            fill="rgba(161, 98, 7, 0.06)"
+            fill="rgba(234, 179, 8, 0.08)"
           />
           <XAxis
             type="number"
@@ -209,13 +209,13 @@ export function QuadrantMap({
             name="Trial activity"
             domain={[0, 1]}
             tickCount={5}
-            tick={{ fill: "#3d565c", fontSize: 12 }}
-            axisLine={{ stroke: "#9bb0b4" }}
+            tick={{ fill: "#9bb0b4", fontSize: 12 }}
+            axisLine={{ stroke: "#3d565c" }}
             label={{
               value: "Trial activity →",
               position: "insideBottom",
               offset: -18,
-              fill: "#3d565c",
+              fill: "#9bb0b4",
               fontSize: 13,
             }}
           />
@@ -225,31 +225,31 @@ export function QuadrantMap({
             name="Genetic evidence"
             domain={[0, 1]}
             tickCount={5}
-            tick={{ fill: "#3d565c", fontSize: 12 }}
-            axisLine={{ stroke: "#9bb0b4" }}
+            tick={{ fill: "#9bb0b4", fontSize: 12 }}
+            axisLine={{ stroke: "#3d565c" }}
             label={{
               value: "Genetic evidence →",
               angle: -90,
               position: "insideLeft",
               offset: 10,
-              fill: "#3d565c",
+              fill: "#9bb0b4",
               fontSize: 13,
             }}
           />
           <ZAxis range={[80, 80]} />
           <ReferenceLine
             x={QUADRANT_CUTOFF}
-            stroke="rgba(12, 31, 36, 0.28)"
+            stroke="rgba(231, 241, 239, 0.28)"
             strokeDasharray="5 5"
           />
           <ReferenceLine
             y={QUADRANT_CUTOFF}
-            stroke="rgba(12, 31, 36, 0.28)"
+            stroke="rgba(231, 241, 239, 0.28)"
             strokeDasharray="5 5"
           />
           <Tooltip
             content={<MapTooltip />}
-            cursor={{ strokeDasharray: "3 3", stroke: "#0f766e" }}
+            cursor={{ strokeDasharray: "3 3", stroke: "#2dd4bf" }}
           />
           <Scatter
             data={data}

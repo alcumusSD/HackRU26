@@ -15,6 +15,7 @@ from app.models import (
     GeneListResponse,
     HealthResponse,
     JudgmentCard,
+    NetworkResponse,
     Robustness,
     Trial,
 )
@@ -106,3 +107,20 @@ def get_robustness(gene_id: str) -> Robustness:
 @app.get("/events", response_model=List[Event])
 def list_events() -> List[Event]:
     return EVENTS
+
+
+@app.get("/network", response_model=NetworkResponse)
+def get_network(
+    disease: str = Query(default="asthma", description="Disease name or ontology id"),
+) -> NetworkResponse:
+    meta = data_store.meta()
+    expected = meta["disease"].lower()
+    disease_l = disease.lower()
+    config = data_store.load_config()
+    efo = (config.get("disease") or {}).get("efo_id", "").lower()
+    if disease_l not in {expected, "asthma", efo, "mondo_0004979", "efo_0000270"}:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Disease '{disease}' not configured. Try disease=asthma",
+        )
+    return data_store.build_network()

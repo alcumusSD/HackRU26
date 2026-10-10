@@ -177,7 +177,15 @@ export function JudgmentPanel({
           <ul className="trials">
             {trials.map((t) => (
               <li key={t.nct_id}>
-                <strong>{t.nct_id}</strong> · {t.phase} · {t.status}
+                <a
+                  className="trial-link"
+                  href={`https://clinicaltrials.gov/study/${t.nct_id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t.nct_id}
+                </a>{" "}
+                · {t.phase} · {t.status}
                 {t.stop_reason_category && (
                   <span>
                     {" "}

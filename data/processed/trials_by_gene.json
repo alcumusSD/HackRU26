@@ -1,0 +1,4398 @@
+{
+  "built_at": "2026-10-10T18:13:13.731805+00:00",
+  "disease": "asthma",
+  "summary": {
+    "studies_fetched": 298,
+    "studies_flattened": 298,
+    "studies_mapped_to_demo_genes": 173,
+    "genes_with_trials": 12,
+    "genes_without_trials": 3,
+    "parsed_at": "2026-10-10T18:13:13.731765+00:00",
+    "notes": "activity_score from ClinicalTrials.gov volume/phase/recency; drug\u2192gene join uses curated synonym map + symbol mentions; futility track-record adjustment deferred until Gemini classifier."
+  },
+  "trials_by_gene": {
+    "ENSG00000143631": [],
+    "ENSG00000077238": [
+      {
+        "nct_id": "NCT03020810",
+        "phase": "NA",
+        "status": "APPROVED_FOR_MARKETING",
+        "drugs": [
+          "Dupilumab"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": null,
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT04173442",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "dupilumab"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-10-24",
+        "end_date": "2025-11-04"
+      },
+      {
+        "nct_id": "NCT04287621",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "DUPIXENT\u00ae"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-03-02",
+        "end_date": "2026-04-27"
+      },
+      {
+        "nct_id": "NCT05331755",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-04-01",
+        "end_date": "2022-12-31"
+      },
+      {
+        "nct_id": "NCT04665141",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Mepolizumab",
+          "Omalizumab",
+          "Reslizumab",
+          "Benralizumab",
+          "Dupilumab"
+        ],
+        "target_genes": [
+          "IGHE",
+          "IL13",
+          "IL4R",
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-04-07",
+        "end_date": "2022-11"
+      },
+      {
+        "nct_id": "NCT05070663",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-11-04",
+        "end_date": "2025-03-03"
+      },
+      {
+        "nct_id": "NCT06064526",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "No intervention"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-04-19",
+        "end_date": "2024-10-15"
+      },
+      {
+        "nct_id": "NCT02573233",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab SAR231893/REGN668",
+          "fluticasone propionate and salmeterol",
+          "budesonide and formoterol",
+          "mometasone furoate and formoterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-01-27",
+        "end_date": "2018-01-03"
+      },
+      {
+        "nct_id": "NCT02528214",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab",
+          "Oral corticosteroid therapy (prednisone/prednisolone)",
+          "Inhaled corticosteroid (ICS) therapy",
+          "Albuterol/Salbutamol",
+          "Levalbuterol/Levosalbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-10-15",
+        "end_date": "2017-11-13"
+      },
+      {
+        "nct_id": "NCT03560466",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab (SAR231893/REGN668)",
+          "Asthma controller therapies (incl. prednisone/prednisolone)",
+          "Asthma reliever therapies"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-06-21",
+        "end_date": "2025-04-01"
+      },
+      {
+        "nct_id": "NCT03782532",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab SAR231893",
+          "Asthma Controller Therapies (include prednisone/prednisolone)",
+          "Asthma Reliever Therapies"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-01-25",
+        "end_date": "2022-05-21"
+      },
+      {
+        "nct_id": "NCT07309614",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "drugs": [
+          "Dupilumab Prefilled Syringe",
+          "Placebo Injection"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-01-29",
+        "end_date": "2030-01"
+      },
+      {
+        "nct_id": "NCT04203797",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "dupilumab",
+          "Matching placebo"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-07-16",
+        "end_date": "2023-07-15"
+      },
+      {
+        "nct_id": "NCT03694158",
+        "phase": "PHASE4",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "Dupilumab"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-09-08",
+        "end_date": "2027-03"
+      },
+      {
+        "nct_id": "NCT04998604",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab",
+          "Omalizumab"
+        ],
+        "target_genes": [
+          "IGHE",
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-09-27",
+        "end_date": "2024-12-27"
+      },
+      {
+        "nct_id": "NCT04380038",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Dupilumab Injectable Product"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-05-01",
+        "end_date": "2026-12-31"
+      },
+      {
+        "nct_id": "NCT06572228",
+        "phase": "PHASE4",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "dupilumab",
+          "Matching Placebo",
+          "ICS/LABA"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-08-26",
+        "end_date": "2027-04-24"
+      },
+      {
+        "nct_id": "NCT06818019",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Stopping dupilumab"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-12-15",
+        "end_date": "2029-12-31"
+      }
+    ],
+    "ENSG00000145777": [
+      {
+        "nct_id": "NCT05677139",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-12-13",
+        "end_date": "2026-02-27"
+      },
+      {
+        "nct_id": "NCT07786870",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "No Intervention: Observational Cohort"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-04-30",
+        "end_date": "2026-11"
+      },
+      {
+        "nct_id": "NCT06438913",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Tezepelumab"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-06-12",
+        "end_date": "2026-12-31"
+      },
+      {
+        "nct_id": "NCT06566885",
+        "phase": "NA",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-09-10",
+        "end_date": "2026-09-30"
+      },
+      {
+        "nct_id": "NCT06724575",
+        "phase": "NA",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-12-17",
+        "end_date": "2028-06-30"
+      },
+      {
+        "nct_id": "NCT06948396",
+        "phase": "NA",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "Tezepelumab"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-06-25",
+        "end_date": "2027-05-30"
+      },
+      {
+        "nct_id": "NCT07046117",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Tezepelumab"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-10-01",
+        "end_date": "2028-08-01"
+      },
+      {
+        "nct_id": "NCT07713498",
+        "phase": "NA",
+        "status": "ENROLLING_BY_INVITATION",
+        "drugs": [
+          "Tapering of inhaled corticosteroid (ICS) treatment"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-05-01",
+        "end_date": "2027-10"
+      },
+      {
+        "nct_id": "NCT02698501",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "MEDI9929"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-08",
+        "end_date": "2019-10-07"
+      },
+      {
+        "nct_id": "NCT06189742",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "Tezepelumab"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-01-29",
+        "end_date": "2026-12"
+      },
+      {
+        "nct_id": "NCT03927157",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Experimental: Tezepelumab"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-06-14",
+        "end_date": "2024-08-13"
+      },
+      {
+        "nct_id": "NCT05274815",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tezepelumab"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-05-17",
+        "end_date": "2024-09-09"
+      },
+      {
+        "nct_id": "NCT05280418",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tezepelumab"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-11-08",
+        "end_date": "2025-12-17"
+      },
+      {
+        "nct_id": "NCT05651841",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tezepelumab"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-03-27",
+        "end_date": "2026-06-23"
+      },
+      {
+        "nct_id": "NCT06473779",
+        "phase": "PHASE3",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "Tezepelumab",
+          "Budesonide/formoterol",
+          "Albuterol/budesonide (AIRSUPRA\u00ae)",
+          "Mannitol",
+          "Salbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1",
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-09-30",
+        "end_date": "2027-06-25"
+      },
+      {
+        "nct_id": "NCT06740045",
+        "phase": "PHASE3",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Tezepelumab"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-01",
+        "end_date": "2025-06"
+      },
+      {
+        "nct_id": "NCT07302516",
+        "phase": "PHASE3",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "tezepelumab (Arm1&Arm2)"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-12-25",
+        "end_date": "2029-12"
+      },
+      {
+        "nct_id": "NCT07363642",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "drugs": [
+          "Tezepelumab"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-01-28",
+        "end_date": "2029-03-31"
+      },
+      {
+        "nct_id": "NCT05329194",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tezepelumab"
+        ],
+        "target_genes": [
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-04-29",
+        "end_date": "2025-10-01"
+      }
+    ],
+    "ENSG00000163485": [
+      {
+        "nct_id": "NCT01696214",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone 250 mg/salmeterol 50 mg",
+          "Montelukast 10mg",
+          "Theophylline 400 mg",
+          "ipratropium"
+        ],
+        "target_genes": [
+          "ADORA1",
+          "ADRB2",
+          "CHRM2",
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2016-11"
+      }
+    ],
+    "ENSG00000113525": [
+      {
+        "nct_id": "NCT00802438",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "mepolizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-06-01",
+        "end_date": "2013-03-01"
+      },
+      {
+        "nct_id": "NCT03028480",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "NUCALA Injection"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-01-11",
+        "end_date": "2023-11-22"
+      },
+      {
+        "nct_id": "NCT03369574",
+        "phase": "NA",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "Reslizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Study personnel diverted to other activities and the study was not commenced",
+        "quote_verified": false,
+        "start_date": "2017-11-14",
+        "end_date": "2018-10-19"
+      },
+      {
+        "nct_id": "NCT04158050",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "IL5 Antagonist or anti-IL5R-antibody or Omalizumab"
+        ],
+        "target_genes": [
+          "IGHE",
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-01-01",
+        "end_date": "2020-10-31"
+      },
+      {
+        "nct_id": "NCT04200326",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-12-20",
+        "end_date": "2020-04-09"
+      },
+      {
+        "nct_id": "NCT04126499",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-01-13",
+        "end_date": "2020-05-08"
+      },
+      {
+        "nct_id": "NCT04991805",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-02-26",
+        "end_date": "2024-04-05"
+      },
+      {
+        "nct_id": "NCT04641741",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Mepolizumab 100 MG"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-04-01",
+        "end_date": "2025-03-01"
+      },
+      {
+        "nct_id": "NCT04665141",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Mepolizumab",
+          "Omalizumab",
+          "Reslizumab",
+          "Benralizumab",
+          "Dupilumab"
+        ],
+        "target_genes": [
+          "IGHE",
+          "IL13",
+          "IL4R",
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-04-07",
+        "end_date": "2022-11"
+      },
+      {
+        "nct_id": "NCT05147155",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Mepolizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-04-19",
+        "end_date": "2023-10-23"
+      },
+      {
+        "nct_id": "NCT04924478",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Mepolizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-07",
+        "end_date": "2022-12"
+      },
+      {
+        "nct_id": "NCT05189613",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Mepolizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-09-01",
+        "end_date": "2022-12-31"
+      },
+      {
+        "nct_id": "NCT05932849",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Benralizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-10-05",
+        "end_date": "2022-02-28"
+      },
+      {
+        "nct_id": "NCT05091385",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Mepolizumab given SC 100mg every 4 weeks between Dec 2017 and Dec 2019"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-01-01",
+        "end_date": "2025-08-06"
+      },
+      {
+        "nct_id": "NCT05365841",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Mepolizumab 100 MG"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-05-15",
+        "end_date": "2025-11-16"
+      },
+      {
+        "nct_id": "NCT05440656",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Cohort"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-06-29",
+        "end_date": "2025-04-13"
+      },
+      {
+        "nct_id": "NCT05404763",
+        "phase": "NA",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-02-02",
+        "end_date": "2026-08-02"
+      },
+      {
+        "nct_id": "NCT06348173",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Mepolizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-06-01",
+        "end_date": "2023-11-30"
+      },
+      {
+        "nct_id": "NCT05708300",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "Mepolizumab 100 MG [Nucala]"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-02-23",
+        "end_date": "2027-03-01"
+      },
+      {
+        "nct_id": "NCT06422078",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-07-25",
+        "end_date": "2027-12-31"
+      },
+      {
+        "nct_id": "NCT06862206",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "benralizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-07-11",
+        "end_date": "2028-01-30"
+      },
+      {
+        "nct_id": "NCT07530770",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "Fasenra"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-09-01",
+        "end_date": "2026-12-01"
+      },
+      {
+        "nct_id": "NCT07214753",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "benralizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-12-20",
+        "end_date": "2028-12-31"
+      },
+      {
+        "nct_id": "NCT02968914",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Benralizumab",
+          "Benralizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-01-04",
+        "end_date": "2017-07-13"
+      },
+      {
+        "nct_id": "NCT00587288",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Reslizumab",
+          "Saline"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-04",
+        "end_date": "2010-03"
+      },
+      {
+        "nct_id": "NCT02559791",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Reslizumab"
+        ],
+        "target_genes": [
+          "IL5",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-10",
+        "end_date": "2017-08"
+      },
+      {
+        "nct_id": "NCT03010436",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "Benralizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-04-15",
+        "end_date": "2021-12"
+      },
+      {
+        "nct_id": "NCT03074942",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Reslizumab"
+        ],
+        "target_genes": [
+          "IGHE",
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-04-20",
+        "end_date": "2018-04-30"
+      },
+      {
+        "nct_id": "NCT02947945",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "drugs": [
+          "Reslizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-09-12",
+        "end_date": "2018-12"
+      },
+      {
+        "nct_id": "NCT01270464",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Reslizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-02",
+        "end_date": "2013-09"
+      },
+      {
+        "nct_id": "NCT01285323",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Reslizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-03",
+        "end_date": "2014-04"
+      },
+      {
+        "nct_id": "NCT01287039",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Reslizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-04",
+        "end_date": "2014-03"
+      },
+      {
+        "nct_id": "NCT01290887",
+        "phase": "PHASE3",
+        "status": "TERMINATED",
+        "drugs": [
+          "Reslizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Business decision",
+        "quote_verified": false,
+        "start_date": "2011-06",
+        "end_date": "2015-01"
+      },
+      {
+        "nct_id": "NCT01508936",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Reslizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-02",
+        "end_date": "2013-08"
+      },
+      {
+        "nct_id": "NCT01691859",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Mepolizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-09-28",
+        "end_date": "2017-05-31"
+      },
+      {
+        "nct_id": "NCT01842607",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Mepolizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-05-27",
+        "end_date": "2015-03-13"
+      },
+      {
+        "nct_id": "NCT02075255",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Benralizumab",
+          "Benralizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-04-28",
+        "end_date": "2016-08-08"
+      },
+      {
+        "nct_id": "NCT02501629",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Reslizumab",
+          "Non-Oral Corticosteroid (non-OCS) Asthma Medication",
+          "Oral Corticosteroid (OCS)"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-09-29",
+        "end_date": "2017-12-04"
+      },
+      {
+        "nct_id": "NCT03052725",
+        "phase": "PHASE3",
+        "status": "TERMINATED",
+        "drugs": [
+          "reslizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Parent Studies didn't meet their primary endpoint so study was terminated.",
+        "quote_verified": false,
+        "start_date": "2017-03-10",
+        "end_date": "2018-02-22"
+      },
+      {
+        "nct_id": "NCT03170271",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Benralizumab (Medi-563)"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-07-07",
+        "end_date": "2020-10-21"
+      },
+      {
+        "nct_id": "NCT06465485",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Benralizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-02-28",
+        "end_date": "2026-05-13"
+      },
+      {
+        "nct_id": "NCT04412044",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Mepolizumab Injection [Nucala]"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-09-01",
+        "end_date": "2019-03-01"
+      },
+      {
+        "nct_id": "NCT02937168",
+        "phase": "PHASE4",
+        "status": "TERMINATED",
+        "drugs": [
+          "Reslizumab",
+          "Fludeoxyglucose F 18 (FDG)"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "The study was terminated early due to challenges in recruitment. The decision to terminate the study was not related to any safety issues or concerns.",
+        "quote_verified": false,
+        "start_date": "2017-05-08",
+        "end_date": "2017-05-24"
+      },
+      {
+        "nct_id": "NCT03652376",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Benralizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-09-01",
+        "end_date": "2019-12-31"
+      },
+      {
+        "nct_id": "NCT03953300",
+        "phase": "PHASE4",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "Benralizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-10-08",
+        "end_date": "2026-10-19"
+      },
+      {
+        "nct_id": "NCT04228588",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Mepolizumab 100 MG [Nucala]"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-01-09",
+        "end_date": "2021-12"
+      },
+      {
+        "nct_id": "NCT04710134",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Reslizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-02-10",
+        "end_date": "2024-01-09"
+      },
+      {
+        "nct_id": "NCT05642806",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Mepolizumab"
+        ],
+        "target_genes": [
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-07-01",
+        "end_date": "2025-06-30"
+      }
+    ],
+    "ENSG00000137033": [],
+    "ENSG00000169194": [
+      {
+        "nct_id": "NCT03020810",
+        "phase": "NA",
+        "status": "APPROVED_FOR_MARKETING",
+        "drugs": [
+          "Dupilumab"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": null,
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT04173442",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "dupilumab"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-10-24",
+        "end_date": "2025-11-04"
+      },
+      {
+        "nct_id": "NCT04287621",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "DUPIXENT\u00ae"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-03-02",
+        "end_date": "2026-04-27"
+      },
+      {
+        "nct_id": "NCT05331755",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-04-01",
+        "end_date": "2022-12-31"
+      },
+      {
+        "nct_id": "NCT04665141",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Mepolizumab",
+          "Omalizumab",
+          "Reslizumab",
+          "Benralizumab",
+          "Dupilumab"
+        ],
+        "target_genes": [
+          "IGHE",
+          "IL13",
+          "IL4R",
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-04-07",
+        "end_date": "2022-11"
+      },
+      {
+        "nct_id": "NCT05070663",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-11-04",
+        "end_date": "2025-03-03"
+      },
+      {
+        "nct_id": "NCT06064526",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "No intervention"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-04-19",
+        "end_date": "2024-10-15"
+      },
+      {
+        "nct_id": "NCT02573233",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab SAR231893/REGN668",
+          "fluticasone propionate and salmeterol",
+          "budesonide and formoterol",
+          "mometasone furoate and formoterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-01-27",
+        "end_date": "2018-01-03"
+      },
+      {
+        "nct_id": "NCT02528214",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab",
+          "Oral corticosteroid therapy (prednisone/prednisolone)",
+          "Inhaled corticosteroid (ICS) therapy",
+          "Albuterol/Salbutamol",
+          "Levalbuterol/Levosalbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-10-15",
+        "end_date": "2017-11-13"
+      },
+      {
+        "nct_id": "NCT03560466",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab (SAR231893/REGN668)",
+          "Asthma controller therapies (incl. prednisone/prednisolone)",
+          "Asthma reliever therapies"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-06-21",
+        "end_date": "2025-04-01"
+      },
+      {
+        "nct_id": "NCT03782532",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab SAR231893",
+          "Asthma Controller Therapies (include prednisone/prednisolone)",
+          "Asthma Reliever Therapies"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-01-25",
+        "end_date": "2022-05-21"
+      },
+      {
+        "nct_id": "NCT07309614",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "drugs": [
+          "Dupilumab Prefilled Syringe",
+          "Placebo Injection"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-01-29",
+        "end_date": "2030-01"
+      },
+      {
+        "nct_id": "NCT04203797",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "dupilumab",
+          "Matching placebo"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-07-16",
+        "end_date": "2023-07-15"
+      },
+      {
+        "nct_id": "NCT03694158",
+        "phase": "PHASE4",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "Dupilumab"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-09-08",
+        "end_date": "2027-03"
+      },
+      {
+        "nct_id": "NCT04998604",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab",
+          "Omalizumab"
+        ],
+        "target_genes": [
+          "IGHE",
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-09-27",
+        "end_date": "2024-12-27"
+      },
+      {
+        "nct_id": "NCT04380038",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Dupilumab Injectable Product"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-05-01",
+        "end_date": "2026-12-31"
+      },
+      {
+        "nct_id": "NCT06572228",
+        "phase": "PHASE4",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "dupilumab",
+          "Matching Placebo",
+          "ICS/LABA"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-08-26",
+        "end_date": "2027-04-24"
+      },
+      {
+        "nct_id": "NCT06818019",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Stopping dupilumab"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-12-15",
+        "end_date": "2029-12-31"
+      }
+    ],
+    "ENSG00000113448": [
+      {
+        "nct_id": "NCT00613587",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-08",
+        "end_date": "2010-01"
+      },
+      {
+        "nct_id": "NCT04108377",
+        "phase": "PHASE1",
+        "status": "TERMINATED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Enrollment stopped secondary to completion of funding",
+        "quote_verified": false,
+        "start_date": "2019-01-21",
+        "end_date": "2023-08-15"
+      },
+      {
+        "nct_id": "NCT00242307",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-05-01",
+        "end_date": "2007-06-01"
+      },
+      {
+        "nct_id": "NCT01365533",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-12",
+        "end_date": "2005-07"
+      },
+      {
+        "nct_id": "NCT01765192",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast",
+          "Roflumilast placebo",
+          "Montelukast"
+        ],
+        "target_genes": [
+          "CYSLTR1",
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-02",
+        "end_date": "2013-10"
+      },
+      {
+        "nct_id": "NCT03532490",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast 500 Mcg Oral Tablet",
+          "Placebo oral capsule"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-08-03",
+        "end_date": "2021-07-30"
+      },
+      {
+        "nct_id": "NCT00163527",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-04",
+        "end_date": "2005-11"
+      },
+      {
+        "nct_id": "NCT00073177",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-11",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00076076",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-12",
+        "end_date": "2005-06"
+      },
+      {
+        "nct_id": "NCT00163475",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-05",
+        "end_date": "2005-08"
+      },
+      {
+        "nct_id": "NCT00246922",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-12-01",
+        "end_date": "2007-10-01"
+      }
+    ],
+    "ENSG00000113580": [
+      {
+        "nct_id": "NCT00367263",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Alvesco (Ciclesonide) 160 ug/day"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-10",
+        "end_date": "2006-11"
+      },
+      {
+        "nct_id": "NCT00576069",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "budesonide/formoterol",
+          "fluticasone/salmeterol",
+          "mometasone/formoterol",
+          "Prednisone"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-10-25",
+        "end_date": "2027-06"
+      },
+      {
+        "nct_id": "NCT00706446",
+        "phase": "NA",
+        "status": "TERMINATED",
+        "drugs": [
+          "tiotropium bromide",
+          "Salmeterol",
+          "Formoterol",
+          "Fluticasone propionate",
+          "budesonide"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Funding was terminated",
+        "quote_verified": false,
+        "start_date": "2008-06",
+        "end_date": "2011-09"
+      },
+      {
+        "nct_id": "NCT01881412",
+        "phase": "NA",
+        "status": "TERMINATED",
+        "drugs": [
+          "fluticasone",
+          "Standard Asthma Discharge Instructions"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Funding complete",
+        "quote_verified": false,
+        "start_date": "2012-08",
+        "end_date": "2018-04"
+      },
+      {
+        "nct_id": "NCT01423305",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Budesonide/formoterol capsule.",
+          "Budesonide/formoterol capsule for oral adm."
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-08",
+        "end_date": "2011-10"
+      },
+      {
+        "nct_id": "NCT00174746",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "AVE2635A"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-03",
+        "end_date": "2005-11"
+      },
+      {
+        "nct_id": "NCT00213252",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Montelukast plus prednisolone",
+          "Prednisolone"
+        ],
+        "target_genes": [
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-09",
+        "end_date": "2008-02"
+      },
+      {
+        "nct_id": "NCT00327808",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "TPI-1020",
+          "budesonide"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-05",
+        "end_date": "2007-03"
+      },
+      {
+        "nct_id": "NCT01200108",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Budesonide",
+          "Budesonide",
+          "Budesonide"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-03",
+        "end_date": "2011-11"
+      },
+      {
+        "nct_id": "NCT02559791",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Reslizumab"
+        ],
+        "target_genes": [
+          "IL5",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-10",
+        "end_date": "2017-08"
+      },
+      {
+        "nct_id": "NCT02573233",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab SAR231893/REGN668",
+          "fluticasone propionate and salmeterol",
+          "budesonide and formoterol",
+          "mometasone furoate and formoterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-01-27",
+        "end_date": "2018-01-03"
+      },
+      {
+        "nct_id": "NCT00691951",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "budesonide and budesonide/formoterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": null,
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00911547",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "montelukast sodium",
+          "beclomethasone",
+          "Placebo inhaler",
+          "placebo tablet"
+        ],
+        "target_genes": [
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "1995-03",
+        "end_date": "1996-05"
+      },
+      {
+        "nct_id": "NCT00642161",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "budesonide"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-11",
+        "end_date": "2004-09"
+      },
+      {
+        "nct_id": "NCT00550550",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "SCH 697243",
+          "Loratadine Syrup 1 mg/mL Rescue Treatment",
+          "Loratadine 10 mg Rescue Treatment",
+          "Olopatadine 0.1% Rescue Treatment",
+          "Mometasone furoate 50 mcg Rescue Treatment",
+          "Albuterol 108 mcg Rescue Treatment",
+          "Fluticasone 44 mcg Rescue Treatment",
+          "Prednisone 5 mg Rescue Treatment"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-11",
+        "end_date": "2009-09"
+      },
+      {
+        "nct_id": "NCT00565266",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "tiotropium bromide",
+          "salmeterol xinafoate",
+          "beclomethasone dipropionate"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-05",
+        "end_date": "2010-05"
+      },
+      {
+        "nct_id": "NCT01086410",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Placebo Inhalation Powder",
+          "Fluticasone Furoate/GW642444 Inhalation Powder",
+          "Fluticasone Furoate/GW642444 Inhalation Powder",
+          "Placebo Oral Capsule",
+          "Prednisolone Oral Capsule"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-03",
+        "end_date": "2010-09"
+      },
+      {
+        "nct_id": "NCT01349673",
+        "phase": "PHASE3",
+        "status": "TERMINATED",
+        "drugs": [
+          "Budesonide Foam"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Terminated for non-safety reasons when Sponsor felt that sufficient long-term safety data was obtained.",
+        "quote_verified": false,
+        "start_date": "2011-05-31",
+        "end_date": "2014-12-31"
+      },
+      {
+        "nct_id": "NCT01606306",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "daily fluticasone propionate",
+          "Montelukast",
+          "as-needed fluticasone propionate"
+        ],
+        "target_genes": [
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-02",
+        "end_date": "2015-04"
+      },
+      {
+        "nct_id": "NCT02066298",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Mometasone 220mcg BID",
+          "Tiotropium Respimat 5mcg QD"
+        ],
+        "target_genes": [
+          "CHRM2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-07",
+        "end_date": "2018-05"
+      },
+      {
+        "nct_id": "NCT02528214",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab",
+          "Oral corticosteroid therapy (prednisone/prednisolone)",
+          "Inhaled corticosteroid (ICS) therapy",
+          "Albuterol/Salbutamol",
+          "Levalbuterol/Levosalbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-10-15",
+        "end_date": "2017-11-13"
+      },
+      {
+        "nct_id": "NCT03560466",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab (SAR231893/REGN668)",
+          "Asthma controller therapies (incl. prednisone/prednisolone)",
+          "Asthma reliever therapies"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-06-21",
+        "end_date": "2025-04-01"
+      },
+      {
+        "nct_id": "NCT03782532",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab SAR231893",
+          "Asthma Controller Therapies (include prednisone/prednisolone)",
+          "Asthma Reliever Therapies"
+        ],
+        "target_genes": [
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-01-25",
+        "end_date": "2022-05-21"
+      },
+      {
+        "nct_id": "NCT05831566",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "drugs": [
+          "Budesonide/Formoterol fumarate dihydrate"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-01-31",
+        "end_date": "2026-04-30"
+      },
+      {
+        "nct_id": "NCT06473779",
+        "phase": "PHASE3",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "Tezepelumab",
+          "Budesonide/formoterol",
+          "Albuterol/budesonide (AIRSUPRA\u00ae)",
+          "Mannitol",
+          "Salbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1",
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-09-30",
+        "end_date": "2027-06-25"
+      },
+      {
+        "nct_id": "NCT00296491",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "fluticasone propionate/salmeterol (FSC)",
+          "montelukast (MON)",
+          "fluticasone propionate (FP)",
+          "placebo nasal",
+          "ADVAIR DISKUS",
+          "placebo capsule",
+          "placebo DISKUS"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-09",
+        "end_date": "2007-10"
+      },
+      {
+        "nct_id": "NCT00257933",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Prednisolone high dose",
+          "Prednisolone lower dose"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-02",
+        "end_date": "2006-11"
+      },
+      {
+        "nct_id": "NCT01225913",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "fluticasone/salmeterol in all asthmatics",
+          "budesonide/formoterol or fluticasone/salmeterol in all asthmatics"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-10",
+        "end_date": "2027-06"
+      },
+      {
+        "nct_id": "NCT01696214",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone 250 mg/salmeterol 50 mg",
+          "Montelukast 10mg",
+          "Theophylline 400 mg",
+          "ipratropium"
+        ],
+        "target_genes": [
+          "ADORA1",
+          "ADRB2",
+          "CHRM2",
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2016-11"
+      },
+      {
+        "nct_id": "NCT04677959",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone propionate/salmeterol (FS)",
+          "Albuterol",
+          "Standard of Care Asthma Medication",
+          "Standard of Care Rescue Medication"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-02-16",
+        "end_date": "2022-03-10"
+      },
+      {
+        "nct_id": "NCT04953741",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Fluticasone propionate inhaled aerosol"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-08-01",
+        "end_date": "2022-08-01"
+      }
+    ],
+    "ENSG00000169252": [
+      {
+        "nct_id": "NCT00576069",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "budesonide/formoterol",
+          "fluticasone/salmeterol",
+          "mometasone/formoterol",
+          "Prednisone"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-10-25",
+        "end_date": "2027-06"
+      },
+      {
+        "nct_id": "NCT00706446",
+        "phase": "NA",
+        "status": "TERMINATED",
+        "drugs": [
+          "tiotropium bromide",
+          "Salmeterol",
+          "Formoterol",
+          "Fluticasone propionate",
+          "budesonide"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Funding was terminated",
+        "quote_verified": false,
+        "start_date": "2008-06",
+        "end_date": "2011-09"
+      },
+      {
+        "nct_id": "NCT02458482",
+        "phase": "NA",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "AccuPAP",
+          "Albuterol and Ipratropium Continuous Nebulizer"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "The trainee for whom I designed the study did not begin enrollment and has left our institution.",
+        "quote_verified": false,
+        "start_date": "2015-07",
+        "end_date": "2020-11-11"
+      },
+      {
+        "nct_id": "NCT01423305",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Budesonide/formoterol capsule.",
+          "Budesonide/formoterol capsule for oral adm."
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-08",
+        "end_date": "2011-10"
+      },
+      {
+        "nct_id": "NCT02059434",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "LAS190792 Dose 1",
+          "LAS190792 Dose 2",
+          "LAS190792 Dose 3",
+          "LAS190792 Dose 4",
+          "LAS190792 Dose 5",
+          "LAS190792 Dose 6",
+          "LAS190792 Dose 1 (Part 2)",
+          "LAS190792 Dose 2 (Part 2)",
+          "Tiotropium 18 \u03bcg",
+          "Indacaterol 150 \u03bcg"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-09-01",
+        "end_date": "2014-10-06"
+      },
+      {
+        "nct_id": "NCT00685347",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Levalbuterol HFA MDI",
+          "Racemic Albuterol"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-01",
+        "end_date": "2003-06"
+      },
+      {
+        "nct_id": "NCT00350207",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium bromide",
+          "Salmeterol xinafoate"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-07",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01013753",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olodaterol (BI 1744) high",
+          "Olodaterol (BI 1744) medium",
+          "Olodaterol (BI 1744) very low",
+          "Formoterol 12 mcg",
+          "Olodaterol (BI 1744) low"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-02",
+        "end_date": "2011-01"
+      },
+      {
+        "nct_id": "NCT02573233",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab SAR231893/REGN668",
+          "fluticasone propionate and salmeterol",
+          "budesonide and formoterol",
+          "mometasone furoate and formoterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-01-27",
+        "end_date": "2018-01-03"
+      },
+      {
+        "nct_id": "NCT03086460",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "CHF 1531 pMDI",
+          "Formoterol Inhalation Solution",
+          "Placebo pMDI"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-09-08",
+        "end_date": "2018-07-28"
+      },
+      {
+        "nct_id": "NCT05363670",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "ARS-1 1 mg",
+          "Albuterol MDI",
+          "ARS-1 2mg"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-07-28",
+        "end_date": "2024-02-02"
+      },
+      {
+        "nct_id": "NCT05819541",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Montelukast Oral Granules",
+          "Albuterol",
+          "Corticosteroid"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-10-20",
+        "end_date": "2026-03-26"
+      },
+      {
+        "nct_id": "NCT00691951",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "budesonide and budesonide/formoterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": null,
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00550550",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "SCH 697243",
+          "Loratadine Syrup 1 mg/mL Rescue Treatment",
+          "Loratadine 10 mg Rescue Treatment",
+          "Olopatadine 0.1% Rescue Treatment",
+          "Mometasone furoate 50 mcg Rescue Treatment",
+          "Albuterol 108 mcg Rescue Treatment",
+          "Fluticasone 44 mcg Rescue Treatment",
+          "Prednisone 5 mg Rescue Treatment"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-11",
+        "end_date": "2009-09"
+      },
+      {
+        "nct_id": "NCT00565266",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "tiotropium bromide",
+          "salmeterol xinafoate",
+          "beclomethasone dipropionate"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-05",
+        "end_date": "2010-05"
+      },
+      {
+        "nct_id": "NCT02528214",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab",
+          "Oral corticosteroid therapy (prednisone/prednisolone)",
+          "Inhaled corticosteroid (ICS) therapy",
+          "Albuterol/Salbutamol",
+          "Levalbuterol/Levosalbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "IL13",
+          "IL4R",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-10-15",
+        "end_date": "2017-11-13"
+      },
+      {
+        "nct_id": "NCT02969408",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Albuterol Sulfate"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-02-13",
+        "end_date": "2018-02-02"
+      },
+      {
+        "nct_id": "NCT05831566",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "drugs": [
+          "Budesonide/Formoterol fumarate dihydrate"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-01-31",
+        "end_date": "2026-04-30"
+      },
+      {
+        "nct_id": "NCT06473779",
+        "phase": "PHASE3",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "Tezepelumab",
+          "Budesonide/formoterol",
+          "Albuterol/budesonide (AIRSUPRA\u00ae)",
+          "Mannitol",
+          "Salbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1",
+          "TSLP"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-09-30",
+        "end_date": "2027-06-25"
+      },
+      {
+        "nct_id": "NCT06618105",
+        "phase": "PHASE3",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Albuterol Sulfate 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations",
+          "Test Placebo",
+          "Reference Placebo",
+          "Albuterol Sulfate 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-10-15",
+        "end_date": "2025-05-31"
+      },
+      {
+        "nct_id": "NCT02235428",
+        "phase": "PHASE4",
+        "status": "TERMINATED",
+        "drugs": [
+          "Ipratropium bromide",
+          "Salbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "1998-09",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00296491",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "fluticasone propionate/salmeterol (FSC)",
+          "montelukast (MON)",
+          "fluticasone propionate (FP)",
+          "placebo nasal",
+          "ADVAIR DISKUS",
+          "placebo capsule",
+          "placebo DISKUS"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-09",
+        "end_date": "2007-10"
+      },
+      {
+        "nct_id": "NCT00273689",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "montelukast vs pretreatment with albuterol",
+          "montelukast"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-12",
+        "end_date": "2007-09"
+      },
+      {
+        "nct_id": "NCT01225913",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "fluticasone/salmeterol in all asthmatics",
+          "budesonide/formoterol or fluticasone/salmeterol in all asthmatics"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-10",
+        "end_date": "2027-06"
+      },
+      {
+        "nct_id": "NCT01696214",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone 250 mg/salmeterol 50 mg",
+          "Montelukast 10mg",
+          "Theophylline 400 mg",
+          "ipratropium"
+        ],
+        "target_genes": [
+          "ADORA1",
+          "ADRB2",
+          "CHRM2",
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2016-11"
+      },
+      {
+        "nct_id": "NCT01721291",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "SALBUTAMOL"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10-01",
+        "end_date": "2017-11-27"
+      },
+      {
+        "nct_id": "NCT02682862",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "olodaterol hydrochloride 2.5mcg, tiotropium bromide 2.5mcg",
+          "olodaterol 2.5 mcg"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-07-11",
+        "end_date": "2019-05-22"
+      },
+      {
+        "nct_id": "NCT04677959",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone propionate/salmeterol (FS)",
+          "Albuterol",
+          "Standard of Care Asthma Medication",
+          "Standard of Care Rescue Medication"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-02-16",
+        "end_date": "2022-03-10"
+      }
+    ],
+    "ENSG00000181072": [
+      {
+        "nct_id": "NCT00706446",
+        "phase": "NA",
+        "status": "TERMINATED",
+        "drugs": [
+          "tiotropium bromide",
+          "Salmeterol",
+          "Formoterol",
+          "Fluticasone propionate",
+          "budesonide"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Funding was terminated",
+        "quote_verified": false,
+        "start_date": "2008-06",
+        "end_date": "2011-09"
+      },
+      {
+        "nct_id": "NCT02458482",
+        "phase": "NA",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "AccuPAP",
+          "Albuterol and Ipratropium Continuous Nebulizer"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "The trainee for whom I designed the study did not begin enrollment and has left our institution.",
+        "quote_verified": false,
+        "start_date": "2015-07",
+        "end_date": "2020-11-11"
+      },
+      {
+        "nct_id": "NCT03692676",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Spiriva Respimat"
+        ],
+        "target_genes": [
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-03-05",
+        "end_date": "2019-10-11"
+      },
+      {
+        "nct_id": "NCT04696965",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Correct/recheck strategy",
+          "Usual verbal instruction"
+        ],
+        "target_genes": [
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-03-04",
+        "end_date": "2023-11-20"
+      },
+      {
+        "nct_id": "NCT02059434",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "LAS190792 Dose 1",
+          "LAS190792 Dose 2",
+          "LAS190792 Dose 3",
+          "LAS190792 Dose 4",
+          "LAS190792 Dose 5",
+          "LAS190792 Dose 6",
+          "LAS190792 Dose 1 (Part 2)",
+          "LAS190792 Dose 2 (Part 2)",
+          "Tiotropium 18 \u03bcg",
+          "Indacaterol 150 \u03bcg"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-09-01",
+        "end_date": "2014-10-06"
+      },
+      {
+        "nct_id": "NCT00350207",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium bromide",
+          "Salmeterol xinafoate"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-07",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01122680",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium bromide",
+          "tiotropium bromide",
+          "tiotropium bromide"
+        ],
+        "target_genes": [
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-05",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01152450",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium 2.5 \u00b5g b.i.d",
+          "Tiotropium 5 \u00b5g q.d."
+        ],
+        "target_genes": [
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-07",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01634113",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "tiotropium-bromide",
+          "tiotropium-bromide"
+        ],
+        "target_genes": [
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-07",
+        "end_date": "2014-12"
+      },
+      {
+        "nct_id": "NCT02382510",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "TRN-157",
+          "Tiotropium"
+        ],
+        "target_genes": [
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-04",
+        "end_date": "2016-03"
+      },
+      {
+        "nct_id": "NCT03358147",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "GP MDI 28.8 \u03bcg",
+          "GP MDI 14.4 \u03bcg",
+          "GP MDI 7.2 \u03bcg",
+          "Placebo MDI",
+          "Spiriva Respimat 2.5 \u03bcg"
+        ],
+        "target_genes": [
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-12-13",
+        "end_date": "2019-09-12"
+      },
+      {
+        "nct_id": "NCT00565266",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "tiotropium bromide",
+          "salmeterol xinafoate",
+          "beclomethasone dipropionate"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-05",
+        "end_date": "2010-05"
+      },
+      {
+        "nct_id": "NCT00772538",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "tiotropium 5mcg/day"
+        ],
+        "target_genes": [
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-10",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01316380",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "tiotropium 2.5 mcg",
+          "tiotropium 5 mcg"
+        ],
+        "target_genes": [
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-03",
+        "end_date": "2012-04"
+      },
+      {
+        "nct_id": "NCT02066298",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Mometasone 220mcg BID",
+          "Tiotropium Respimat 5mcg QD"
+        ],
+        "target_genes": [
+          "CHRM2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-07",
+        "end_date": "2018-05"
+      },
+      {
+        "nct_id": "NCT02235428",
+        "phase": "PHASE4",
+        "status": "TERMINATED",
+        "drugs": [
+          "Ipratropium bromide",
+          "Salbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "1998-09",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00546234",
+        "phase": "PHASE4",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "tiotropium",
+          "long acting beta agonist"
+        ],
+        "target_genes": [
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "No subjects enrolled and no ongoing funding.",
+        "quote_verified": false,
+        "start_date": "2007-11",
+        "end_date": "2014-01"
+      },
+      {
+        "nct_id": "NCT01696214",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone 250 mg/salmeterol 50 mg",
+          "Montelukast 10mg",
+          "Theophylline 400 mg",
+          "ipratropium"
+        ],
+        "target_genes": [
+          "ADORA1",
+          "ADRB2",
+          "CHRM2",
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2016-11"
+      },
+      {
+        "nct_id": "NCT02622243",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium",
+          "glycopyrronium",
+          "Respimat",
+          "Breezehaler"
+        ],
+        "target_genes": [
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-11",
+        "end_date": "2016-03"
+      },
+      {
+        "nct_id": "NCT02682862",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "olodaterol hydrochloride 2.5mcg, tiotropium bromide 2.5mcg",
+          "olodaterol 2.5 mcg"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-07-11",
+        "end_date": "2019-05-22"
+      }
+    ],
+    "ENSG00000211891": [
+      {
+        "nct_id": "NCT00252135",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-06",
+        "end_date": "2011-11"
+      },
+      {
+        "nct_id": "NCT00226200",
+        "phase": "NA",
+        "status": "TERMINATED",
+        "drugs": [
+          "Omalizumab"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Completed",
+        "quote_verified": false,
+        "start_date": "2004-11",
+        "end_date": "2007-10"
+      },
+      {
+        "nct_id": "NCT00373061",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Xolair\u00ae"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-10-20",
+        "end_date": "2018-01-05"
+      },
+      {
+        "nct_id": "NCT03480815",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Nocturnal Temperature Controlled Laminar Flow Device",
+          "None Device"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-01-20",
+        "end_date": "2020-06-30"
+      },
+      {
+        "nct_id": "NCT04158050",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "IL5 Antagonist or anti-IL5R-antibody or Omalizumab"
+        ],
+        "target_genes": [
+          "IGHE",
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-01-01",
+        "end_date": "2020-10-31"
+      },
+      {
+        "nct_id": "NCT05424523",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Omalizumab"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-02-25",
+        "end_date": "2021-06-28"
+      },
+      {
+        "nct_id": "NCT04665141",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Mepolizumab",
+          "Omalizumab",
+          "Reslizumab",
+          "Benralizumab",
+          "Dupilumab"
+        ],
+        "target_genes": [
+          "IGHE",
+          "IL13",
+          "IL4R",
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-04-07",
+        "end_date": "2022-11"
+      },
+      {
+        "nct_id": "NCT02388997",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "omalizumab",
+          "Rhinovirus (strain 16)"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-02-01",
+        "end_date": "2017-05-04"
+      },
+      {
+        "nct_id": "NCT03074942",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Reslizumab"
+        ],
+        "target_genes": [
+          "IGHE",
+          "IL5"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-04-20",
+        "end_date": "2018-04-30"
+      },
+      {
+        "nct_id": "NCT00109200",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Xolair (omalizumab)"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-05",
+        "end_date": "2003-09"
+      },
+      {
+        "nct_id": "NCT00482508",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Omalizumab"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-05",
+        "end_date": "2005-10"
+      },
+      {
+        "nct_id": "NCT00314574",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "omalizumab (Xolair)",
+          "corticosteroids",
+          "long-acting beta-agonists"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-12",
+        "end_date": "2009-11"
+      },
+      {
+        "nct_id": "NCT00500539",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "omalizumab"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-07",
+        "end_date": "2008-09"
+      },
+      {
+        "nct_id": "NCT01328886",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Omalizumab"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-03",
+        "end_date": "2013-12"
+      },
+      {
+        "nct_id": "NCT00639691",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "omalizumab"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-01",
+        "end_date": "2011-12"
+      },
+      {
+        "nct_id": "NCT00242359",
+        "phase": "PHASE4",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "omalizumab"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "could not find subject population",
+        "quote_verified": false,
+        "start_date": "2005-11",
+        "end_date": "2009-01"
+      },
+      {
+        "nct_id": "NCT00267202",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Omalizumab",
+          "Immunotherapy",
+          "Immunotherapy"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-12",
+        "end_date": "2008-04"
+      },
+      {
+        "nct_id": "NCT00657891",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Omalizumab"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-03",
+        "end_date": "2007-10"
+      },
+      {
+        "nct_id": "NCT00777764",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Cohort I",
+          "Cohort 2"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-08",
+        "end_date": "2009-04"
+      },
+      {
+        "nct_id": "NCT00784485",
+        "phase": "PHASE4",
+        "status": "TERMINATED",
+        "drugs": [
+          "Xolair injections"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Terminated due to poor enrollment.",
+        "quote_verified": false,
+        "start_date": "2009-02",
+        "end_date": "2011-02"
+      },
+      {
+        "nct_id": "NCT02023151",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Omalizumab"
+        ],
+        "target_genes": [
+          "IGHE"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-02",
+        "end_date": "2016-08"
+      },
+      {
+        "nct_id": "NCT04998604",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dupilumab",
+          "Omalizumab"
+        ],
+        "target_genes": [
+          "IGHE",
+          "IL13",
+          "IL4R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-09-27",
+        "end_date": "2024-12-27"
+      }
+    ],
+    "ENSG00000173198": [
+      {
+        "nct_id": "NCT00046644",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-06",
+        "end_date": "2005-05"
+      },
+      {
+        "nct_id": "NCT00213252",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Montelukast plus prednisolone",
+          "Prednisolone"
+        ],
+        "target_genes": [
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-09",
+        "end_date": "2008-02"
+      },
+      {
+        "nct_id": "NCT00947453",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "montelukast"
+        ],
+        "target_genes": [
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-07",
+        "end_date": "2011-12"
+      },
+      {
+        "nct_id": "NCT01156792",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "FP 100",
+          "GSK2190915 100",
+          "GSK2190915 300",
+          "montelukast",
+          "FP/SAL 100/50"
+        ],
+        "target_genes": [
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-09",
+        "end_date": "2011-10"
+      },
+      {
+        "nct_id": "NCT01424124",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "YHD001 dose level 1",
+          "YHD001 dose level 2",
+          "Singulair"
+        ],
+        "target_genes": [
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-11",
+        "end_date": "2014-01"
+      },
+      {
+        "nct_id": "NCT01536041",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "ONO-6950",
+          "ONO-6950",
+          "Montelukast"
+        ],
+        "target_genes": [
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-03",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01765192",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast",
+          "Roflumilast placebo",
+          "Montelukast"
+        ],
+        "target_genes": [
+          "CYSLTR1",
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-02",
+        "end_date": "2013-10"
+      },
+      {
+        "nct_id": "NCT05819541",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Montelukast Oral Granules",
+          "Albuterol",
+          "Corticosteroid"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-10-20",
+        "end_date": "2026-03-26"
+      },
+      {
+        "nct_id": "NCT00911547",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "montelukast sodium",
+          "beclomethasone",
+          "Placebo inhaler",
+          "placebo tablet"
+        ],
+        "target_genes": [
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "1995-03",
+        "end_date": "1996-05"
+      },
+      {
+        "nct_id": "NCT01606306",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "daily fluticasone propionate",
+          "Montelukast",
+          "as-needed fluticasone propionate"
+        ],
+        "target_genes": [
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-02",
+        "end_date": "2015-04"
+      },
+      {
+        "nct_id": "NCT01011452",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Montelukast"
+        ],
+        "target_genes": [
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2001-05",
+        "end_date": "2004-10"
+      },
+      {
+        "nct_id": "NCT00148408",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Montelukast",
+          "Education"
+        ],
+        "target_genes": [
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-12",
+        "end_date": "2005-12"
+      },
+      {
+        "nct_id": "NCT00296491",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "fluticasone propionate/salmeterol (FSC)",
+          "montelukast (MON)",
+          "fluticasone propionate (FP)",
+          "placebo nasal",
+          "ADVAIR DISKUS",
+          "placebo capsule",
+          "placebo DISKUS"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-09",
+        "end_date": "2007-10"
+      },
+      {
+        "nct_id": "NCT00273689",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "montelukast vs pretreatment with albuterol",
+          "montelukast"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-12",
+        "end_date": "2007-09"
+      },
+      {
+        "nct_id": "NCT01725360",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "montelukast"
+        ],
+        "target_genes": [
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-01",
+        "end_date": "2012-01"
+      },
+      {
+        "nct_id": "NCT00770900",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "montelukast sodium",
+          "Comparator: placebo comparator"
+        ],
+        "target_genes": [
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-09",
+        "end_date": "2009-12"
+      },
+      {
+        "nct_id": "NCT01304901",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "montelukast 4 mg granule",
+          "Montelukast placebo gran\u00fcle"
+        ],
+        "target_genes": [
+          "CYSLTR1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-04",
+        "end_date": "2010-12"
+      },
+      {
+        "nct_id": "NCT01696214",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone 250 mg/salmeterol 50 mg",
+          "Montelukast 10mg",
+          "Theophylline 400 mg",
+          "ipratropium"
+        ],
+        "target_genes": [
+          "ADORA1",
+          "ADRB2",
+          "CHRM2",
+          "CYSLTR1",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2016-11"
+      }
+    ],
+    "ENSG00000065989": [
+      {
+        "nct_id": "NCT00613587",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-08",
+        "end_date": "2010-01"
+      },
+      {
+        "nct_id": "NCT04108377",
+        "phase": "PHASE1",
+        "status": "TERMINATED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Enrollment stopped secondary to completion of funding",
+        "quote_verified": false,
+        "start_date": "2019-01-21",
+        "end_date": "2023-08-15"
+      },
+      {
+        "nct_id": "NCT00242307",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-05-01",
+        "end_date": "2007-06-01"
+      },
+      {
+        "nct_id": "NCT01365533",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-12",
+        "end_date": "2005-07"
+      },
+      {
+        "nct_id": "NCT01765192",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast",
+          "Roflumilast placebo",
+          "Montelukast"
+        ],
+        "target_genes": [
+          "CYSLTR1",
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-02",
+        "end_date": "2013-10"
+      },
+      {
+        "nct_id": "NCT03532490",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast 500 Mcg Oral Tablet",
+          "Placebo oral capsule"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-08-03",
+        "end_date": "2021-07-30"
+      },
+      {
+        "nct_id": "NCT00163527",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-04",
+        "end_date": "2005-11"
+      },
+      {
+        "nct_id": "NCT00073177",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-11",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00076076",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-12",
+        "end_date": "2005-06"
+      },
+      {
+        "nct_id": "NCT00163475",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-05",
+        "end_date": "2005-08"
+      },
+      {
+        "nct_id": "NCT00246922",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-12-01",
+        "end_date": "2007-10-01"
+      }
+    ],
+    "ENSG00000150594": []
+  }
+}

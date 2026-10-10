@@ -86,3 +86,31 @@ export type JudgmentCard = {
   data_as_of: string;
   card_confidence: "high" | "moderate" | "low";
 };
+
+export type NetworkNode = {
+  id: string;
+  name: string;
+  kind: "gene" | "drug";
+  gene_id?: string | null;
+  symbol?: string | null;
+  quadrant?: Quadrant | null;
+  genetic_score?: number | null;
+  activity_score?: number | null;
+  trial_count: number;
+  degree: number;
+};
+
+export type NetworkLink = {
+  source: string;
+  target: string;
+  weight: number;
+  sample_ncts: string[];
+};
+
+export type NetworkResponse = {
+  disease: string;
+  data_as_of: string;
+  description: string;
+  nodes: NetworkNode[];
+  links: NetworkLink[];
+};

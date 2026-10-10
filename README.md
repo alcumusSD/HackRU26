@@ -6,7 +6,7 @@ Interactive evidence map: genetic support × clinical trial activity, plus a **j
 
 - **Backend:** FastAPI with mock **or** Open Targets cached genes (`DATA_MODE=auto`)
 - **Frontend:** interactive Evidence × Activity map + judgment panel
-- **Live fetch:** Open Targets asthma (top 15) wired; ClinicalTrials.gov / Gemini not yet
+- **Live fetch:** Open Targets genes + ClinicalTrials.gov activity/trials wired; Gemini judgment not yet
 
 ## Quick start
 

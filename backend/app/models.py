@@ -145,3 +145,32 @@ class HealthResponse(BaseModel):
     status: str
     service: str
     mode: str
+
+
+class NetworkNode(BaseModel):
+    id: str
+    name: str
+    kind: Literal["gene", "drug"]
+    gene_id: Optional[str] = None
+    symbol: Optional[str] = None
+    quadrant: Optional[Quadrant] = None
+    genetic_score: Optional[float] = None
+    activity_score: Optional[float] = None
+    trial_count: int = 0
+    degree: int = 0
+
+
+class NetworkLink(BaseModel):
+    source: str
+    target: str
+    weight: int = 1
+    sample_ncts: List[str] = Field(default_factory=list)
+
+
+class NetworkResponse(BaseModel):
+    disease: str
+    data_as_of: str
+    description: str
+    nodes: List[NetworkNode]
+    links: List[NetworkLink]
+

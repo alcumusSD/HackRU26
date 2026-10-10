@@ -20,23 +20,26 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-## Fetch Open Targets (asthma, top 15)
+## Fetch data (asthma, small scale)
 
 ```bash
 cd backend
 source .venv/bin/activate
-python fetch_all.py          # skip if raw cache exists
-python fetch_all.py --force  # refetch
+python fetch_all.py                 # skip existing raw caches
+python fetch_all.py --force         # refetch OT + CT.gov
+python fetch_all.py --force-trials  # refetch trials only
 ```
 
 Writes:
 
-- `data/raw/genes.json` — raw GraphQL response
-- `data/processed/genes.json` — UI-shaped genes
+- `data/raw/genes.json` — Open Targets GraphQL
+- `data/raw/trials.json` — ClinicalTrials.gov studies
+- `data/processed/genes.json` — UI-shaped genes (activity from trials)
+- `data/processed/trials_by_gene.json` — trials per gene
 - `data/validation_report.md`
 
-Disease ID: **`MONDO_0004979`** (asthma in current Open Targets).  
-`activity_score` currently uses the Open Targets **clinical** datatype as a proxy until ClinicalTrials.gov is wired.
+Disease ID: **`MONDO_0004979`**.  
+`genetic_score` from Open Targets; `activity_score` from CT.gov volume/phase/recency (curated drug→gene map). Judgment still mock/default.
 
 ## Run API
 
@@ -60,6 +63,7 @@ uvicorn app.main:app --reload --port 8000
 | GET | `/genes/{id}/judgment` | Mock/default judgment |
 | GET | `/genes/{id}/robustness` | From judgment |
 | GET | `/events` | Mock change feed (`simulated`) |
+| GET | `/network?disease=asthma` | Gene–drug network for the Network tab |
 
 ## Contract notes
 

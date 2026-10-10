@@ -1,4 +1,10 @@
-import type { Gene, GeneListResponse, JudgmentCard, Trial } from "./types";
+import type {
+  Gene,
+  GeneListResponse,
+  JudgmentCard,
+  NetworkResponse,
+  Trial,
+} from "./types";
 
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") ||
@@ -29,6 +35,12 @@ export function fetchTrials(id: string): Promise<Trial[]> {
 
 export function fetchJudgment(id: string): Promise<JudgmentCard> {
   return getJson<JudgmentCard>(`/genes/${encodeURIComponent(id)}/judgment`);
+}
+
+export function fetchNetwork(disease = "asthma"): Promise<NetworkResponse> {
+  return getJson<NetworkResponse>(
+    `/network?disease=${encodeURIComponent(disease)}`,
+  );
 }
 
 export { API_URL };

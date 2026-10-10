@@ -14,5 +14,20 @@
   "open_targets": {
     "graphql_url": "https://api.platform.opentargets.org/api/v4/graphql"
   },
-  "notes": "Small-scale: top 15 Open Targets associations. Activity score uses OT clinical datatype as proxy until ClinicalTrials.gov is wired."
+  "clinicaltrials": {
+    "max_studies": 150,
+    "page_size": 100,
+    "extra_interventions": [
+      "dupilumab",
+      "tezepelumab",
+      "mepolizumab",
+      "benralizumab",
+      "reslizumab",
+      "omalizumab",
+      "montelukast",
+      "roflumilast",
+      "tiotropium"
+    ]
+  },
+  "notes": "Small-scale: top 15 OT genes + CT.gov asthma studies (+ drug-targeted pulls). Activity from trial volume/phase/recency."
 }

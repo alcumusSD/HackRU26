@@ -21,7 +21,8 @@ Open http://localhost:3000
 
 ## What you get
 
-- Full-viewport quadrant map (genetic evidence vs trial activity)
+- **Map** tab — Evidence × Activity quadrant (default for demos)
+- **Network** tab — 3D force graph of **gene–drug** links from trials (different data than the score map); orbit/zoom/click
 - Shape + color legend (color-blind friendly)
-- Click a gene → judgment panel (For / Against / Missing / Could-change-if)
+- Click a gene → judgment panel + clickable ClinicalTrials.gov links
 - Cached-data footer and “not a recommendation” disclaimer
