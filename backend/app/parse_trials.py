@@ -73,7 +73,13 @@ def link_study_to_genes(
     return hits
 
 
-def to_api_trial(flat: Dict[str, Any], gene_symbols: List[str]) -> Trial:
+def to_api_trial(
+    flat: Dict[str, Any],
+    gene_symbols: List[str],
+    *,
+    classify_stops: bool = False,
+    use_gemini: bool = False,
+) -> Trial:
     skip_drugs = {"placebo", "none", "none (observational study)", "n/a"}
     drugs = []
     for i in flat.get("interventions") or []:
@@ -83,15 +89,42 @@ def to_api_trial(flat: Dict[str, Any], gene_symbols: List[str]) -> Trial:
         drugs.append(name)
 
     why = flat.get("why_stopped")
+    category = flat.get("stop_reason_category")
+    quote = flat.get("stop_reason_quote") or why
+    verified = bool(flat.get("quote_verified"))
+
+    # Classify on the fly if not already attached to the flat study.
+    status = (flat.get("status") or "").upper()
+    stopped = status in {"TERMINATED", "WITHDRAWN", "SUSPENDED"}
+    if classify_stops and stopped and why and not category:
+        from app.gemini_client import classify_stop_reason
+        from app.models import StopReasonCategory
+
+        classified = classify_stop_reason(why, use_gemini=use_gemini)
+        category = classified.category
+        if classified.quote:
+            quote = classified.quote
+        verified = bool(classified.quote_verified)
+        if isinstance(category, StopReasonCategory):
+            category = category
+
+    if isinstance(category, str):
+        from app.models import StopReasonCategory
+
+        try:
+            category = StopReasonCategory(category)
+        except ValueError:
+            category = StopReasonCategory.OTHER
+
     return Trial(
         nct_id=flat["nct_id"],
         phase=flat.get("phase") or "NA",
         status=flat.get("status") or "UNKNOWN",
         drugs=drugs,
         target_genes=gene_symbols,
-        stop_reason_category=None,  # Gemini later
-        stop_reason_quote=why,
-        quote_verified=False,
+        stop_reason_category=category,
+        stop_reason_quote=quote,
+        quote_verified=verified,
         start_date=flat.get("start_date"),
         end_date=flat.get("end_date"),
     )
@@ -155,9 +188,18 @@ def activity_from_trials(
     recent = _clamp01(recent)
 
     score = 0.30 * volume + 0.40 * phase + 0.30 * recent
-    # Futility adjustment deferred until Gemini stop-reason classifier exists.
+
+    # Light track-record adjustments when stop categories are already present.
+    futility_n = sum(
+        1 for t in trials if (t.get("stop_reason_category") or "") == "futility"
+    )
+    if futility_n:
+        score = _clamp01(score - 0.05 * min(futility_n, 3))
+
     safety = any(
-        "safety" in (t.get("why_stopped") or "").lower() for t in trials
+        (t.get("stop_reason_category") or "") == "safety"
+        or "safety" in (t.get("why_stopped") or "").lower()
+        for t in trials
     )
 
     breakdown = [
@@ -188,6 +230,9 @@ def parse_and_join_trials(
     genes: List[Gene],
     genetic_cut: float = 0.5,
     activity_cut: float = 0.5,
+    *,
+    classify_stops: bool = False,
+    use_gemini: bool = False,
 ) -> Tuple[List[Gene], Dict[str, List[Dict[str, Any]]], Dict[str, Any]]:
     """Enrich genes with CT.gov activity; return trials_by_gene_id and summary."""
     demo_symbols = {g.symbol for g in genes}
@@ -201,6 +246,21 @@ def parse_and_join_trials(
         linked = link_study_to_genes(flat, demo_symbols)
         flat["linked_genes"] = sorted(linked)
         flats.append(flat)
+
+    if classify_stops:
+        from app.gemini_client import classify_stop_reason
+
+        for flat in flats:
+            status = (flat.get("status") or "").upper()
+            why = (flat.get("why_stopped") or "").strip()
+            if status not in {"TERMINATED", "WITHDRAWN", "SUSPENDED"} or not why:
+                continue
+            classified = classify_stop_reason(why, use_gemini=use_gemini)
+            if classified.category is not None:
+                flat["stop_reason_category"] = classified.category.value
+            if classified.quote:
+                flat["stop_reason_quote"] = classified.quote
+            flat["quote_verified"] = bool(classified.quote_verified)
 
     trials_by_symbol: Dict[str, List[Dict[str, Any]]] = {s: [] for s in demo_symbols}
     mapped = 0
@@ -251,14 +311,44 @@ def parse_and_join_trials(
         enriched.append(new_gene)
 
         api_trials = [
-            to_api_trial(t, t.get("linked_genes") or [gene.symbol]).model_dump(
-                mode="json"
-            )
+            to_api_trial(
+                t,
+                t.get("linked_genes") or [gene.symbol],
+                classify_stops=classify_stops,
+                use_gemini=use_gemini,
+            ).model_dump(mode="json")
             for t in gene_trials
         ]
         # Stable sort: phase depth then start date
         api_trials.sort(key=lambda t: (t.get("phase") or "", t.get("start_date") or ""))
         trials_by_gene_id[gene.id] = api_trials
+
+    classified_n = sum(
+        1
+        for trials in trials_by_gene_id.values()
+        for t in trials
+        if t.get("stop_reason_category")
+    )
+    verified_n = sum(
+        1
+        for trials in trials_by_gene_id.values()
+        for t in trials
+        if t.get("quote_verified")
+    )
+
+    notes = (
+        "activity_score from ClinicalTrials.gov volume/phase/recency; "
+        "drug→gene join uses curated synonym map + symbol mentions"
+    )
+    if classify_stops:
+        notes += (
+            f"; stop reasons classified ({classified_n} categorized, "
+            f"{verified_n} quotes verified"
+            f"{'; Gemini' if use_gemini else '; heuristic'})"
+        )
+        notes += "; light futility penalty applied when category=futility"
+    else:
+        notes += "; stop-reason classification skipped (pass --classify-stops)"
 
     summary = {
         "studies_fetched": len(studies),
@@ -266,11 +356,15 @@ def parse_and_join_trials(
         "studies_mapped_to_demo_genes": mapped,
         "genes_with_trials": sum(1 for g in enriched if not g.partial_data),
         "genes_without_trials": sum(1 for g in enriched if g.partial_data),
-        "parsed_at": datetime.now(timezone.utc).isoformat(),
-        "notes": (
-            "activity_score from ClinicalTrials.gov volume/phase/recency; "
-            "drug→gene join uses curated synonym map + symbol mentions; "
-            "futility track-record adjustment deferred until Gemini classifier."
+        "stop_reasons_classified": classified_n,
+        "stop_quotes_verified": verified_n,
+        "classify_stops": classify_stops,
+        "classify_engine": (
+            ("gemini+heuristic" if use_gemini else "heuristic")
+            if classify_stops
+            else "none"
         ),
+        "parsed_at": datetime.now(timezone.utc).isoformat(),
+        "notes": notes,
     }
     return enriched, trials_by_gene_id, summary

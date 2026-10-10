@@ -1,4 +1,6 @@
 import type {
+  ChatMessage,
+  ChatResponse,
   Gene,
   GeneListResponse,
   JudgmentCard,
@@ -12,6 +14,20 @@ const API_URL =
 
 async function getJson<T>(path: string): Promise<T> {
   const res = await fetch(`${API_URL}${path}`, { cache: "no-store" });
+  if (!res.ok) {
+    const detail = await res.text();
+    throw new Error(detail || `Request failed: ${res.status}`);
+  }
+  return res.json() as Promise<T>;
+}
+
+async function postJson<T>(path: string, body: unknown): Promise<T> {
+  const res = await fetch(`${API_URL}${path}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+    cache: "no-store",
+  });
   if (!res.ok) {
     const detail = await res.text();
     throw new Error(detail || `Request failed: ${res.status}`);
@@ -41,6 +57,14 @@ export function fetchNetwork(disease = "asthma"): Promise<NetworkResponse> {
   return getJson<NetworkResponse>(
     `/network?disease=${encodeURIComponent(disease)}`,
   );
+}
+
+export function postChat(payload: {
+  message: string;
+  context: Record<string, unknown>;
+  history: ChatMessage[];
+}): Promise<ChatResponse> {
+  return postJson<ChatResponse>("/chat", payload);
 }
 
 export { API_URL };

@@ -145,6 +145,24 @@ class HealthResponse(BaseModel):
     status: str
     service: str
     mode: str
+    gemini: str = "missing"
+
+
+class ChatMessage(BaseModel):
+    role: Literal["user", "assistant"]
+    content: str
+
+
+class ChatRequest(BaseModel):
+    message: str = Field(min_length=1, max_length=2000)
+    context: dict = Field(default_factory=dict)
+    history: List[ChatMessage] = Field(default_factory=list)
+
+
+class ChatResponse(BaseModel):
+    reply: str
+    model: str
+    grounded: bool = True
 
 
 class NetworkNode(BaseModel):

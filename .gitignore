@@ -34,3 +34,7 @@ frontend/.env.local
 # Uncomment to ignore all raw JSON:
 # data/raw/*.json
 # !data/raw/.gitkeep
+
+# Regenerable stop-reason / Gemini classification cache (keep directory via .gitkeep)
+data/cache/gemini/*.json
+!data/cache/gemini/.gitkeep

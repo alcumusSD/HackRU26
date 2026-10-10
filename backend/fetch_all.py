@@ -6,6 +6,9 @@ Usage:
   python fetch_all.py --force      # refetch everything
   python fetch_all.py --force-trials   # refetch trials only
   python fetch_all.py --skip-trials    # Open Targets genes only
+  python fetch_all.py --reparse-trials # rebuild processed from raw (no refetch)
+  python fetch_all.py --reparse-trials --classify-stops
+  python fetch_all.py --reparse-trials --classify-stops --gemini-stops
 
 Writes:
   data/raw/genes.json
@@ -72,6 +75,9 @@ def write_validation(ot_summary, trial_summary, genes_count: int) -> None:
             f"- Studies mapped to demo genes: {trial_summary.get('studies_mapped_to_demo_genes')}",
             f"- Genes with ≥1 linked trial: {trial_summary.get('genes_with_trials')}",
             f"- Genes with no linked trial (partial_data): {trial_summary.get('genes_without_trials')}",
+            f"- Stop reasons classified: {trial_summary.get('stop_reasons_classified', 0)}",
+            f"- Stop quotes verified: {trial_summary.get('stop_quotes_verified', 0)}",
+            f"- Classify engine: {trial_summary.get('classify_engine', 'none')}",
             f"- Notes: {trial_summary.get('notes')}",
             "",
         ]
@@ -83,11 +89,16 @@ def write_validation(ot_summary, trial_summary, genes_count: int) -> None:
             "",
         ]
     lines += [
-        "## Still mock / deferred",
+        "## Judgment",
         "",
-        "- Judgment cards (Gemini + quote verify)",
-        "- Stop-reason categories / futility track-record adjustment",
+        "- Cards assembled live from gene scores + linked trials (`app/judgment.py`)",
+        "- Against items use verified whyStopped quotes when classified",
+        "- Robustness = deterministic reweight of evidence×activity across peers",
+        "",
+        "## Still deferred",
+        "",
         "- Change-feed events",
+        "- Full Monte-Carlo robustness (current is lightweight reweight)",
         "",
     ]
     VALIDATION.parent.mkdir(parents=True, exist_ok=True)
@@ -106,7 +117,26 @@ def main() -> int:
     parser.add_argument(
         "--skip-trials", action="store_true", help="Only refresh Open Targets genes"
     )
+    parser.add_argument(
+        "--reparse-trials",
+        action="store_true",
+        help="Rebuild processed genes/trials from existing raw (no CT.gov refetch)",
+    )
+    parser.add_argument(
+        "--classify-stops",
+        action="store_true",
+        help="Classify TERMINATED/WITHDRAWN/SUSPENDED whyStopped texts",
+    )
+    parser.add_argument(
+        "--gemini-stops",
+        action="store_true",
+        help="Use Gemini for stop classification (else heuristic; requires --classify-stops)",
+    )
     args = parser.parse_args()
+
+    if args.gemini_stops and not args.classify_stops:
+        print("ERROR: --gemini-stops requires --classify-stops", file=sys.stderr)
+        return 2
 
     config = load_config()
     disease = config.get("disease", {})
@@ -165,11 +195,18 @@ def main() -> int:
 
     # --- ClinicalTrials.gov ---
     if not args.skip_trials:
-        need_trials = args.force or args.force_trials or not RAW_TRIALS.exists()
-        if not need_trials:
+        need_trials = (
+            args.force
+            or args.force_trials
+            or not RAW_TRIALS.exists()
+        )
+        if args.reparse_trials and RAW_TRIALS.exists():
+            need_trials = False
+
+        if not need_trials and RAW_TRIALS.exists():
             print(f"skip CT.gov fetch (exists): {RAW_TRIALS.relative_to(ROOT)}")
             raw_trials = json.loads(RAW_TRIALS.read_text())
-        else:
+        elif need_trials:
             print(
                 f"fetching ClinicalTrials.gov: cond={disease_name} max={max_studies}"
             )
@@ -180,12 +217,21 @@ def main() -> int:
             )
             raw_trials = {"fetched_at": stamp, **payload}
             write_json(RAW_TRIALS, raw_trials)
+        else:
+            print("ERROR: no raw trials; run without --skip-trials first", file=sys.stderr)
+            return 1
+
+        if args.classify_stops:
+            engine = "gemini+heuristic" if args.gemini_stops else "heuristic"
+            print(f"classifying stop reasons ({engine})…")
 
         genes, trials_by_gene, trial_summary = parse_and_join_trials(
             raw_trials,
             genes,
             genetic_cut=genetic_cut,
             activity_cut=activity_cut,
+            classify_stops=args.classify_stops,
+            use_gemini=args.gemini_stops,
         )
         write_json(
             PROCESSED_TRIALS,
@@ -221,5 +267,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    # Python 3.9 compatibility for dict | None in write_validation annotation
     sys.exit(main())

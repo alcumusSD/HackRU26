@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-10T18:13:13.733999+00:00",
+  "built_at": "2026-10-10T19:43:22.514765+00:00",
   "disease": {
     "id": "MONDO_0004979",
     "name": "asthma"
@@ -14,7 +14,7 @@
       "parsed_genes": 15,
       "skipped_rows": 0,
       "partial_activity_count": 1,
-      "parsed_at": "2026-10-10T18:13:13.720277+00:00",
+      "parsed_at": "2026-10-10T19:43:22.480452+00:00",
       "notes": "activity_score uses Open Targets 'clinical' datatype as a proxy; genetic_score uses genetic_association when present else overall score."
     },
     "clinicaltrials": {
@@ -23,8 +23,12 @@
       "studies_mapped_to_demo_genes": 173,
       "genes_with_trials": 12,
       "genes_without_trials": 3,
-      "parsed_at": "2026-10-10T18:13:13.731765+00:00",
-      "notes": "activity_score from ClinicalTrials.gov volume/phase/recency; drug\u2192gene join uses curated synonym map + symbol mentions; futility track-record adjustment deferred until Gemini classifier."
+      "stop_reasons_classified": 17,
+      "stop_quotes_verified": 17,
+      "classify_stops": true,
+      "classify_engine": "heuristic",
+      "parsed_at": "2026-10-10T19:43:22.512419+00:00",
+      "notes": "activity_score from ClinicalTrials.gov volume/phase/recency; drug\u2192gene join uses curated synonym map + symbol mentions; stop reasons classified (17 categorized, 17 quotes verified; heuristic); light futility penalty applied when category=futility"
     }
   },
   "genes": [
@@ -308,7 +312,7 @@
       "id": "ENSG00000113525",
       "symbol": "IL5",
       "genetic_score": 0.8030380069009645,
-      "activity_score": 0.825,
+      "activity_score": 0.7749999999999999,
       "score_breakdown": [
         {
           "component": "open_targets_overall",

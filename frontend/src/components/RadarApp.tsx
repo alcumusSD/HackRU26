@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { fetchGenes, fetchJudgment, fetchTrials } from "@/lib/api";
 import type { Gene, JudgmentCard, Trial } from "@/lib/types";
 import { QUADRANT_META } from "@/lib/quadrant";
@@ -8,6 +8,7 @@ import { DrugPanel, type SelectedDrug } from "./DrugPanel";
 import { GeneSpace3DLazy } from "./GeneSpace3DLazy";
 import { JudgmentPanel } from "./JudgmentPanel";
 import { QuadrantMap } from "./QuadrantMap";
+import { RadarChat } from "./RadarChat";
 
 type ViewTab = "map" | "space3d";
 
@@ -74,6 +75,92 @@ export function RadarApp() {
 
   const networkMode = tab === "space3d";
   const panelOpen = Boolean(selected || selectedDrug);
+
+  const chatContext = useMemo(() => {
+    const statusCounts: Record<string, number> = {};
+    const phaseCounts: Record<string, number> = {};
+    for (const t of trials) {
+      statusCounts[t.status] = (statusCounts[t.status] || 0) + 1;
+      phaseCounts[t.phase] = (phaseCounts[t.phase] || 0) + 1;
+    }
+    return {
+      app: "Evidence Radar",
+      disease,
+      data_as_of: dataAsOf,
+      view: networkMode ? "network" : "map",
+      protective_variant_filter: protectiveOnly,
+      gene_count_on_map: genes.length,
+      selected_gene: selected
+        ? {
+            id: selected.id,
+            symbol: selected.symbol,
+            genetic_score: selected.genetic_score,
+            activity_score: selected.activity_score,
+            quadrant: selected.quadrant,
+            protective_variant: selected.protective_variant,
+            partial_data: selected.partial_data,
+            safety_flag: selected.safety_flag,
+            score_breakdown: selected.score_breakdown,
+          }
+        : null,
+      selected_drug: selectedDrug
+        ? {
+            id: selectedDrug.id,
+            name: selectedDrug.name,
+            degree: selectedDrug.degree,
+            trial_count: selectedDrug.trial_count,
+            connected_genes: selectedDrug.connectedGenes.map((g) => ({
+              symbol: g.symbol,
+              genetic_score: g.genetic_score,
+              activity_score: g.activity_score,
+              quadrant: g.quadrant,
+            })),
+          }
+        : null,
+      judgment: judgment
+        ? {
+            note: "Judgment narrative may still be mock/default until Gemini judgment assembly ships.",
+            confidence: judgment.confidence,
+            card_confidence: judgment.card_confidence,
+            robustness: judgment.robustness,
+            for: judgment.for,
+            against: judgment.against,
+            missing: judgment.missing,
+            open_questions: judgment.open_questions,
+          }
+        : null,
+      trials_summary: {
+        count: trials.length,
+        by_status: statusCounts,
+        by_phase: phaseCounts,
+        sample: trials.slice(0, 12).map((t) => ({
+          nct_id: t.nct_id,
+          phase: t.phase,
+          status: t.status,
+          stop_reason_category: t.stop_reason_category,
+          stop_reason_quote: t.stop_reason_quote,
+          quote_verified: t.quote_verified,
+        })),
+      },
+      glossary: {
+        evidence_score: "Open Targets genetic association strength (0–1).",
+        activity_score:
+          "ClinicalTrials.gov-derived score from trial volume, furthest phase, and recency.",
+        quadrant:
+          "validated / white_space / caution / deprioritize from evidence×activity cutoffs.",
+      },
+    };
+  }, [
+    dataAsOf,
+    disease,
+    genes.length,
+    judgment,
+    networkMode,
+    protectiveOnly,
+    selected,
+    selectedDrug,
+    trials,
+  ]);
 
   return (
     <div
@@ -216,6 +303,8 @@ export function RadarApp() {
           </p>
         </footer>
       )}
+
+      <RadarChat context={chatContext} />
     </div>
   );
 }

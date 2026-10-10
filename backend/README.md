@@ -56,10 +56,12 @@ uvicorn app.main:app --reload --port 8000
 
 | Method | Path | Notes |
 |--------|------|--------|
-| GET | `/health` | Includes `mode` |
+| GET | `/health` | `mode` + `gemini` |
+| GET | `/gemini/ping` | Live Gemini smoke test |
+| POST | `/chat` | Grounded Q&A over UI context snapshot |
 | GET | `/genes?disease=asthma` | Quadrant points |
 | GET | `/genes/{id}` | Detail + score breakdown |
-| GET | `/genes/{id}/trials` | Mock trials when available |
+| GET | `/genes/{id}/trials` | CT.gov trials when cached |
 | GET | `/genes/{id}/judgment` | Mock/default judgment |
 | GET | `/genes/{id}/robustness` | From judgment |
 | GET | `/events` | Mock change feed (`simulated`) |

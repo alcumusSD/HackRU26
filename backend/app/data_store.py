@@ -1,4 +1,7 @@
-"""Load genes/trials from processed cache or fall back to mocks. Judgment stays mock/default."""
+"""Load genes/trials from processed cache or fall back to mocks.
+
+Cached mode assembles judgment cards from real gene + trial fields.
+"""
 
 from __future__ import annotations
 
@@ -9,6 +12,7 @@ import re
 from collections import defaultdict
 from typing import Dict, List, Optional, Set, Tuple
 
+from app.judgment import assemble_judgment
 from app.mock_data import (
     DATA_AS_OF,
     DISEASE,
@@ -116,6 +120,18 @@ def get_judgment(gene_id: str) -> Optional[JudgmentCard]:
     gene = get_gene(gene_id)
     if gene is None:
         return None
+
+    m = meta()
+    if active_mode() == "cached":
+        trials = get_trials(gene.id)
+        return assemble_judgment(
+            gene,
+            trials,
+            data_as_of=m["data_as_of"],
+            peers=list_genes(),
+        )
+
+    # Mock mode: keep narrative fixtures for the demo gene set.
     if mock_gene_by_id(gene.id) or mock_gene_by_id(gene.symbol):
         return mock_judgment_for(gene.id) or mock_judgment_for(gene.symbol)
     return default_judgment(gene)

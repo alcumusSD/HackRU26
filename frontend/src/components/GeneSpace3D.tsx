@@ -10,6 +10,7 @@ import {
 } from "react";
 import ForceGraph3D, { type ForceGraphMethods } from "react-force-graph-3d";
 import SpriteText from "three-spritetext";
+import { Group } from "three";
 import { fetchNetwork } from "@/lib/api";
 import type { Gene, NetworkLink, NetworkNode, Quadrant } from "@/lib/types";
 import type { SelectedDrug } from "./DrugPanel";
@@ -28,6 +29,7 @@ type GraphNode = NetworkNode & {
   y?: number;
   z?: number;
   __label?: SpriteText;
+  __labelGroup?: Group;
 };
 
 type GraphLink = {
@@ -256,11 +258,11 @@ const NetworkCanvas = memo(function NetworkCanvas({
       nodeId="id"
       linkSource="source"
       linkTarget="target"
-      nodeRelSize={4}
+      nodeRelSize={5}
       nodeVal={(n) =>
         n.kind === "gene"
-          ? 18 + (n.degree || 0) * 2.2
-          : 4 + Math.min(n.degree || 0, 5)
+          ? 22 + (n.degree || 0) * 2.4
+          : 14 + Math.min(n.degree || 0, 6) * 1.5
       }
       nodeOpacity={0.95}
       nodeResolution={16}
@@ -327,16 +329,60 @@ const NetworkCanvas = memo(function NetworkCanvas({
       nodeThreeObjectExtend
       nodeThreeObject={(n) => {
         const node = n as GraphNode;
-        if (node.kind !== "gene") return false;
-        if (node.__label) return node.__label;
+        if (node.kind !== "gene" && node.kind !== "drug") return false;
+
+        const applyLabelStyle = (label: SpriteText) => {
+          // Short display name so long drug strings stay legible
+          const raw = node.name;
+          const display =
+            raw.length > 14 ? `${raw.slice(0, 12)}…` : raw;
+          label.text = display;
+
+          const val =
+            node.kind === "gene"
+              ? 22 + (node.degree || 0) * 2.4
+              : 14 + Math.min(node.degree || 0, 6) * 1.5;
+          // Match force-graph sphere scale (cbrt(val) * nodeRelSize)
+          const radius = Math.cbrt(val) * 5;
+          const nameLen = Math.max(display.length, 3);
+          // Fill most of the node diameter; shrink only for long names
+          const textHeight = Math.max(
+            4.2,
+            Math.min(radius * 0.72, (radius * 1.65) / nameLen),
+          );
+
+          label.color = node.kind === "gene" ? "#1e1233" : "#0f172a";
+          label.textHeight = textHeight;
+          label.fontWeight = "700";
+          label.backgroundColor =
+            node.kind === "gene"
+              ? "rgba(216, 196, 245, 0.96)"
+              : "rgba(226, 212, 248, 0.96)";
+          label.padding = Math.max(0.8, textHeight * 0.18);
+          label.borderRadius = 2;
+          label.strokeWidth = 0.2;
+          label.strokeColor = "rgba(15, 23, 42, 0.4)";
+          label.position.set(0, 0, 0);
+          label.renderOrder = 999;
+          if (label.material) {
+            label.material.depthTest = false;
+            label.material.depthWrite = false;
+            label.material.transparent = true;
+          }
+        };
+
+        if (node.__labelGroup && node.__label) {
+          applyLabelStyle(node.__label);
+          return node.__labelGroup;
+        }
+
+        const group = new Group();
         const label = new SpriteText(node.name);
-        label.color = "#e7f1ef";
-        label.textHeight = 4;
-        label.backgroundColor = "rgba(16,26,29,0.82)";
-        label.padding = 1.4;
-        label.borderRadius = 2;
+        applyLabelStyle(label);
+        group.add(label);
         node.__label = label;
-        return label;
+        node.__labelGroup = group;
+        return group;
       }}
     />
   );

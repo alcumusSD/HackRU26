@@ -761,6 +761,20 @@ body {
   color: var(--ink);
 }
 
+.judgment-panel blockquote.quote-raw {
+  border-left-color: var(--line);
+  background: rgba(231, 241, 239, 0.04);
+  color: var(--ink-soft);
+}
+
+.trial-stop-quote {
+  margin: 0.25rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  line-height: 1.35;
+}
+
 .robustness {
   margin: 0;
   font-size: 0.92rem;
@@ -878,6 +892,136 @@ body {
   background: transparent;
 }
 
+.radar-chat {
+  position: fixed;
+  z-index: 20;
+  right: 1.1rem;
+  bottom: 1.1rem;
+}
+
+.radar-chat-toggle {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.65rem 0.9rem;
+  cursor: pointer;
+}
+
+.radar-chat-toggle:hover {
+  border-color: var(--teal);
+}
+
+.radar-chat-panel {
+  width: min(22.5rem, calc(100vw - 1.5rem));
+  max-height: min(28rem, calc(100vh - 5rem));
+  display: flex;
+  flex-direction: column;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+}
+
+.radar-chat-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: start;
+  padding: 0.75rem 0.85rem 0.35rem;
+}
+
+.radar-chat-head .eyebrow {
+  margin: 0;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+.radar-chat-head strong {
+  font-family: var(--font-display), Syne, sans-serif;
+  font-size: 0.95rem;
+}
+
+.radar-chat-note {
+  margin: 0;
+  padding: 0 0.85rem 0.55rem;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  line-height: 1.35;
+}
+
+.radar-chat-messages {
+  flex: 1;
+  min-height: 10rem;
+  max-height: 14rem;
+  overflow: auto;
+  padding: 0.35rem 0.85rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.radar-chat-bubble {
+  max-width: 95%;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.84rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.radar-chat-bubble--user {
+  align-self: flex-end;
+  background: rgba(45, 212, 191, 0.16);
+  border: 1px solid rgba(45, 212, 191, 0.28);
+}
+
+.radar-chat-bubble--assistant {
+  align-self: flex-start;
+  background: rgba(231, 241, 239, 0.06);
+  border: 1px solid var(--line);
+}
+
+.radar-chat-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.4rem;
+  padding: 0.65rem 0.75rem 0.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.radar-chat-form input {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.45rem 0.55rem;
+  outline: none;
+}
+
+.radar-chat-form input:focus {
+  border-color: var(--teal);
+}
+
+.radar-chat-form button {
+  border: 1px solid var(--teal);
+  background: rgba(45, 212, 191, 0.14);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.45rem 0.7rem;
+  cursor: pointer;
+}
+
+.radar-chat-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 @media (max-width: 900px) {
   .radar-stage.has-panel .radar-main {
     grid-template-columns: 1fr;
@@ -893,5 +1037,10 @@ body {
 
   .ql {
     display: none;
+  }
+
+  .radar-chat {
+    right: 0.65rem;
+    bottom: 0.65rem;
   }
 }

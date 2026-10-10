@@ -93,18 +93,24 @@ export function JudgmentPanel({
           <section>
             <h3>Against</h3>
             {judgment.against.length === 0 ? (
-              <p className="muted">None found in cached sources.</p>
+              <p className="muted">No terminated/withdrawn studies with stop text.</p>
             ) : (
               <ul>
                 {judgment.against.map((item) => (
                   <li key={item.id}>
                     <p>{item.text}</p>
-                    {item.quote_verified && (
-                      <blockquote>“{item.quote}”</blockquote>
+                    {item.quote && (
+                      <blockquote className={item.quote_verified ? "quote-verified" : "quote-raw"}>
+                        “{item.quote}”
+                      </blockquote>
                     )}
                     <small>
                       {item.source}
-                      {item.quote_verified ? " · quote verified" : ""}
+                      {item.quote_verified
+                        ? " · quote verified"
+                        : item.quote
+                          ? " · quote unverified"
+                          : ""}
                     </small>
                   </li>
                 ))}
@@ -190,7 +196,11 @@ export function JudgmentPanel({
                   <span>
                     {" "}
                     · stop: {t.stop_reason_category.replace(/_/g, " ")}
+                    {t.quote_verified ? " ✓" : ""}
                   </span>
+                )}
+                {t.stop_reason_quote && (
+                  <p className="trial-stop-quote">“{t.stop_reason_quote}”</p>
                 )}
               </li>
             ))}

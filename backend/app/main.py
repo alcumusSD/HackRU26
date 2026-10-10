@@ -1,4 +1,4 @@
-"""Evidence Radar FastAPI — mock or Open Targets cached genes; judgment/trials mock."""
+"""Evidence Radar FastAPI — cached OT/CT.gov genes; optional Gemini chat."""
 
 from __future__ import annotations
 
@@ -7,9 +7,21 @@ from typing import List
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.env_load import load_app_env
+
+load_app_env()
+
 from app import data_store
+from app.gemini_client import (
+    answer_about_context,
+    gemini_status,
+    get_model_name,
+    ping as gemini_ping,
+)
 from app.mock_data import EVENTS
 from app.models import (
+    ChatRequest,
+    ChatResponse,
     Event,
     Gene,
     GeneListResponse,
@@ -23,10 +35,11 @@ from app.models import (
 app = FastAPI(
     title="Evidence Radar API",
     description=(
-        "Evidence Radar + Trials API. Genes may come from Open Targets cache; "
-        "judgment and trials remain mock/default until those pipelines are wired."
+        "Evidence Radar + Trials API. Genes/trials from Open Targets + CT.gov; "
+        "optional grounded Gemini chat over the UI context. Judgment cards remain "
+        "mock/default until that pipeline is wired."
     ),
-    version="0.2.0",
+    version="0.3.0",
 )
 
 app.add_middleware(
@@ -48,7 +61,40 @@ def health() -> HealthResponse:
         status="ok",
         service="evidence-radar",
         mode=meta["mode"],
+        gemini=gemini_status(),
     )
+
+
+@app.get("/gemini/ping")
+def gemini_ping_route() -> dict:
+    """Live Gemini smoke test (does not return the API key)."""
+    if gemini_status() != "configured":
+        raise HTTPException(
+            status_code=503,
+            detail="GEMINI_API_KEY missing or placeholder in backend/.env",
+        )
+    try:
+        return gemini_ping()
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(status_code=502, detail=str(exc)) from exc
+
+
+@app.post("/chat", response_model=ChatResponse)
+def chat(req: ChatRequest) -> ChatResponse:
+    """Answer questions using only the provided on-screen context."""
+    if gemini_status() != "configured":
+        raise HTTPException(
+            status_code=503,
+            detail="GEMINI_API_KEY missing or placeholder in backend/.env",
+        )
+    history = [{"role": m.role, "content": m.content} for m in req.history]
+    try:
+        reply = answer_about_context(req.message, req.context, history)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(status_code=502, detail=str(exc)) from exc
+    return ChatResponse(reply=reply, model=get_model_name(), grounded=True)
 
 
 @app.get("/genes", response_model=GeneListResponse)

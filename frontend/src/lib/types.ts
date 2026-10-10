@@ -114,3 +114,14 @@ export type NetworkResponse = {
   nodes: NetworkNode[];
   links: NetworkLink[];
 };
+
+export type ChatMessage = {
+  role: "user" | "assistant";
+  content: string;
+};
+
+export type ChatResponse = {
+  reply: string;
+  model: string;
+  grounded: boolean;
+};
