@@ -1,9 +1,40 @@
 {
-  "disease": {
-    "name": "asthma",
-    "efo_id": "MONDO_0004979",
-    "label": "asthma",
-    "notes": "Open Targets search resolves asthma to MONDO_0004979 (not EFO_0000270)."
+  "default_disease": "asthma",
+  "diseases": {
+    "asthma": {
+      "name": "asthma",
+      "efo_id": "MONDO_0004979",
+      "label": "Asthma",
+      "notes": "Open Targets search resolves asthma to MONDO_0004979 (not EFO_0000270).",
+      "extra_interventions": [
+        "dupilumab",
+        "tezepelumab",
+        "mepolizumab",
+        "benralizumab",
+        "reslizumab",
+        "omalizumab",
+        "montelukast",
+        "roflumilast",
+        "tiotropium"
+      ]
+    },
+    "copd": {
+      "name": "COPD",
+      "efo_id": "MONDO_0005002",
+      "label": "COPD",
+      "notes": "Open Targets uses MONDO_0005002 for chronic obstructive pulmonary disease.",
+      "extra_interventions": [
+        "roflumilast",
+        "tiotropium",
+        "umeclidinium",
+        "indacaterol",
+        "olodaterol",
+        "vilanterol",
+        "dupilumab",
+        "itepekimab",
+        "ensifentrine"
+      ]
+    }
   },
   "gene_limit": 15,
   "quadrant_cutoff": {
@@ -16,18 +47,7 @@
   },
   "clinicaltrials": {
     "max_studies": 150,
-    "page_size": 100,
-    "extra_interventions": [
-      "dupilumab",
-      "tezepelumab",
-      "mepolizumab",
-      "benralizumab",
-      "reslizumab",
-      "omalizumab",
-      "montelukast",
-      "roflumilast",
-      "tiotropium"
-    ]
+    "page_size": 100
   },
-  "notes": "Small-scale: top 15 OT genes + CT.gov asthma studies (+ drug-targeted pulls). Activity from trial volume/phase/recency."
+  "notes": "Small-scale: top 15 OT genes + CT.gov studies (+ drug-targeted pulls) per disease. Activity from trial volume/phase/recency."
 }

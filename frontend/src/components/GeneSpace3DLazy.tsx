@@ -19,6 +19,7 @@ type Props = {
   onSelectDrug: (drug: SelectedDrug) => void;
   onClearDrug: () => void;
   protectiveOnly: boolean;
+  disease?: string;
 };
 
 export function GeneSpace3DLazy(props: Props) {

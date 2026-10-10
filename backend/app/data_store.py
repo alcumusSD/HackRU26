@@ -1,6 +1,7 @@
 """Load genes/trials from processed cache or fall back to mocks.
 
 Cached mode assembles judgment cards from real gene + trial fields.
+Supports per-disease paths under data/processed/<slug>/.
 """
 
 from __future__ import annotations
@@ -23,6 +24,7 @@ from app.mock_data import (
     trials_for as mock_trials_for,
 )
 from app.models import (
+    DiseaseInfo,
     Gene,
     JudgmentCard,
     NetworkLink,
@@ -32,15 +34,117 @@ from app.models import (
 )
 
 ROOT = Path(__file__).resolve().parents[2]
-PROCESSED_GENES = ROOT / "data" / "processed" / "genes.json"
-PROCESSED_TRIALS = ROOT / "data" / "processed" / "trials_by_gene.json"
+DATA_PROCESSED = ROOT / "data" / "processed"
+DATA_RAW = ROOT / "data" / "raw"
 CONFIG_PATH = Path(__file__).resolve().parents[1] / "config.json"
+
+# In-memory cache keyed by disease slug
+_genes_cache: Dict[str, List[Gene]] = {}
+_trials_cache: Dict[str, Dict[str, List[Trial]]] = {}
 
 
 def load_config() -> Dict:
     if CONFIG_PATH.exists():
         return json.loads(CONFIG_PATH.read_text())
-    return {"disease": {"name": DISEASE}, "data_as_of": DATA_AS_OF}
+    return {
+        "default_disease": "asthma",
+        "diseases": {"asthma": {"name": DISEASE, "efo_id": "", "label": "Asthma"}},
+        "data_as_of": DATA_AS_OF,
+    }
+
+
+def default_disease_slug() -> str:
+    config = load_config()
+    return str(config.get("default_disease") or "asthma")
+
+
+def list_disease_infos() -> List[DiseaseInfo]:
+    config = load_config()
+    diseases = config.get("diseases") or {}
+    if not diseases and config.get("disease"):
+        d = config["disease"]
+        return [
+            DiseaseInfo(
+                slug=str(d.get("name") or "asthma").lower(),
+                label=str(d.get("label") or d.get("name") or "asthma"),
+                efo_id=str(d.get("efo_id") or ""),
+                name=str(d.get("name") or "asthma"),
+            )
+        ]
+    out: List[DiseaseInfo] = []
+    for slug, entry in diseases.items():
+        out.append(
+            DiseaseInfo(
+                slug=slug,
+                label=str(entry.get("label") or entry.get("name") or slug),
+                efo_id=str(entry.get("efo_id") or ""),
+                name=str(entry.get("name") or slug),
+            )
+        )
+    # Prefer default first
+    default = default_disease_slug()
+    out.sort(key=lambda d: (0 if d.slug == default else 1, d.label.lower()))
+    return out
+
+
+def resolve_disease_slug(disease: Optional[str] = None) -> str:
+    """Map query string (slug, name, or efo_id) to a configured disease slug."""
+    config = load_config()
+    diseases = config.get("diseases") or {}
+    needle = (disease or default_disease_slug()).strip().lower()
+
+    if not diseases:
+        legacy = config.get("disease") or {}
+        aliases = {
+            str(legacy.get("name") or "asthma").lower(),
+            str(legacy.get("efo_id") or "").lower(),
+            "asthma",
+        }
+        aliases.discard("")
+        if needle in aliases:
+            return str(legacy.get("name") or "asthma").lower()
+        raise KeyError(disease or needle)
+
+    for slug, entry in diseases.items():
+        aliases = {
+            slug.lower(),
+            str(entry.get("name") or "").lower(),
+            str(entry.get("label") or "").lower(),
+            str(entry.get("efo_id") or "").lower(),
+        }
+        aliases.discard("")
+        if needle in aliases:
+            return slug
+
+    raise KeyError(disease or needle)
+
+
+def processed_paths(slug: str) -> Tuple[Path, Path]:
+    return (
+        DATA_PROCESSED / slug / "genes.json",
+        DATA_PROCESSED / slug / "trials_by_gene.json",
+    )
+
+
+def migrate_legacy_paths() -> None:
+    """Best-effort move of flat cache into asthma/ (API side safety net)."""
+    legacy_genes = DATA_PROCESSED / "genes.json"
+    legacy_trials = DATA_PROCESSED / "trials_by_gene.json"
+    dest_genes = DATA_PROCESSED / "asthma" / "genes.json"
+    dest_trials = DATA_PROCESSED / "asthma" / "trials_by_gene.json"
+    if legacy_genes.exists() and not dest_genes.exists():
+        dest_genes.parent.mkdir(parents=True, exist_ok=True)
+        legacy_genes.rename(dest_genes)
+    if legacy_trials.exists() and not dest_trials.exists():
+        dest_trials.parent.mkdir(parents=True, exist_ok=True)
+        legacy_trials.rename(dest_trials)
+
+    for name in ("genes.json", "trials.json"):
+        legacy = DATA_RAW / name
+        dest = DATA_RAW / "asthma" / name
+        if legacy.exists() and not dest.exists():
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            legacy.rename(dest)
 
 
 def resolve_mode() -> str:
@@ -50,20 +154,37 @@ def resolve_mode() -> str:
     return mode
 
 
-def _load_processed_genes() -> Optional[List[Gene]]:
-    if not PROCESSED_GENES.exists():
-        return None
-    payload = json.loads(PROCESSED_GENES.read_text())
+def _load_processed_genes(slug: str) -> Optional[List[Gene]]:
+    genes_path, _ = processed_paths(slug)
+    if not genes_path.exists():
+        # Fall back to legacy flat path for asthma only
+        if slug == "asthma":
+            legacy = DATA_PROCESSED / "genes.json"
+            if legacy.exists():
+                genes_path = legacy
+            else:
+                return None
+        else:
+            return None
+    payload = json.loads(genes_path.read_text())
     items = payload.get("genes") if isinstance(payload, dict) else payload
     if not isinstance(items, list):
         return None
     return [Gene.model_validate(item) for item in items]
 
 
-def _load_trials_by_gene() -> Dict[str, List[Trial]]:
-    if not PROCESSED_TRIALS.exists():
-        return {}
-    payload = json.loads(PROCESSED_TRIALS.read_text())
+def _load_trials_by_gene(slug: str) -> Dict[str, List[Trial]]:
+    _, trials_path = processed_paths(slug)
+    if not trials_path.exists():
+        if slug == "asthma":
+            legacy = DATA_PROCESSED / "trials_by_gene.json"
+            if legacy.exists():
+                trials_path = legacy
+            else:
+                return {}
+        else:
+            return {}
+    payload = json.loads(trials_path.read_text())
     raw_map = payload.get("trials_by_gene") or {}
     out: Dict[str, List[Trial]] = {}
     for gene_id, items in raw_map.items():
@@ -71,41 +192,62 @@ def _load_trials_by_gene() -> Dict[str, List[Trial]]:
     return out
 
 
-def active_mode() -> str:
+def active_mode(disease: Optional[str] = None) -> str:
+    migrate_legacy_paths()
     mode = resolve_mode()
+    try:
+        slug = resolve_disease_slug(disease)
+    except KeyError:
+        slug = default_disease_slug()
+    genes_path, _ = processed_paths(slug)
+    has_cache = genes_path.exists() or (
+        slug == "asthma" and (DATA_PROCESSED / "genes.json").exists()
+    )
     if mode == "auto":
-        return "cached" if PROCESSED_GENES.exists() else "mock"
-    if mode == "cached" and not PROCESSED_GENES.exists():
+        return "cached" if has_cache else "mock"
+    if mode == "cached" and not has_cache:
         return "mock"
     return mode
 
 
-def list_genes() -> List[Gene]:
-    if active_mode() == "cached":
-        genes = _load_processed_genes()
+def _genes_for(slug: str) -> List[Gene]:
+    if slug in _genes_cache:
+        return _genes_cache[slug]
+    if active_mode(slug) == "cached":
+        genes = _load_processed_genes(slug)
         if genes:
+            _genes_cache[slug] = genes
             return genes
-    return list(MOCK_GENES)
+    if slug == default_disease_slug() or slug == "asthma":
+        return list(MOCK_GENES)
+    return []
 
 
-def get_gene(gene_id: str) -> Optional[Gene]:
+def list_genes(disease: Optional[str] = None) -> List[Gene]:
+    slug = resolve_disease_slug(disease)
+    return list(_genes_for(slug))
+
+
+def get_gene(gene_id: str, disease: Optional[str] = None) -> Optional[Gene]:
     needle = gene_id.upper()
-    for gene in list_genes():
+    for gene in list_genes(disease):
         if gene.id.upper() == needle or gene.symbol.upper() == needle:
             return gene
     return None
 
 
-def get_trials(gene_id: str) -> List[Trial]:
-    gene = get_gene(gene_id)
+def get_trials(gene_id: str, disease: Optional[str] = None) -> List[Trial]:
+    slug = resolve_disease_slug(disease)
+    gene = get_gene(gene_id, slug)
     if gene is None:
         return []
 
-    if active_mode() == "cached":
-        by_id = _load_trials_by_gene()
+    if active_mode(slug) == "cached":
+        if slug not in _trials_cache:
+            _trials_cache[slug] = _load_trials_by_gene(slug)
+        by_id = _trials_cache[slug]
         if gene.id in by_id:
             return by_id[gene.id]
-        # Also allow lookup if map keyed oddly
         for key, trials in by_id.items():
             if key.upper() == gene.id.upper():
                 return trials
@@ -116,37 +258,50 @@ def get_trials(gene_id: str) -> List[Trial]:
     return []
 
 
-def get_judgment(gene_id: str) -> Optional[JudgmentCard]:
-    gene = get_gene(gene_id)
+def get_judgment(gene_id: str, disease: Optional[str] = None) -> Optional[JudgmentCard]:
+    slug = resolve_disease_slug(disease)
+    gene = get_gene(gene_id, slug)
     if gene is None:
         return None
 
-    m = meta()
-    if active_mode() == "cached":
-        trials = get_trials(gene.id)
+    m = meta(slug)
+    if active_mode(slug) == "cached":
+        trials = get_trials(gene.id, slug)
         return assemble_judgment(
             gene,
             trials,
             data_as_of=m["data_as_of"],
-            peers=list_genes(),
+            peers=list_genes(slug),
         )
 
-    # Mock mode: keep narrative fixtures for the demo gene set.
     if mock_gene_by_id(gene.id) or mock_gene_by_id(gene.symbol):
         return mock_judgment_for(gene.id) or mock_judgment_for(gene.symbol)
     return default_judgment(gene)
 
 
-def meta() -> Dict:
+def meta(disease: Optional[str] = None) -> Dict:
     config = load_config()
-    mode = active_mode()
-    has_trials = PROCESSED_TRIALS.exists()
+    try:
+        slug = resolve_disease_slug(disease)
+    except KeyError:
+        slug = default_disease_slug()
+    mode = active_mode(slug)
+    _, trials_path = processed_paths(slug)
+    has_trials = trials_path.exists() or (
+        slug == "asthma" and (DATA_PROCESSED / "trials_by_gene.json").exists()
+    )
     source = "mock"
     if mode == "cached":
         source = "open_targets+clinicaltrials" if has_trials else "open_targets"
+
+    diseases = config.get("diseases") or {}
+    entry = diseases.get(slug) or config.get("disease") or {}
+    display_name = entry.get("name") or slug
+
     return {
         "mode": mode,
-        "disease": config.get("disease", {}).get("name", DISEASE),
+        "disease": display_name,
+        "disease_slug": slug,
         "data_as_of": config.get("data_as_of", DATA_AS_OF),
         "cached": mode == "cached",
         "source": source,
@@ -160,6 +315,7 @@ _SKIP_DRUGS = {
     "none (observational study)",
     "no intervention: observational cohort",
     "asthma reliever therapies",
+    "asthma controller therapies",
 }
 
 
@@ -179,21 +335,26 @@ def normalize_drug_name(name: str) -> Optional[str]:
     return primary.title()
 
 
-def build_network(max_drugs: int = 14, min_edge_weight: int = 2) -> NetworkResponse:
+def build_network(
+    disease: Optional[str] = None,
+    max_drugs: int = 14,
+    min_edge_weight: int = 2,
+) -> NetworkResponse:
     """Gene–drug network from linked trials (different view than score map).
 
     Kept intentionally sparse: top drugs by trial volume, edges with enough
     supporting trials, and only genes that still have a drug link.
     """
-    m = meta()
-    genes = list_genes()
+    slug = resolve_disease_slug(disease)
+    m = meta(slug)
+    genes = list_genes(slug)
     edges: Dict[Tuple[str, str], Dict] = {}
     drug_counts: Dict[str, int] = defaultdict(int)
     gene_trial_counts: Dict[str, int] = defaultdict(int)
     drug_gene_sets: Dict[str, Set[str]] = defaultdict(set)
 
     for gene in genes:
-        trials = get_trials(gene.id)
+        trials = get_trials(gene.id, slug)
         gene_trial_counts[gene.id] = len(trials)
         gene_node = f"gene:{gene.symbol}"
         for trial in trials:
@@ -219,7 +380,6 @@ def build_network(max_drugs: int = 14, min_edge_weight: int = 2) -> NetworkRespo
                 if trial.nct_id not in ncts and len(ncts) < 12:
                     ncts.append(trial.nct_id)
 
-    # Prefer multi-gene hub drugs, then fill with highest trial volume
     ranked_drugs = sorted(
         drug_counts.keys(),
         key=lambda d: (-len(drug_gene_sets[d]), -drug_counts[d], d),
@@ -269,7 +429,6 @@ def build_network(max_drugs: int = 14, min_edge_weight: int = 2) -> NetworkRespo
         degree[g_id] += 1
         degree[d_id] += 1
 
-    # Drop drugs that lost all edges after the weight filter
     drug_nodes = {d_id: node for d_id, node in drug_nodes.items() if degree[d_id] > 0}
 
     nodes = []

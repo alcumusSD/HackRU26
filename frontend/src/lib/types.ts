@@ -31,6 +31,13 @@ export type GeneListResponse = {
   genes: Gene[];
 };
 
+export type DiseaseInfo = {
+  slug: string;
+  label: string;
+  efo_id: string;
+  name: string;
+};
+
 export type Trial = {
   nct_id: string;
   phase: string;
@@ -85,6 +92,15 @@ export type JudgmentCard = {
   open_questions: string[];
   data_as_of: string;
   card_confidence: "high" | "moderate" | "low";
+  enrollment_risk: {
+    level: "low" | "moderate" | "high" | "unknown";
+    linked_trials: number;
+    stopped_low_enrollment: number;
+    recruiting: number;
+    active_not_recruiting: number;
+    summary: string;
+    sample_ncts: string[];
+  };
 };
 
 export type NetworkNode = {

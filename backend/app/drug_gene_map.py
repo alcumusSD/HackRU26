@@ -1,7 +1,8 @@
-"""Small-scale drug → gene synonyms for asthma demo genes.
+"""Small-scale drug → gene synonyms for demo disease genes.
 
 Used to join ClinicalTrials.gov interventions to Open Targets genes.
-Expand or replace with ChEMBL / OT known-drugs when available.
+Covers asthma + COPD demo sets. Expand or replace with ChEMBL / OT known-drugs
+when available.
 """
 
 from __future__ import annotations
@@ -22,7 +23,7 @@ DRUG_TO_GENES: Dict[str, List[str]] = {
     "mepolizumab": ["IL5"],
     "nucala": ["IL5"],
     "reslizumab": ["IL5"],
-    "Cinqair": ["IL5"],
+    "cinqair": ["IL5"],
     "cinqaero": ["IL5"],
     "benralizumab": ["IL5"],
     "fasenra": ["IL5"],
@@ -54,17 +55,22 @@ DRUG_TO_GENES: Dict[str, List[str]] = {
     "zafirlukast": ["CYSLTR1"],
     "accolate": ["CYSLTR1"],
     "pranlukast": ["CYSLTR1"],
-    # PDE4
-    "roflumilast": ["PDE4D", "PDE4A"],
-    "daliresp": ["PDE4D", "PDE4A"],
-    "apremilast": ["PDE4D", "PDE4A"],
-    # Muscarinic
-    "tiotropium": ["CHRM2"],
-    "spiriva": ["CHRM2"],
-    "ipratropium": ["CHRM2"],
-    "atrovent": ["CHRM2"],
-    "umeclidinium": ["CHRM2"],
-    "glycopyrronium": ["CHRM2"],
+    # PDE4 (+ ensifentrine PDE3/4 dual)
+    "roflumilast": ["PDE4D", "PDE4A", "PDE4B"],
+    "daliresp": ["PDE4D", "PDE4A", "PDE4B"],
+    "apremilast": ["PDE4D", "PDE4A", "PDE4B"],
+    "ensifentrine": ["PDE4D", "PDE4A", "PDE4B"],
+    "ohtuvayre": ["PDE4D", "PDE4A", "PDE4B"],
+    # Muscarinic (LAMAs primarily target CHRM3)
+    "tiotropium": ["CHRM3", "CHRM1", "CHRM2"],
+    "spiriva": ["CHRM3", "CHRM1", "CHRM2"],
+    "ipratropium": ["CHRM3", "CHRM1", "CHRM2"],
+    "atrovent": ["CHRM3", "CHRM1", "CHRM2"],
+    "umeclidinium": ["CHRM3", "CHRM1", "CHRM2"],
+    "glycopyrronium": ["CHRM3", "CHRM1", "CHRM2"],
+    "glycopyrrolate": ["CHRM3", "CHRM1", "CHRM2"],
+    "aclidinium": ["CHRM3", "CHRM1", "CHRM2"],
+    "revefenacin": ["CHRM3", "CHRM1", "CHRM2"],
     # Glucocorticoid receptor
     "budesonide": ["NR3C1"],
     "fluticasone": ["NR3C1"],
@@ -78,6 +84,31 @@ DRUG_TO_GENES: Dict[str, List[str]] = {
     # Adenosine
     "theophylline": ["ADORA1"],
     "aminophylline": ["ADORA1"],
+    # CFTR modulators (COPD OT set includes CFTR)
+    "ivacaftor": ["CFTR"],
+    "kalydeco": ["CFTR"],
+    "lumacaftor": ["CFTR"],
+    "orkambi": ["CFTR"],
+    "tezacaftor": ["CFTR"],
+    "symdeko": ["CFTR"],
+    "elexacaftor": ["CFTR"],
+    "trikafta": ["CFTR"],
+    # Alpha-1 antitrypsin (SERPINA1)
+    "alpha1": ["SERPINA1"],
+    "alpha-1": ["SERPINA1"],
+    "antitrypsin": ["SERPINA1"],
+    "prolastin": ["SERPINA1"],
+    "aralast": ["SERPINA1"],
+    "glassia": ["SERPINA1"],
+    "zemaira": ["SERPINA1"],
+    "respreeza": ["SERPINA1"],
+    # ENaC (SCNN1*)
+    "amiloride": ["SCNN1A", "SCNN1B", "SCNN1G"],
+    "benzamil": ["SCNN1A", "SCNN1B", "SCNN1G"],
+    # Nicotinic (CHRNA4)
+    "varenicline": ["CHRNA4"],
+    "chantix": ["CHRNA4"],
+    "nicotine": ["CHRNA4"],
 }
 
 # Normalize keys

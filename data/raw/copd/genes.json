@@ -1,0 +1,352 @@
+{
+  "fetched_at": "2026-10-10T23:17:13.201434+00:00",
+  "query": {
+    "source": "open_targets_graphql",
+    "url": "https://api.platform.opentargets.org/api/v4/graphql",
+    "disease_id": "MONDO_0005002",
+    "limit": 15
+  },
+  "response": {
+    "data": {
+      "disease": {
+        "id": "MONDO_0005002",
+        "name": "chronic obstructive pulmonary disease",
+        "associatedTargets": {
+          "count": 8000,
+          "rows": [
+            {
+              "score": 0.805565172801944,
+              "target": {
+                "id": "ENSG00000168447",
+                "approvedSymbol": "SCNN1B",
+                "approvedName": "sodium channel epithelial 1 subunit beta"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.3066562617794194
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8884696019284987
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.8644396846868674
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.15198269940290526
+                }
+              ]
+            },
+            {
+              "score": 0.7920953486980721,
+              "target": {
+                "id": "ENSG00000111319",
+                "approvedSymbol": "SCNN1A",
+                "approvedName": "sodium channel epithelial 1 subunit alpha"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.14003187259667246
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8440466429068016
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.15198269940290526
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.8644396846868674
+                }
+              ]
+            },
+            {
+              "score": 0.7737127497829676,
+              "target": {
+                "id": "ENSG00000001626",
+                "approvedSymbol": "CFTR",
+                "approvedName": "CF transmembrane conductance regulator"
+              },
+              "datatypeScores": [
+                {
+                  "id": "clinical",
+                  "score": 0.18761087001892748
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.865457038266544
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9614281296047393
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9116882848761694
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.6312375418558119
+                }
+              ]
+            },
+            {
+              "score": 0.7596579321107519,
+              "target": {
+                "id": "ENSG00000166828",
+                "approvedSymbol": "SCNN1G",
+                "approvedName": "sodium channel epithelial 1 subunit gamma"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.08119438781119852
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.7901902539960208
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.8644396846868674
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.15198269940290526
+                }
+              ]
+            },
+            {
+              "score": 0.715777613364506,
+              "target": {
+                "id": "ENSG00000113580",
+                "approvedSymbol": "NR3C1",
+                "approvedName": "nuclear receptor subfamily 3 group C member 1"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.8580036937780957
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.6227188401108985
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.6158516240969162
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9965861824940213
+                }
+              ]
+            },
+            {
+              "score": 0.7062484085872931,
+              "target": {
+                "id": "ENSG00000197249",
+                "approvedSymbol": "SERPINA1",
+                "approvedName": "serpin family A member 1"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9608345243718879
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.912298500939557
+                }
+              ]
+            },
+            {
+              "score": 0.6768618816477873,
+              "target": {
+                "id": "ENSG00000133019",
+                "approvedSymbol": "CHRM3",
+                "approvedName": "cholinergic receptor muscarinic 3"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.1645496226927334
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.3187381171877729
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.42336825354534763
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9984043961476394
+                }
+              ]
+            },
+            {
+              "score": 0.6393637479907147,
+              "target": {
+                "id": "ENSG00000101204",
+                "approvedSymbol": "CHRNA4",
+                "approvedName": "cholinergic receptor nicotinic alpha 4 subunit"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.34652969876458356
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8914093046574761
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.6103794077686678
+                }
+              ]
+            },
+            {
+              "score": 0.6361792392661902,
+              "target": {
+                "id": "ENSG00000138640",
+                "approvedSymbol": "FAM13A",
+                "approvedName": "family with sequence similarity 13 member A"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9299427529648727
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8206409176157129
+                }
+              ]
+            },
+            {
+              "score": 0.6327429830168176,
+              "target": {
+                "id": "ENSG00000169252",
+                "approvedSymbol": "ADRB2",
+                "approvedName": "adrenoceptor beta 2"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.8422591815084934
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9987012018499244
+                }
+              ]
+            },
+            {
+              "score": 0.617495960464814,
+              "target": {
+                "id": "ENSG00000065989",
+                "approvedSymbol": "PDE4A",
+                "approvedName": "phosphodiesterase 4A"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.6123427527558892
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9851168289432237
+                }
+              ]
+            },
+            {
+              "score": 0.6081556086133284,
+              "target": {
+                "id": "ENSG00000113448",
+                "approvedSymbol": "PDE4D",
+                "approvedName": "phosphodiesterase 4D"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.3050593616797637
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9851168289432237
+                }
+              ]
+            },
+            {
+              "score": 0.6077893106856592,
+              "target": {
+                "id": "ENSG00000163485",
+                "approvedSymbol": "ADORA1",
+                "approvedName": "adenosine A1 receptor"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.1033600564705958
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.41407105785693327
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.8939526101423096
+                }
+              ]
+            },
+            {
+              "score": 0.6058953034226577,
+              "target": {
+                "id": "ENSG00000168539",
+                "approvedSymbol": "CHRM1",
+                "approvedName": "cholinergic receptor muscarinic 1"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.06287936109504055
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9935077985657906
+                }
+              ]
+            },
+            {
+              "score": 0.6037376679032542,
+              "target": {
+                "id": "ENSG00000184588",
+                "approvedSymbol": "PDE4B",
+                "approvedName": "phosphodiesterase 4B"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.15971582167715276
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9851168289432237
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -22,6 +22,7 @@ type Props = {
   onSelectDrug: (drug: SelectedDrug) => void;
   onClearDrug: () => void;
   protectiveOnly: boolean;
+  disease?: string;
 };
 
 type GraphNode = NetworkNode & {
@@ -161,11 +162,12 @@ const NetworkCanvas = memo(function NetworkCanvas({
     const fg = fgRef.current;
     if (!fg || nodes.length === 0) return;
 
-    fg.d3Force("charge")?.strength(-220);
+    // Stronger repulsion + longer links keep gene/drug label pills from stacking
+    fg.d3Force("charge")?.strength(-480);
     fg.d3Force("link")?.distance(
-      (link: GraphLink) => 48 + (4 - Math.min(link.weight, 4)) * 8,
+      (link: GraphLink) => 96 + (4 - Math.min(link.weight, 4)) * 14,
     );
-    fg.d3Force("center")?.strength(0.35);
+    fg.d3Force("center")?.strength(0.22);
 
     const controls = fg.controls?.() as
       | {
@@ -251,9 +253,9 @@ const NetworkCanvas = memo(function NetworkCanvas({
       enablePointerInteraction
       d3VelocityDecay={0.4}
       d3AlphaDecay={0.08}
-      warmupTicks={100}
-      cooldownTime={2200}
-      cooldownTicks={100}
+      warmupTicks={140}
+      cooldownTime={2800}
+      cooldownTicks={140}
       onEngineStop={fitCamera}
       nodeId="id"
       linkSource="source"
@@ -335,7 +337,7 @@ const NetworkCanvas = memo(function NetworkCanvas({
           // Short display name so long drug strings stay legible
           const raw = node.name;
           const display =
-            raw.length > 14 ? `${raw.slice(0, 12)}…` : raw;
+            raw.length > 12 ? `${raw.slice(0, 10)}…` : raw;
           label.text = display;
 
           const val =
@@ -345,29 +347,34 @@ const NetworkCanvas = memo(function NetworkCanvas({
           // Match force-graph sphere scale (cbrt(val) * nodeRelSize)
           const radius = Math.cbrt(val) * 5;
           const nameLen = Math.max(display.length, 3);
-          // Fill most of the node diameter; shrink only for long names
           const textHeight = Math.max(
-            4.2,
-            Math.min(radius * 0.72, (radius * 1.65) / nameLen),
+            3.2,
+            Math.min(radius * 0.55, (radius * 1.35) / nameLen),
           );
 
-          label.color = node.kind === "gene" ? "#1e1233" : "#0f172a";
-          label.textHeight = textHeight;
+          const emphasized =
+            (node.kind === "gene" &&
+              selectedId != null &&
+              node.gene_id === selectedId) ||
+            (node.kind === "drug" && focusDrugId === node.id) ||
+            (flyToId != null && node.id === flyToId);
+
+          // Light text centered in the node — no pill background
+          label.color = "#f1f5f9";
+          label.textHeight = emphasized ? textHeight * 1.1 : textHeight;
           label.fontWeight = "700";
-          label.backgroundColor =
-            node.kind === "gene"
-              ? "rgba(216, 196, 245, 0.96)"
-              : "rgba(226, 212, 248, 0.96)";
-          label.padding = Math.max(0.8, textHeight * 0.18);
-          label.borderRadius = 2;
-          label.strokeWidth = 0.2;
-          label.strokeColor = "rgba(15, 23, 42, 0.4)";
+          label.backgroundColor = "rgba(0,0,0,0)";
+          label.padding = 0;
+          label.borderRadius = 0;
+          label.strokeWidth = 0.55;
+          label.strokeColor = "rgba(15, 23, 42, 0.85)";
           label.position.set(0, 0, 0);
-          label.renderOrder = 999;
+          label.renderOrder = emphasized ? 1000 : 900;
           if (label.material) {
             label.material.depthTest = false;
             label.material.depthWrite = false;
             label.material.transparent = true;
+            label.material.opacity = 1;
           }
         };
 
@@ -395,6 +402,7 @@ export function GeneSpace3D({
   onSelectDrug,
   onClearDrug,
   protectiveOnly,
+  disease = "asthma",
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const searchRef = useRef<HTMLDivElement>(null);
@@ -525,7 +533,7 @@ export function GeneSpace3D({
     let cancelled = false;
     setLoading(true);
     setError(null);
-    fetchNetwork("asthma")
+    fetchNetwork(disease)
       .then((res) => {
         if (cancelled) return;
         let nextNodes = res.nodes as GraphNode[];
@@ -560,7 +568,7 @@ export function GeneSpace3D({
     return () => {
       cancelled = true;
     };
-  }, [genes, protectiveOnly]);
+  }, [disease, genes, protectiveOnly]);
 
   useEffect(() => {
     function onDocClick(e: MouseEvent) {

@@ -1,0 +1,1048 @@
+{
+  "built_at": "2026-10-10T23:17:50.943144+00:00",
+  "disease": {
+    "id": "MONDO_0004979",
+    "name": "asthma",
+    "slug": "asthma"
+  },
+  "source": "open_targets+clinicaltrials",
+  "gene_count": 15,
+  "summary": {
+    "open_targets": {
+      "disease_id": "MONDO_0004979",
+      "disease_name": "asthma",
+      "ot_association_count": 7772,
+      "parsed_genes": 15,
+      "skipped_rows": 0,
+      "partial_activity_count": 1,
+      "parsed_at": "2026-10-10T23:17:50.926157+00:00",
+      "notes": "activity_score uses Open Targets 'clinical' datatype as a proxy; genetic_score uses genetic_association when present else overall score."
+    },
+    "clinicaltrials": {
+      "studies_fetched": 298,
+      "studies_flattened": 298,
+      "studies_mapped_to_demo_genes": 173,
+      "genes_with_trials": 12,
+      "genes_without_trials": 3,
+      "stop_reasons_classified": 0,
+      "stop_quotes_verified": 0,
+      "classify_stops": false,
+      "classify_engine": "none",
+      "parsed_at": "2026-10-10T23:17:50.940500+00:00",
+      "notes": "activity_score from ClinicalTrials.gov volume/phase/recency; drug\u2192gene join uses curated synonym map + symbol mentions; stop-reason classification skipped (pass --classify-stops)"
+    }
+  },
+  "genes": [
+    {
+      "id": "ENSG00000143631",
+      "symbol": "FLG",
+      "genetic_score": 0.9785117676400652,
+      "activity_score": 0.0,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.7491090795778099,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.4089529880751863,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.9785117676400652,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 0.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 0.0,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "white_space",
+      "contradictions": [],
+      "partial_data": true,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000077238",
+      "symbol": "IL4R",
+      "genetic_score": 0.9584858728437942,
+      "activity_score": 0.8568046806963657,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.746773466615787,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.6559275606110533,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "animal_model",
+          "value": 0.40272375687781836,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.9584858728437942,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.9691539645718391,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 0.9671267134323301,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (n=18)"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 1.0,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.5555555555555556,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (share started \u22645y)"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000145777",
+      "symbol": "TSLP",
+      "genetic_score": 0.944240247370436,
+      "activity_score": 0.9636133858955851,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.736503889146964,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.9720845999812302,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.944240247370436,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.9538310307798042,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 0.983974444213354,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (n=19)"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 1.0,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.8947368421052632,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (share started \u22645y)"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000163485",
+      "symbol": "ADORA1",
+      "genetic_score": 0.8546391635437983,
+      "activity_score": 0.46830107460908593,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.7334358116097813,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.16657964466309413,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.8546391635437983,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.9890846572746229,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 0.227670248696953,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (n=1)"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 1.0,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (share started \u22645y)"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "white_space",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000113525",
+      "symbol": "IL5",
+      "genetic_score": 0.8030380069009645,
+      "activity_score": 0.825,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.7295739445353943,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.7833813284028249,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.8030380069009645,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.9819257642584052,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 1.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (n=48)"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 1.0,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.4166666666666667,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (share started \u22645y)"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": true
+    },
+    {
+      "id": "ENSG00000137033",
+      "symbol": "IL33",
+      "genetic_score": 0.9337373081597884,
+      "activity_score": 0.0,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.7291041342871766,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.962922207638213,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.9337373081597884,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.17201650053440248,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 0.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 0.0,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "white_space",
+      "contradictions": [],
+      "partial_data": true,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000169194",
+      "symbol": "IL13",
+      "genetic_score": 0.9610218190287644,
+      "activity_score": 0.8568046806963657,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.7009923410497906,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "rna_expression",
+          "value": 0.08508783118489587,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.9802059940781486,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.9610218190287644,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "animal_model",
+          "value": 0.29624467767614293,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.6635649477239475,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 0.9671267134323301,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (n=18)"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 1.0,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.5555555555555556,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (share started \u22645y)"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000113448",
+      "symbol": "PDE4D",
+      "genetic_score": 0.5114251910771247,
+      "activity_score": 0.5448567912325308,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6835189751515444,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.2792496300991152,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.5114251910771247,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.9902749673035801,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 0.8161893041084362,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (n=11)"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 0.75,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (share started \u22645y)"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000113580",
+      "symbol": "NR3C1",
+      "genetic_score": 0.6342010294225594,
+      "activity_score": 0.7387096774193548,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6342010294225594,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.8880328644773411,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.9988108933249413,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 1.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (n=31)"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 1.0,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.12903225806451613,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (share started \u22645y)"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": true
+    },
+    {
+      "id": "ENSG00000169252",
+      "symbol": "ADRB2",
+      "genetic_score": 0.6340823380638957,
+      "activity_score": 0.7642857142857142,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6340823380638957,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.8792576947992983,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "rna_expression",
+          "value": 0.016957668054408362,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.9986775764685687,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 1.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (n=28)"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 1.0,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.21428571428571427,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (share started \u22645y)"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000181072",
+      "symbol": "CHRM2",
+      "genetic_score": 0.45904366067326074,
+      "activity_score": 0.715,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6329094545116098,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.15259455475659958,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.45904366067326074,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.9229360886195679,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 1.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (n=20)"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 1.0,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.05,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (share started \u22645y)"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "caution",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000211891",
+      "symbol": "IGHE",
+      "genetic_score": 0.6291184652112587,
+      "activity_score": 0.7409090909090909,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6291184652112587,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.9919125455495513,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.9852564770786066,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 1.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (n=22)"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 1.0,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.13636363636363635,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (share started \u22645y)"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000173198",
+      "symbol": "CYSLTR1",
+      "genetic_score": 0.6233740718220604,
+      "activity_score": 0.7068046806963658,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6233740718220604,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.5906299901595534,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.995871513912483,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 0.9671267134323301,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (n=18)"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 1.0,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.05555555555555555,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (share started \u22645y)"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000065989",
+      "symbol": "PDE4A",
+      "genetic_score": 0.6231089670796988,
+      "activity_score": 0.5448567912325308,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6231089670796988,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.6938393789184193,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.9902749673035801,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 0.8161893041084362,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (n=11)"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 0.75,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov (share started \u22645y)"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000150594",
+      "symbol": "ADRA2A",
+      "genetic_score": 0.6152878439982719,
+      "activity_score": 0.0,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6152878439982719,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.6596520438307025,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "open_targets_clinical_ref",
+          "value": 0.9791191804711535,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets clinical (reference only)"
+          ]
+        },
+        {
+          "component": "trial_volume",
+          "value": 0.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "furthest_phase",
+          "value": 0.0,
+          "weight": 0.4,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        },
+        {
+          "component": "recency",
+          "value": 0.0,
+          "weight": 0.3,
+          "sources": [
+            "ClinicalTrials.gov"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "white_space",
+      "contradictions": [],
+      "partial_data": true,
+      "safety_flag": false
+    }
+  ]
+}

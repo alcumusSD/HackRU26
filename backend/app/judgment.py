@@ -14,6 +14,7 @@ from app.models import (
     CardConfidence,
     ConfidenceBand,
     CouldChangeIf,
+    EnrollmentRisk,
     EvidenceItem,
     Gene,
     JudgmentCard,
@@ -214,6 +215,97 @@ def _card_confidence(
     return CardConfidence.MODERATE
 
 
+def _is_low_enrollment_stop(trial: Trial) -> bool:
+    status = (trial.status or "").upper()
+    if status not in {"TERMINATED", "WITHDRAWN", "SUSPENDED"}:
+        return False
+    if trial.stop_reason_category == StopReasonCategory.LOW_ENROLLMENT:
+        return True
+    blob = (trial.stop_reason_quote or "").lower()
+    return any(
+        k in blob
+        for k in ("enroll", "recruit", "accrual", "slow enrollment")
+    )
+
+
+def _enrollment_risk(gene: Gene, trials: List[Trial]) -> EnrollmentRisk:
+    """Plain-language enrollment risk from linked CT.gov trials."""
+    n = len(trials)
+    if n == 0:
+        return EnrollmentRisk(
+            level="unknown",
+            linked_trials=0,
+            summary=(
+                f"No linked trials for {gene.symbol} yet — enrollment risk "
+                "cannot be estimated from this cache."
+            ),
+        )
+
+    low_enroll = [t for t in trials if _is_low_enrollment_stop(t)]
+    recruiting = [
+        t for t in trials if (t.status or "").upper() == "RECRUITING"
+    ]
+    active = [
+        t
+        for t in trials
+        if (t.status or "").upper() == "ACTIVE_NOT_RECRUITING"
+    ]
+    stopped_n = len(low_enroll)
+    recruiting_n = len(recruiting)
+    active_n = len(active)
+    samples = [t.nct_id for t in low_enroll[:4]]
+
+    level: Literal["low", "moderate", "high", "unknown"]
+    if stopped_n >= 2 or (stopped_n >= 1 and recruiting_n >= 2):
+        level = "high"
+        summary = (
+            f"High enrollment-risk pattern for {gene.symbol}: "
+            f"{stopped_n} linked "
+            f"{'study' if stopped_n == 1 else 'studies'} stopped with "
+            f"enrollment/recruitment language"
+            + (
+                f", and {recruiting_n} still recruiting"
+                if recruiting_n
+                else ""
+            )
+            + ". Expect harder patient accrual unless the plan differs clearly."
+        )
+    elif stopped_n == 1:
+        level = "moderate"
+        summary = (
+            f"Moderate enrollment risk for {gene.symbol}: "
+            f"1 linked study stopped citing enrollment/recruitment"
+            + (
+                f"; {recruiting_n} currently recruiting"
+                if recruiting_n
+                else ""
+            )
+            + ". Review that stop reason before locking a protocol."
+        )
+    else:
+        level = "low"
+        summary = (
+            f"No low-enrollment stops among {n} linked "
+            f"{'trial' if n == 1 else 'trials'} for {gene.symbol}"
+            + (
+                f"; {recruiting_n} currently recruiting"
+                if recruiting_n
+                else ""
+            )
+            + ". Enrollment risk looks lower in this cache — still not a forecast."
+        )
+
+    return EnrollmentRisk(
+        level=level,
+        linked_trials=n,
+        stopped_low_enrollment=stopped_n,
+        recruiting=recruiting_n,
+        active_not_recruiting=active_n,
+        summary=summary,
+        sample_ncts=samples,
+    )
+
+
 def assemble_judgment(
     gene: Gene,
     trials: List[Trial],
@@ -237,4 +329,5 @@ def assemble_judgment(
         open_questions=_open_questions(gene, missing, against),
         data_as_of=data_as_of,
         card_confidence=_card_confidence(gene, against, missing),
+        enrollment_risk=_enrollment_risk(gene, trials),
     )

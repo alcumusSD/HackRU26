@@ -68,8 +68,8 @@ export function LandingPage({ onEnter }: Props) {
             See which targets have genetic weight — and which trials actually moved.
           </h1>
           <p className="landing-support">
-            Asthma demo: Open Targets + ClinicalTrials.gov, with a judgment layer
-            and grounded chat beside the map.
+            Asthma and COPD demo: Open Targets + ClinicalTrials.gov, with a
+            judgment layer and grounded chat beside the map.
           </p>
           <div className="landing-cta-group">
             <button

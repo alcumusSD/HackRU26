@@ -114,6 +114,18 @@ class Robustness(BaseModel):
     rank_p95: Optional[int] = None
 
 
+class EnrollmentRisk(BaseModel):
+    """Ops-oriented signal from linked trial stop reasons + recruiting status."""
+
+    level: Literal["low", "moderate", "high", "unknown"] = "unknown"
+    linked_trials: int = 0
+    stopped_low_enrollment: int = 0
+    recruiting: int = 0
+    active_not_recruiting: int = 0
+    summary: str = "No enrollment-risk signal computed."
+    sample_ncts: List[str] = Field(default_factory=list)
+
+
 class JudgmentCard(BaseModel):
     model_config = ConfigDict(populate_by_name=True, ser_json_by_alias=True)
 
@@ -132,6 +144,7 @@ class JudgmentCard(BaseModel):
     open_questions: List[str] = Field(default_factory=list)
     data_as_of: str
     card_confidence: CardConfidence
+    enrollment_risk: EnrollmentRisk = Field(default_factory=EnrollmentRisk)
 
 
 class GeneListResponse(BaseModel):
@@ -139,6 +152,13 @@ class GeneListResponse(BaseModel):
     data_as_of: str
     cached: bool = True
     genes: List[Gene]
+
+
+class DiseaseInfo(BaseModel):
+    slug: str
+    label: str
+    efo_id: str = ""
+    name: str = ""
 
 
 class HealthResponse(BaseModel):

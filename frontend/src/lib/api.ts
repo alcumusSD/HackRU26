@@ -1,6 +1,7 @@
 import type {
   ChatMessage,
   ChatResponse,
+  DiseaseInfo,
   Gene,
   GeneListResponse,
   JudgmentCard,
@@ -35,22 +36,41 @@ async function postJson<T>(path: string, body: unknown): Promise<T> {
   return res.json() as Promise<T>;
 }
 
+function withDisease(path: string, disease?: string): string {
+  if (!disease) return path;
+  const sep = path.includes("?") ? "&" : "?";
+  return `${path}${sep}disease=${encodeURIComponent(disease)}`;
+}
+
+export function fetchDiseases(): Promise<DiseaseInfo[]> {
+  return getJson<DiseaseInfo[]>("/diseases");
+}
+
 export function fetchGenes(disease = "asthma"): Promise<GeneListResponse> {
   return getJson<GeneListResponse>(
     `/genes?disease=${encodeURIComponent(disease)}`,
   );
 }
 
-export function fetchGene(id: string): Promise<Gene> {
-  return getJson<Gene>(`/genes/${encodeURIComponent(id)}`);
+export function fetchGene(id: string, disease?: string): Promise<Gene> {
+  return getJson<Gene>(
+    withDisease(`/genes/${encodeURIComponent(id)}`, disease),
+  );
 }
 
-export function fetchTrials(id: string): Promise<Trial[]> {
-  return getJson<Trial[]>(`/genes/${encodeURIComponent(id)}/trials`);
+export function fetchTrials(id: string, disease?: string): Promise<Trial[]> {
+  return getJson<Trial[]>(
+    withDisease(`/genes/${encodeURIComponent(id)}/trials`, disease),
+  );
 }
 
-export function fetchJudgment(id: string): Promise<JudgmentCard> {
-  return getJson<JudgmentCard>(`/genes/${encodeURIComponent(id)}/judgment`);
+export function fetchJudgment(
+  id: string,
+  disease?: string,
+): Promise<JudgmentCard> {
+  return getJson<JudgmentCard>(
+    withDisease(`/genes/${encodeURIComponent(id)}/judgment`, disease),
+  );
 }
 
 export function fetchNetwork(disease = "asthma"): Promise<NetworkResponse> {

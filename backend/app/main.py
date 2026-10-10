@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import List
+from typing import List, Optional
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
@@ -22,6 +22,7 @@ from app.mock_data import EVENTS
 from app.models import (
     ChatRequest,
     ChatResponse,
+    DiseaseInfo,
     Event,
     Gene,
     GeneListResponse,
@@ -39,7 +40,7 @@ app = FastAPI(
         "optional grounded Gemini chat over the UI context. Judgment cards remain "
         "mock/default until that pipeline is wired."
     ),
-    version="0.3.0",
+    version="0.4.0",
 )
 
 app.add_middleware(
@@ -54,6 +55,17 @@ app.add_middleware(
 )
 
 
+def _require_disease(disease: Optional[str]) -> str:
+    try:
+        return data_store.resolve_disease_slug(disease)
+    except KeyError:
+        known = ", ".join(d.slug for d in data_store.list_disease_infos()) or "asthma"
+        raise HTTPException(
+            status_code=404,
+            detail=f"Disease '{disease}' not configured. Try: {known}",
+        ) from None
+
+
 @app.get("/health", response_model=HealthResponse)
 def health() -> HealthResponse:
     meta = data_store.meta()
@@ -63,6 +75,11 @@ def health() -> HealthResponse:
         mode=meta["mode"],
         gemini=gemini_status(),
     )
+
+
+@app.get("/diseases", response_model=List[DiseaseInfo])
+def list_diseases() -> List[DiseaseInfo]:
+    return data_store.list_disease_infos()
 
 
 @app.get("/gemini/ping")
@@ -99,52 +116,63 @@ def chat(req: ChatRequest) -> ChatResponse:
 
 @app.get("/genes", response_model=GeneListResponse)
 def list_genes(
-    disease: str = Query(default="asthma", description="Disease name or ontology id"),
+    disease: Optional[str] = Query(
+        default=None,
+        description="Disease slug, name, or ontology id",
+    ),
 ) -> GeneListResponse:
-    meta = data_store.meta()
-    expected = meta["disease"].lower()
-    disease_l = disease.lower()
-    config = data_store.load_config()
-    efo = (config.get("disease") or {}).get("efo_id", "").lower()
-    if disease_l not in {expected, "asthma", efo, "mondo_0004979", "efo_0000270"}:
-        raise HTTPException(
-            status_code=404,
-            detail=f"Disease '{disease}' not configured. Try disease=asthma",
-        )
+    slug = _require_disease(disease or data_store.default_disease_slug())
+    meta = data_store.meta(slug)
     return GeneListResponse(
         disease=meta["disease"],
         data_as_of=meta["data_as_of"],
-        cached=True,
-        genes=data_store.list_genes(),
+        cached=meta["cached"],
+        genes=data_store.list_genes(slug),
     )
 
 
 @app.get("/genes/{gene_id}", response_model=Gene)
-def get_gene(gene_id: str) -> Gene:
-    gene = data_store.get_gene(gene_id)
+def get_gene(
+    gene_id: str,
+    disease: Optional[str] = Query(default=None, description="Disease slug"),
+) -> Gene:
+    slug = _require_disease(disease or data_store.default_disease_slug())
+    gene = data_store.get_gene(gene_id, slug)
     if gene is None:
         raise HTTPException(status_code=404, detail=f"Gene '{gene_id}' not found")
     return gene
 
 
 @app.get("/genes/{gene_id}/trials", response_model=List[Trial])
-def get_trials(gene_id: str) -> List[Trial]:
-    if data_store.get_gene(gene_id) is None:
+def get_trials(
+    gene_id: str,
+    disease: Optional[str] = Query(default=None, description="Disease slug"),
+) -> List[Trial]:
+    slug = _require_disease(disease or data_store.default_disease_slug())
+    if data_store.get_gene(gene_id, slug) is None:
         raise HTTPException(status_code=404, detail=f"Gene '{gene_id}' not found")
-    return data_store.get_trials(gene_id)
+    return data_store.get_trials(gene_id, slug)
 
 
 @app.get("/genes/{gene_id}/judgment", response_model=JudgmentCard)
-def get_judgment(gene_id: str) -> JudgmentCard:
-    card = data_store.get_judgment(gene_id)
+def get_judgment(
+    gene_id: str,
+    disease: Optional[str] = Query(default=None, description="Disease slug"),
+) -> JudgmentCard:
+    slug = _require_disease(disease or data_store.default_disease_slug())
+    card = data_store.get_judgment(gene_id, slug)
     if card is None:
         raise HTTPException(status_code=404, detail=f"Gene '{gene_id}' not found")
     return card
 
 
 @app.get("/genes/{gene_id}/robustness", response_model=Robustness)
-def get_robustness(gene_id: str) -> Robustness:
-    card = data_store.get_judgment(gene_id)
+def get_robustness(
+    gene_id: str,
+    disease: Optional[str] = Query(default=None, description="Disease slug"),
+) -> Robustness:
+    slug = _require_disease(disease or data_store.default_disease_slug())
+    card = data_store.get_judgment(gene_id, slug)
     if card is None:
         raise HTTPException(status_code=404, detail=f"Gene '{gene_id}' not found")
     return card.robustness
@@ -157,16 +185,10 @@ def list_events() -> List[Event]:
 
 @app.get("/network", response_model=NetworkResponse)
 def get_network(
-    disease: str = Query(default="asthma", description="Disease name or ontology id"),
+    disease: Optional[str] = Query(
+        default=None,
+        description="Disease slug, name, or ontology id",
+    ),
 ) -> NetworkResponse:
-    meta = data_store.meta()
-    expected = meta["disease"].lower()
-    disease_l = disease.lower()
-    config = data_store.load_config()
-    efo = (config.get("disease") or {}).get("efo_id", "").lower()
-    if disease_l not in {expected, "asthma", efo, "mondo_0004979", "efo_0000270"}:
-        raise HTTPException(
-            status_code=404,
-            detail=f"Disease '{disease}' not configured. Try disease=asthma",
-        )
-    return data_store.build_network()
+    slug = _require_disease(disease or data_store.default_disease_slug())
+    return data_store.build_network(slug)

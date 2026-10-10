@@ -1,0 +1,5297 @@
+{
+  "built_at": "2026-10-10T23:17:47.799106+00:00",
+  "disease": "COPD",
+  "slug": "copd",
+  "summary": {
+    "studies_fetched": 260,
+    "studies_flattened": 260,
+    "studies_mapped_to_demo_genes": 100,
+    "genes_with_trials": 8,
+    "genes_without_trials": 7,
+    "stop_reasons_classified": 0,
+    "stop_quotes_verified": 0,
+    "classify_stops": false,
+    "classify_engine": "none",
+    "parsed_at": "2026-10-10T23:17:47.799048+00:00",
+    "notes": "activity_score from ClinicalTrials.gov volume/phase/recency; drug\u2192gene join uses curated synonym map + symbol mentions; stop-reason classification skipped (pass --classify-stops)"
+  },
+  "trials_by_gene": {
+    "ENSG00000168447": [],
+    "ENSG00000111319": [],
+    "ENSG00000001626": [],
+    "ENSG00000166828": [],
+    "ENSG00000113580": [
+      {
+        "nct_id": "NCT03858348",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-05-01",
+        "end_date": "2019-12-31"
+      },
+      {
+        "nct_id": "NCT05062304",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate-Vilanterol Trifenatate",
+          "Furoate-umeclidinium-vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-12-13",
+        "end_date": "2021-07-22"
+      },
+      {
+        "nct_id": "NCT00908362",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "fluticasone",
+          "fluticasone/salmeterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-05",
+        "end_date": "2009-12"
+      },
+      {
+        "nct_id": "NCT00239278",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "budesonide/formoterol, 2x 200/6 microgram. 4 times daily",
+          "prednisolone, 30 mg once daily and placebo"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2001-01",
+        "end_date": "2005-01"
+      },
+      {
+        "nct_id": "NCT00535366",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium",
+          "Salmeterol",
+          "Fluticasone",
+          "Ciclesonide low",
+          "Ciclesonide high"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-10",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01636076",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "QMF149",
+          "Salmeterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-11",
+        "end_date": "2013-09"
+      },
+      {
+        "nct_id": "NCT01342913",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate 100mcg/Vilanterol 25mcg",
+          "Fluticaosne Propionate 500mcg/Salmeterol 50mcg"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-02-01",
+        "end_date": "2011-10-19"
+      },
+      {
+        "nct_id": "NCT01315249",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "indacaterol and glycopyrronium (QVA149)",
+          "Placebo to fluticasone/salmeterol",
+          "fluticasone/salmeterol",
+          "Placebo to indacaterol and glycopyrronium (QVA149)"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-03",
+        "end_date": "2012-03"
+      },
+      {
+        "nct_id": "NCT01336608",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate/Vilanterol",
+          "Vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-03-04",
+        "end_date": "2014-11-04"
+      },
+      {
+        "nct_id": "NCT01879410",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "UMEC/VI Inhalation Powder 62.5/25 mcg via NDPI",
+          "FSC Inhalation Powder 250/50 mcg via ACCUHALER/DISKUS",
+          "Placebo DISKUS",
+          "Placebo NDPI"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-06-13",
+        "end_date": "2014-01-09"
+      },
+      {
+        "nct_id": "NCT01957163",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF",
+          "VI",
+          "UMEC"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-10-01",
+        "end_date": "2014-04-01"
+      },
+      {
+        "nct_id": "NCT01834885",
+        "phase": "PHASE3",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "QVA149",
+          "fluticasone/salmeterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-12",
+        "end_date": "2014-09"
+      },
+      {
+        "nct_id": "NCT01860066",
+        "phase": "PHASE3",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "QVA149",
+          "fluticasone/salmeterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-12",
+        "end_date": "2014-09"
+      },
+      {
+        "nct_id": "NCT02729051",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF/UMEC/VI",
+          "FF/VI",
+          "UMEC",
+          "Albuterol/salbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-06-29",
+        "end_date": "2017-05-23"
+      },
+      {
+        "nct_id": "NCT04320342",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Beclomethasone Dipropionate",
+          "Glycopyrronium Bromide",
+          "Formoterol Fumarate"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-04-27",
+        "end_date": "2026-01-12"
+      },
+      {
+        "nct_id": "NCT05831566",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "drugs": [
+          "Budesonide/Formoterol fumarate dihydrate"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-01-31",
+        "end_date": "2026-04-30"
+      },
+      {
+        "nct_id": "NCT00996697",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Budesonide/formoterol and tiotropium",
+          "Budesonide/formoterol and placebo"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-10",
+        "end_date": "2008-09"
+      },
+      {
+        "nct_id": "NCT01957150",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate/Vilanterol",
+          "Vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-01-28",
+        "end_date": "2018-03-26"
+      },
+      {
+        "nct_id": "NCT03028701",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Formoterol/Budesonide 12/400 mcg Discair"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-09",
+        "end_date": "2017-03"
+      },
+      {
+        "nct_id": "NCT05342558",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate/Vilanterol 100/25 mcgs",
+          "Umeclidinium/Vilanterol 62.5/25 mcgs"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-09-19",
+        "end_date": "2021-02-01"
+      },
+      {
+        "nct_id": "NCT03474081",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF/UMEC/VI",
+          "Tiotropium",
+          "Albuterol/salbutamol",
+          "Placebo to match FF/UMEC/VI",
+          "Placebo to match tiotropium",
+          "ELLIPTA inhaler",
+          "HANDIHALER",
+          "MDI"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-03-29",
+        "end_date": "2019-07-17"
+      },
+      {
+        "nct_id": "NCT04671355",
+        "phase": "PHASE4",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "Beclometasone Dipropionate / Formoterol Fumarate / Glycopyrronium 100/6/10 mcg",
+          "Fluticasone Furoate / Vilanterol Trifenatate 100/25 mcg"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Continuing delays due to COVID-19 pandemic",
+        "quote_verified": false,
+        "start_date": "2021-10-04",
+        "end_date": "2022-02-18"
+      },
+      {
+        "nct_id": "NCT04923347",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF/UMEC/VI",
+          "ELLIPTA"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-06-06",
+        "end_date": "2024-03-14"
+      }
+    ],
+    "ENSG00000197249": [],
+    "ENSG00000133019": [
+      {
+        "nct_id": "NCT01810692",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Group1:Spiriva\u00ae Respimat\u00ae",
+          "Group2:Hirobriz\u00ae/Oslif\u00ae/Onbrez\u00ae Breezhaler\u00ae"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-03",
+        "end_date": "2014-03"
+      },
+      {
+        "nct_id": "NCT03979807",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olodaterol/Tiotropium Bromide",
+          "Umeclidinium/ Vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-06-10",
+        "end_date": "2019-06-11"
+      },
+      {
+        "nct_id": "NCT04011475",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium + Olodaterol",
+          "Other LABA/LAMA",
+          "LAMA"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-12-29",
+        "end_date": "2020-10-31"
+      },
+      {
+        "nct_id": "NCT04999930",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Aerochamber"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-01-10",
+        "end_date": "2021-02-28"
+      },
+      {
+        "nct_id": "NCT05062304",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate-Vilanterol Trifenatate",
+          "Furoate-umeclidinium-vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-12-13",
+        "end_date": "2021-07-22"
+      },
+      {
+        "nct_id": "NCT06053541",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-04-01",
+        "end_date": "2021-07-01"
+      },
+      {
+        "nct_id": "NCT04402515",
+        "phase": "NA",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "TIO/OLO",
+          "ICS"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "not due to safety reasons",
+        "quote_verified": false,
+        "start_date": "2021-10-28",
+        "end_date": "2022-01-31"
+      },
+      {
+        "nct_id": "NCT06525051",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-10-23",
+        "end_date": "2024-04-30"
+      },
+      {
+        "nct_id": "NCT00568503",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "QAX028",
+          "Tiotropium bromide",
+          "QAX028",
+          "QAX028"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-10",
+        "end_date": "2008-02"
+      },
+      {
+        "nct_id": "NCT02231177",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "BI 1744 CL",
+          "BI 1744 CL/Tiotropium FDC",
+          "Tiotropium"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-06",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT02238119",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium + formoterol combination",
+          "Tiotropium",
+          "Formoterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-02",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT02242266",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium low dose",
+          "Tiotropium medium dose",
+          "Spiriva\u00ae HandiHaler\u00ae high dose",
+          "Placebo via the blue HandiHaler\u00ae",
+          "Placebo via the grey HandiHaler\u00ae"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-07-28",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00535366",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium",
+          "Salmeterol",
+          "Fluticasone",
+          "Ciclesonide low",
+          "Ciclesonide high"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-10",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00570778",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "indacaterol/glycopyrrolate",
+          "indacaterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-12",
+        "end_date": "2008-09"
+      },
+      {
+        "nct_id": "NCT02030535",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "olodaterol",
+          "tiotropium",
+          "tiotropium",
+          "olodaterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-01",
+        "end_date": "2014-06"
+      },
+      {
+        "nct_id": "NCT02542254",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Salbutamol",
+          "Ipratropium",
+          "RPL554",
+          "Salbutamol matched placebo",
+          "Ipratropium matched placebo",
+          "RPL554 matched placebo"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-10",
+        "end_date": "2015-12"
+      },
+      {
+        "nct_id": "NCT02570165",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Batefenterol",
+          "Umeclidinium/ Vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-11-06",
+        "end_date": "2016-07-06"
+      },
+      {
+        "nct_id": "NCT03028142",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "1.5 mg RPL554 plus tiotropium",
+          "6 mg RPL554 plus tiotropium",
+          "Placebo plus tiotropium"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-01",
+        "end_date": "2017-08"
+      },
+      {
+        "nct_id": "NCT03673670",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "RPL554 Suspension",
+          "Tiotropium/olodaterol (Respimat)"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-07-16",
+        "end_date": "2018-11-13"
+      },
+      {
+        "nct_id": "NCT03937479",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine (formerly RPL554) 0.375 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 0.75 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 1.5 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 3.0 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) placebo twice daily, in addition to tiotropium"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-05-01",
+        "end_date": "2019-11-15"
+      },
+      {
+        "nct_id": "NCT04780984",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium bromide inhalation solution"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-11-01",
+        "end_date": "2021-04-26"
+      },
+      {
+        "nct_id": "NCT07016412",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine 3 mg",
+          "Glycopyrrolate 21.25 mcg",
+          "Glycopyrrolate 42.5 mcg"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-07-31",
+        "end_date": "2026-08-17"
+      },
+      {
+        "nct_id": "NCT07132983",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine 3 mg",
+          "Glycopyrrolate 42.5 mcg",
+          "Ensifentrine 1.5 mg",
+          "Ensifentrine 3 mg (marketed formulation)"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-10-06",
+        "end_date": "2025-11-28"
+      },
+      {
+        "nct_id": "NCT02172443",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "tiotropium inhalation powder capsules",
+          "Atrovent",
+          "placebo to Atrovent",
+          "placebo to tiotropium inhalation capsules"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2001-06",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00157235",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium bromide"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-09",
+        "end_date": "2006-04"
+      },
+      {
+        "nct_id": "NCT00240435",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "5 mcg once daily tiotropium inhalation solution delivered by the Respimat inhaler",
+          "10 mcg once daily tiotropium inhalation solution delivered by the Respimat inhaler"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-11",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00424268",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-01",
+        "end_date": "2008-07"
+      },
+      {
+        "nct_id": "NCT00877383",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Indacaterol 150 \u03bcg",
+          "Tiotropium 18 \u03bcg",
+          "Placebo to indacaterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-04",
+        "end_date": "2010-02"
+      },
+      {
+        "nct_id": "NCT00900731",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Indacaterol 150 \u03bcg",
+          "Tiotropium 18 \u03bcg",
+          "Placebo to indacaterol",
+          "Placebo to tiotropium"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-06",
+        "end_date": "2010-03"
+      },
+      {
+        "nct_id": "NCT01040689",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olodaterol (BI1744) Low",
+          "Placebo (for olodaterol BI1744)",
+          "Placebo (for Tiotropium)",
+          "Olodaterol (BI1744) High",
+          "Tiotropium 18 mcg"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-01",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01315249",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "indacaterol and glycopyrronium (QVA149)",
+          "Placebo to fluticasone/salmeterol",
+          "fluticasone/salmeterol",
+          "Placebo to indacaterol and glycopyrronium (QVA149)"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-03",
+        "end_date": "2012-03"
+      },
+      {
+        "nct_id": "NCT01431274",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "tiotropium + olodaterol",
+          "tiotropium",
+          "olodaterol",
+          "tiotropium",
+          "tiotropium + olodaterol",
+          "Respimat"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-09",
+        "end_date": "2013-09"
+      },
+      {
+        "nct_id": "NCT01525615",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Respimat inhaler",
+          "tiotropium+olodaterol (low dose)",
+          "tiotropium + olodaterol (high dose)",
+          "Respimat inhaler",
+          "Respimat inhaler",
+          "placebo to tiotropium+olodaterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-02",
+        "end_date": "2013-09"
+      },
+      {
+        "nct_id": "NCT01610037",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "QVA149",
+          "Tiotropium"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2015-02"
+      },
+      {
+        "nct_id": "NCT01879410",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "UMEC/VI Inhalation Powder 62.5/25 mcg via NDPI",
+          "FSC Inhalation Powder 250/50 mcg via ACCUHALER/DISKUS",
+          "Placebo DISKUS",
+          "Placebo NDPI"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-06-13",
+        "end_date": "2014-01-09"
+      },
+      {
+        "nct_id": "NCT01957163",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF",
+          "VI",
+          "UMEC"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-10-01",
+        "end_date": "2014-04-01"
+      },
+      {
+        "nct_id": "NCT02729051",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF/UMEC/VI",
+          "FF/VI",
+          "UMEC",
+          "Albuterol/salbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-06-29",
+        "end_date": "2017-05-23"
+      },
+      {
+        "nct_id": "NCT03162055",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Glycopyrronium/Formoterol Fumarate",
+          "umeclidinium/vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-05-25",
+        "end_date": "2018-05-04"
+      },
+      {
+        "nct_id": "NCT04320342",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Beclomethasone Dipropionate",
+          "Glycopyrronium Bromide",
+          "Formoterol Fumarate"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-04-27",
+        "end_date": "2026-01-12"
+      },
+      {
+        "nct_id": "NCT00996697",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Budesonide/formoterol and tiotropium",
+          "Budesonide/formoterol and placebo"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-10",
+        "end_date": "2008-09"
+      },
+      {
+        "nct_id": "NCT02375724",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Aclidinium Bromide"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-03",
+        "end_date": "2015-11"
+      },
+      {
+        "nct_id": "NCT02872090",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Indacaterol",
+          "Glycopyrronium",
+          "Tiotropium",
+          "photoplethysmography"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-03",
+        "end_date": "2021-06-01"
+      },
+      {
+        "nct_id": "NCT02799784",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "UMEC/VI",
+          "TIO/OLO",
+          "Albuterol/salbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-07-14",
+        "end_date": "2017-04-27"
+      },
+      {
+        "nct_id": "NCT02853123",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium",
+          "Olodaterol",
+          "Tiotropium"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-09-22",
+        "end_date": "2017-08-14"
+      },
+      {
+        "nct_id": "NCT03081156",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Glycopyrrolate / Formoterol Inhaler vs Placebo Inhaler"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-03-27",
+        "end_date": "2019-01-31"
+      },
+      {
+        "nct_id": "NCT03034915",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "UMEC/VI 62.5/25 mcg via ELLIPTA",
+          "UMEC 62.5 mcg via ELLIPTA",
+          "Salmeterol 50 mcg via DISKUS",
+          "Placebo via ELLIPTA",
+          "Placebo via DISKUS"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-06-16",
+        "end_date": "2018-06-18"
+      },
+      {
+        "nct_id": "NCT05342558",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate/Vilanterol 100/25 mcgs",
+          "Umeclidinium/Vilanterol 62.5/25 mcgs"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-09-19",
+        "end_date": "2021-02-01"
+      },
+      {
+        "nct_id": "NCT03474081",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF/UMEC/VI",
+          "Tiotropium",
+          "Albuterol/salbutamol",
+          "Placebo to match FF/UMEC/VI",
+          "Placebo to match tiotropium",
+          "ELLIPTA inhaler",
+          "HANDIHALER",
+          "MDI"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-03-29",
+        "end_date": "2019-07-17"
+      },
+      {
+        "nct_id": "NCT03611699",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Umeclidinium / Vilanterol Dry Powder Inhaler"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-01-24",
+        "end_date": "2020-04-01"
+      },
+      {
+        "nct_id": "NCT04231214",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olodaterol-Tiotropium"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-01-28",
+        "end_date": "2023-04-18"
+      },
+      {
+        "nct_id": "NCT04671355",
+        "phase": "PHASE4",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "Beclometasone Dipropionate / Formoterol Fumarate / Glycopyrronium 100/6/10 mcg",
+          "Fluticasone Furoate / Vilanterol Trifenatate 100/25 mcg"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Continuing delays due to COVID-19 pandemic",
+        "quote_verified": false,
+        "start_date": "2021-10-04",
+        "end_date": "2022-02-18"
+      },
+      {
+        "nct_id": "NCT04923347",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF/UMEC/VI",
+          "ELLIPTA"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-06-06",
+        "end_date": "2024-03-14"
+      }
+    ],
+    "ENSG00000101204": [],
+    "ENSG00000138640": [],
+    "ENSG00000169252": [
+      {
+        "nct_id": "NCT01271556",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Salmeterol",
+          "saline infusion (0.9 per cent sodium chloride)"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-12",
+        "end_date": "2009-07"
+      },
+      {
+        "nct_id": "NCT03858348",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-05-01",
+        "end_date": "2019-12-31"
+      },
+      {
+        "nct_id": "NCT03979807",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olodaterol/Tiotropium Bromide",
+          "Umeclidinium/ Vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-06-10",
+        "end_date": "2019-06-11"
+      },
+      {
+        "nct_id": "NCT04011475",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium + Olodaterol",
+          "Other LABA/LAMA",
+          "LAMA"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-12-29",
+        "end_date": "2020-10-31"
+      },
+      {
+        "nct_id": "NCT05062304",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate-Vilanterol Trifenatate",
+          "Furoate-umeclidinium-vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-12-13",
+        "end_date": "2021-07-22"
+      },
+      {
+        "nct_id": "NCT05457868",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Salbutamol",
+          "LAMA"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-02-01",
+        "end_date": "2023-12-31"
+      },
+      {
+        "nct_id": "NCT04402515",
+        "phase": "NA",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "TIO/OLO",
+          "ICS"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "not due to safety reasons",
+        "quote_verified": false,
+        "start_date": "2021-10-28",
+        "end_date": "2022-01-31"
+      },
+      {
+        "nct_id": "NCT00880490",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Inhaled PT005",
+          "Inhaled PT005",
+          "Inhaled PT005",
+          "Inhaled placebo",
+          "Formoterol Fumarate 12 mcg (Foradil Aerolizer)"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-11",
+        "end_date": "2009-05"
+      },
+      {
+        "nct_id": "NCT00908362",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "fluticasone",
+          "fluticasone/salmeterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-05",
+        "end_date": "2009-12"
+      },
+      {
+        "nct_id": "NCT01571999",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Inhaled GSK573719",
+          "Inhaled GSK573719/vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-03-29",
+        "end_date": "2012-06-22"
+      },
+      {
+        "nct_id": "NCT00239278",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "budesonide/formoterol, 2x 200/6 microgram. 4 times daily",
+          "prednisolone, 30 mg once daily and placebo"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2001-01",
+        "end_date": "2005-01"
+      },
+      {
+        "nct_id": "NCT02238119",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium + formoterol combination",
+          "Tiotropium",
+          "Formoterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-02",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01809262",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "single dose of 5 mcg",
+          "single dose of placebo",
+          "single dose of 40 mcg",
+          "single dose of 20 mcg",
+          "single dose of 2 mcg",
+          "single dose of 10 mcg"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-12",
+        "end_date": "2006-11"
+      },
+      {
+        "nct_id": "NCT00535366",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium",
+          "Salmeterol",
+          "Fluticasone",
+          "Ciclesonide low",
+          "Ciclesonide high"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-10",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00570778",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "indacaterol/glycopyrrolate",
+          "indacaterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-12",
+        "end_date": "2008-09"
+      },
+      {
+        "nct_id": "NCT01636076",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "QMF149",
+          "Salmeterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-11",
+        "end_date": "2013-09"
+      },
+      {
+        "nct_id": "NCT02030535",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "olodaterol",
+          "tiotropium",
+          "tiotropium",
+          "olodaterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-01",
+        "end_date": "2014-06"
+      },
+      {
+        "nct_id": "NCT02542254",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Salbutamol",
+          "Ipratropium",
+          "RPL554",
+          "Salbutamol matched placebo",
+          "Ipratropium matched placebo",
+          "RPL554 matched placebo"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-10",
+        "end_date": "2015-12"
+      },
+      {
+        "nct_id": "NCT02570165",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Batefenterol",
+          "Umeclidinium/ Vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-11-06",
+        "end_date": "2016-07-06"
+      },
+      {
+        "nct_id": "NCT03673670",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "RPL554 Suspension",
+          "Tiotropium/olodaterol (Respimat)"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-07-16",
+        "end_date": "2018-11-13"
+      },
+      {
+        "nct_id": "NCT00313209",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-04",
+        "end_date": "2008-02"
+      },
+      {
+        "nct_id": "NCT00567996",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Indacaterol 150 \u03bcg",
+          "Salmeterol 50 \u03bcg",
+          "Placebo to Indacaterol",
+          "Placebo to Salmeterol"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-11",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00794157",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Indacaterol 150 \u03bcg capsules",
+          "Indacaterol 300 \u03bcg capsules",
+          "Placebo capsules"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-11",
+        "end_date": "2009-10"
+      },
+      {
+        "nct_id": "NCT00796653",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olodaterol (BI 1744)",
+          "Olodaterol (BI 1744)",
+          "Formoterol"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-01",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00782509",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olodaterol (BI 1744)",
+          "Olodaterol (BI 1744)"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-02",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00877383",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Indacaterol 150 \u03bcg",
+          "Tiotropium 18 \u03bcg",
+          "Placebo to indacaterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-04",
+        "end_date": "2010-02"
+      },
+      {
+        "nct_id": "NCT00900731",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Indacaterol 150 \u03bcg",
+          "Tiotropium 18 \u03bcg",
+          "Placebo to indacaterol",
+          "Placebo to tiotropium"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-06",
+        "end_date": "2010-03"
+      },
+      {
+        "nct_id": "NCT01068600",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Indacaterol",
+          "Placebo to indacaterol"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-01",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01040689",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olodaterol (BI1744) Low",
+          "Placebo (for olodaterol BI1744)",
+          "Placebo (for Tiotropium)",
+          "Olodaterol (BI1744) High",
+          "Tiotropium 18 mcg"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-01",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01342913",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate 100mcg/Vilanterol 25mcg",
+          "Fluticaosne Propionate 500mcg/Salmeterol 50mcg"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-02-01",
+        "end_date": "2011-10-19"
+      },
+      {
+        "nct_id": "NCT01315249",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "indacaterol and glycopyrronium (QVA149)",
+          "Placebo to fluticasone/salmeterol",
+          "fluticasone/salmeterol",
+          "Placebo to indacaterol and glycopyrronium (QVA149)"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-03",
+        "end_date": "2012-03"
+      },
+      {
+        "nct_id": "NCT01336608",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate/Vilanterol",
+          "Vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-03-04",
+        "end_date": "2014-11-04"
+      },
+      {
+        "nct_id": "NCT01431274",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "tiotropium + olodaterol",
+          "tiotropium",
+          "olodaterol",
+          "tiotropium",
+          "tiotropium + olodaterol",
+          "Respimat"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-09",
+        "end_date": "2013-09"
+      },
+      {
+        "nct_id": "NCT01525615",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Respimat inhaler",
+          "tiotropium+olodaterol (low dose)",
+          "tiotropium + olodaterol (high dose)",
+          "Respimat inhaler",
+          "Respimat inhaler",
+          "placebo to tiotropium+olodaterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-02",
+        "end_date": "2013-09"
+      },
+      {
+        "nct_id": "NCT01879410",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "UMEC/VI Inhalation Powder 62.5/25 mcg via NDPI",
+          "FSC Inhalation Powder 250/50 mcg via ACCUHALER/DISKUS",
+          "Placebo DISKUS",
+          "Placebo NDPI"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-06-13",
+        "end_date": "2014-01-09"
+      },
+      {
+        "nct_id": "NCT01957163",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF",
+          "VI",
+          "UMEC"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-10-01",
+        "end_date": "2014-04-01"
+      },
+      {
+        "nct_id": "NCT01834885",
+        "phase": "PHASE3",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "QVA149",
+          "fluticasone/salmeterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-12",
+        "end_date": "2014-09"
+      },
+      {
+        "nct_id": "NCT01860066",
+        "phase": "PHASE3",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "QVA149",
+          "fluticasone/salmeterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-12",
+        "end_date": "2014-09"
+      },
+      {
+        "nct_id": "NCT02729051",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF/UMEC/VI",
+          "FF/VI",
+          "UMEC",
+          "Albuterol/salbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-06-29",
+        "end_date": "2017-05-23"
+      },
+      {
+        "nct_id": "NCT03162055",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Glycopyrronium/Formoterol Fumarate",
+          "umeclidinium/vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-05-25",
+        "end_date": "2018-05-04"
+      },
+      {
+        "nct_id": "NCT04320342",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Beclomethasone Dipropionate",
+          "Glycopyrronium Bromide",
+          "Formoterol Fumarate"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-04-27",
+        "end_date": "2026-01-12"
+      },
+      {
+        "nct_id": "NCT05831566",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "drugs": [
+          "Budesonide/Formoterol fumarate dihydrate"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-01-31",
+        "end_date": "2026-04-30"
+      },
+      {
+        "nct_id": "NCT00996697",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Budesonide/formoterol and tiotropium",
+          "Budesonide/formoterol and placebo"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-10",
+        "end_date": "2008-09"
+      },
+      {
+        "nct_id": "NCT01377428",
+        "phase": "PHASE4",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "Indacaterol",
+          "Formoterol"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-09",
+        "end_date": "2012-02"
+      },
+      {
+        "nct_id": "NCT01721291",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "SALBUTAMOL"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10-01",
+        "end_date": "2017-11-27"
+      },
+      {
+        "nct_id": "NCT01957150",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate/Vilanterol",
+          "Vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-01-28",
+        "end_date": "2018-03-26"
+      },
+      {
+        "nct_id": "NCT02665130",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tai-chi plus Indacaterol",
+          "Pulmonary rehabilitation plus Indacaterol"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-12",
+        "end_date": "2016-08"
+      },
+      {
+        "nct_id": "NCT03028701",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Formoterol/Budesonide 12/400 mcg Discair"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-09",
+        "end_date": "2017-03"
+      },
+      {
+        "nct_id": "NCT02547558",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Arterial blood gases",
+          "Cardiac Output",
+          "Vital signs",
+          "Exhaled breath",
+          "Spirometry",
+          "Indacaterol"
+        ],
+        "target_genes": [
+          "ADRB2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-10",
+        "end_date": "2015-11"
+      },
+      {
+        "nct_id": "NCT02872090",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Indacaterol",
+          "Glycopyrronium",
+          "Tiotropium",
+          "photoplethysmography"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-03",
+        "end_date": "2021-06-01"
+      },
+      {
+        "nct_id": "NCT02799784",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "UMEC/VI",
+          "TIO/OLO",
+          "Albuterol/salbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-07-14",
+        "end_date": "2017-04-27"
+      },
+      {
+        "nct_id": "NCT02853123",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium",
+          "Olodaterol",
+          "Tiotropium"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-09-22",
+        "end_date": "2017-08-14"
+      },
+      {
+        "nct_id": "NCT03081156",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Glycopyrrolate / Formoterol Inhaler vs Placebo Inhaler"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-03-27",
+        "end_date": "2019-01-31"
+      },
+      {
+        "nct_id": "NCT03034915",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "UMEC/VI 62.5/25 mcg via ELLIPTA",
+          "UMEC 62.5 mcg via ELLIPTA",
+          "Salmeterol 50 mcg via DISKUS",
+          "Placebo via ELLIPTA",
+          "Placebo via DISKUS"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-06-16",
+        "end_date": "2018-06-18"
+      },
+      {
+        "nct_id": "NCT05342558",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate/Vilanterol 100/25 mcgs",
+          "Umeclidinium/Vilanterol 62.5/25 mcgs"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-09-19",
+        "end_date": "2021-02-01"
+      },
+      {
+        "nct_id": "NCT03474081",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF/UMEC/VI",
+          "Tiotropium",
+          "Albuterol/salbutamol",
+          "Placebo to match FF/UMEC/VI",
+          "Placebo to match tiotropium",
+          "ELLIPTA inhaler",
+          "HANDIHALER",
+          "MDI"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-03-29",
+        "end_date": "2019-07-17"
+      },
+      {
+        "nct_id": "NCT03611699",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Umeclidinium / Vilanterol Dry Powder Inhaler"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-01-24",
+        "end_date": "2020-04-01"
+      },
+      {
+        "nct_id": "NCT04231214",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olodaterol-Tiotropium"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-01-28",
+        "end_date": "2023-04-18"
+      },
+      {
+        "nct_id": "NCT04671355",
+        "phase": "PHASE4",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "Beclometasone Dipropionate / Formoterol Fumarate / Glycopyrronium 100/6/10 mcg",
+          "Fluticasone Furoate / Vilanterol Trifenatate 100/25 mcg"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Continuing delays due to COVID-19 pandemic",
+        "quote_verified": false,
+        "start_date": "2021-10-04",
+        "end_date": "2022-02-18"
+      },
+      {
+        "nct_id": "NCT04923347",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF/UMEC/VI",
+          "ELLIPTA"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-06-06",
+        "end_date": "2024-03-14"
+      }
+    ],
+    "ENSG00000065989": [
+      {
+        "nct_id": "NCT02015767",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-02-01",
+        "end_date": "2016-08-31"
+      },
+      {
+        "nct_id": "NCT01354782",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-05",
+        "end_date": "2011-09"
+      },
+      {
+        "nct_id": "NCT05758428",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine",
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-03-06",
+        "end_date": "2023-04-18"
+      },
+      {
+        "nct_id": "NCT01473758",
+        "phase": "PHASE2",
+        "status": "TERMINATED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Company decision: No Safety or Efficacy Concerns",
+        "quote_verified": false,
+        "start_date": "2012-02",
+        "end_date": "2014-03"
+      },
+      {
+        "nct_id": "NCT01730404",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "CHF6001 DPI",
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2013-10"
+      },
+      {
+        "nct_id": "NCT02671942",
+        "phase": "PHASE2",
+        "status": "TERMINATED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-03",
+        "end_date": "2018-06-13"
+      },
+      {
+        "nct_id": "NCT03937479",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine (formerly RPL554) 0.375 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 0.75 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 1.5 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 3.0 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) placebo twice daily, in addition to tiotropium"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-05-01",
+        "end_date": "2019-11-15"
+      },
+      {
+        "nct_id": "NCT05270525",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-05-27",
+        "end_date": "2027-03-01"
+      },
+      {
+        "nct_id": "NCT07016412",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine 3 mg",
+          "Glycopyrrolate 21.25 mcg",
+          "Glycopyrrolate 42.5 mcg"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-07-31",
+        "end_date": "2026-08-17"
+      },
+      {
+        "nct_id": "NCT07132983",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine 3 mg",
+          "Glycopyrrolate 42.5 mcg",
+          "Ensifentrine 1.5 mg",
+          "Ensifentrine 3 mg (marketed formulation)"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-10-06",
+        "end_date": "2025-11-28"
+      },
+      {
+        "nct_id": "NCT00076089",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-12",
+        "end_date": "2005-12"
+      },
+      {
+        "nct_id": "NCT00108823",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-10",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00297102",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-02",
+        "end_date": "2008-09"
+      },
+      {
+        "nct_id": "NCT00297115",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-03",
+        "end_date": "2008-08"
+      },
+      {
+        "nct_id": "NCT00313209",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-04",
+        "end_date": "2008-02"
+      },
+      {
+        "nct_id": "NCT00424268",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-01",
+        "end_date": "2008-07"
+      },
+      {
+        "nct_id": "NCT02340520",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Theophylline",
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "ADORA1",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-12",
+        "end_date": "2016-08"
+      },
+      {
+        "nct_id": "NCT04122547",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-01",
+        "end_date": "2015-12"
+      },
+      {
+        "nct_id": "NCT04542057",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-09-22",
+        "end_date": "2022-07-06"
+      },
+      {
+        "nct_id": "NCT04535986",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-09-29",
+        "end_date": "2022-12-02"
+      },
+      {
+        "nct_id": "NCT05743075",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-03-10",
+        "end_date": "2025-03-07"
+      },
+      {
+        "nct_id": "NCT06460493",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine 3 mg twice daily"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-06-11",
+        "end_date": "2024-12-03"
+      },
+      {
+        "nct_id": "NCT01480661",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast",
+          "Placebo of Roflumilast",
+          "Functional Respiratory Imaging"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-12",
+        "end_date": "2013-04"
+      },
+      {
+        "nct_id": "NCT01595750",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Roflumilast 500"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-05",
+        "end_date": "2012-08"
+      },
+      {
+        "nct_id": "NCT01849341",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast alternated days",
+          "Roflumilast 500 mcg per day"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-07",
+        "end_date": "2014-07"
+      },
+      {
+        "nct_id": "NCT02018432",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Roflumilast escalation dosage",
+          "Roflumilast conventional dosage"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-12",
+        "end_date": "2015-12"
+      },
+      {
+        "nct_id": "NCT07795086",
+        "phase": "PHASE4",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Roflumilast Oral Tablet",
+          "Azithromycin 250 mg"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2027-02",
+        "end_date": "2027-02"
+      }
+    ],
+    "ENSG00000113448": [
+      {
+        "nct_id": "NCT02015767",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-02-01",
+        "end_date": "2016-08-31"
+      },
+      {
+        "nct_id": "NCT01354782",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-05",
+        "end_date": "2011-09"
+      },
+      {
+        "nct_id": "NCT05758428",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine",
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-03-06",
+        "end_date": "2023-04-18"
+      },
+      {
+        "nct_id": "NCT01473758",
+        "phase": "PHASE2",
+        "status": "TERMINATED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Company decision: No Safety or Efficacy Concerns",
+        "quote_verified": false,
+        "start_date": "2012-02",
+        "end_date": "2014-03"
+      },
+      {
+        "nct_id": "NCT01730404",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "CHF6001 DPI",
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2013-10"
+      },
+      {
+        "nct_id": "NCT02671942",
+        "phase": "PHASE2",
+        "status": "TERMINATED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-03",
+        "end_date": "2018-06-13"
+      },
+      {
+        "nct_id": "NCT03937479",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine (formerly RPL554) 0.375 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 0.75 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 1.5 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 3.0 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) placebo twice daily, in addition to tiotropium"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-05-01",
+        "end_date": "2019-11-15"
+      },
+      {
+        "nct_id": "NCT05270525",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-05-27",
+        "end_date": "2027-03-01"
+      },
+      {
+        "nct_id": "NCT07016412",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine 3 mg",
+          "Glycopyrrolate 21.25 mcg",
+          "Glycopyrrolate 42.5 mcg"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-07-31",
+        "end_date": "2026-08-17"
+      },
+      {
+        "nct_id": "NCT07132983",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine 3 mg",
+          "Glycopyrrolate 42.5 mcg",
+          "Ensifentrine 1.5 mg",
+          "Ensifentrine 3 mg (marketed formulation)"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-10-06",
+        "end_date": "2025-11-28"
+      },
+      {
+        "nct_id": "NCT00076089",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-12",
+        "end_date": "2005-12"
+      },
+      {
+        "nct_id": "NCT00108823",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-10",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00297102",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-02",
+        "end_date": "2008-09"
+      },
+      {
+        "nct_id": "NCT00297115",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-03",
+        "end_date": "2008-08"
+      },
+      {
+        "nct_id": "NCT00313209",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-04",
+        "end_date": "2008-02"
+      },
+      {
+        "nct_id": "NCT00424268",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-01",
+        "end_date": "2008-07"
+      },
+      {
+        "nct_id": "NCT02340520",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Theophylline",
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "ADORA1",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-12",
+        "end_date": "2016-08"
+      },
+      {
+        "nct_id": "NCT04122547",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-01",
+        "end_date": "2015-12"
+      },
+      {
+        "nct_id": "NCT04542057",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-09-22",
+        "end_date": "2022-07-06"
+      },
+      {
+        "nct_id": "NCT04535986",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-09-29",
+        "end_date": "2022-12-02"
+      },
+      {
+        "nct_id": "NCT05743075",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-03-10",
+        "end_date": "2025-03-07"
+      },
+      {
+        "nct_id": "NCT06460493",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine 3 mg twice daily"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-06-11",
+        "end_date": "2024-12-03"
+      },
+      {
+        "nct_id": "NCT01480661",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast",
+          "Placebo of Roflumilast",
+          "Functional Respiratory Imaging"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-12",
+        "end_date": "2013-04"
+      },
+      {
+        "nct_id": "NCT01595750",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Roflumilast 500"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-05",
+        "end_date": "2012-08"
+      },
+      {
+        "nct_id": "NCT01849341",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast alternated days",
+          "Roflumilast 500 mcg per day"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-07",
+        "end_date": "2014-07"
+      },
+      {
+        "nct_id": "NCT02018432",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Roflumilast escalation dosage",
+          "Roflumilast conventional dosage"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-12",
+        "end_date": "2015-12"
+      },
+      {
+        "nct_id": "NCT07795086",
+        "phase": "PHASE4",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Roflumilast Oral Tablet",
+          "Azithromycin 250 mg"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2027-02",
+        "end_date": "2027-02"
+      }
+    ],
+    "ENSG00000163485": [
+      {
+        "nct_id": "NCT02340520",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Theophylline",
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "ADORA1",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-12",
+        "end_date": "2016-08"
+      }
+    ],
+    "ENSG00000168539": [
+      {
+        "nct_id": "NCT01810692",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Group1:Spiriva\u00ae Respimat\u00ae",
+          "Group2:Hirobriz\u00ae/Oslif\u00ae/Onbrez\u00ae Breezhaler\u00ae"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-03",
+        "end_date": "2014-03"
+      },
+      {
+        "nct_id": "NCT03979807",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olodaterol/Tiotropium Bromide",
+          "Umeclidinium/ Vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-06-10",
+        "end_date": "2019-06-11"
+      },
+      {
+        "nct_id": "NCT04011475",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium + Olodaterol",
+          "Other LABA/LAMA",
+          "LAMA"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-12-29",
+        "end_date": "2020-10-31"
+      },
+      {
+        "nct_id": "NCT04999930",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Aerochamber"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-01-10",
+        "end_date": "2021-02-28"
+      },
+      {
+        "nct_id": "NCT05062304",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate-Vilanterol Trifenatate",
+          "Furoate-umeclidinium-vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-12-13",
+        "end_date": "2021-07-22"
+      },
+      {
+        "nct_id": "NCT06053541",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-04-01",
+        "end_date": "2021-07-01"
+      },
+      {
+        "nct_id": "NCT04402515",
+        "phase": "NA",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "TIO/OLO",
+          "ICS"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "not due to safety reasons",
+        "quote_verified": false,
+        "start_date": "2021-10-28",
+        "end_date": "2022-01-31"
+      },
+      {
+        "nct_id": "NCT06525051",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-10-23",
+        "end_date": "2024-04-30"
+      },
+      {
+        "nct_id": "NCT00568503",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "QAX028",
+          "Tiotropium bromide",
+          "QAX028",
+          "QAX028"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-10",
+        "end_date": "2008-02"
+      },
+      {
+        "nct_id": "NCT02231177",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "BI 1744 CL",
+          "BI 1744 CL/Tiotropium FDC",
+          "Tiotropium"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-06",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT02238119",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium + formoterol combination",
+          "Tiotropium",
+          "Formoterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-02",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT02242266",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium low dose",
+          "Tiotropium medium dose",
+          "Spiriva\u00ae HandiHaler\u00ae high dose",
+          "Placebo via the blue HandiHaler\u00ae",
+          "Placebo via the grey HandiHaler\u00ae"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-07-28",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00535366",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium",
+          "Salmeterol",
+          "Fluticasone",
+          "Ciclesonide low",
+          "Ciclesonide high"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-10",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00570778",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "indacaterol/glycopyrrolate",
+          "indacaterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-12",
+        "end_date": "2008-09"
+      },
+      {
+        "nct_id": "NCT02030535",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "olodaterol",
+          "tiotropium",
+          "tiotropium",
+          "olodaterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-01",
+        "end_date": "2014-06"
+      },
+      {
+        "nct_id": "NCT02542254",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Salbutamol",
+          "Ipratropium",
+          "RPL554",
+          "Salbutamol matched placebo",
+          "Ipratropium matched placebo",
+          "RPL554 matched placebo"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-10",
+        "end_date": "2015-12"
+      },
+      {
+        "nct_id": "NCT02570165",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Batefenterol",
+          "Umeclidinium/ Vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-11-06",
+        "end_date": "2016-07-06"
+      },
+      {
+        "nct_id": "NCT03028142",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "1.5 mg RPL554 plus tiotropium",
+          "6 mg RPL554 plus tiotropium",
+          "Placebo plus tiotropium"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-01",
+        "end_date": "2017-08"
+      },
+      {
+        "nct_id": "NCT03673670",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "RPL554 Suspension",
+          "Tiotropium/olodaterol (Respimat)"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-07-16",
+        "end_date": "2018-11-13"
+      },
+      {
+        "nct_id": "NCT03937479",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine (formerly RPL554) 0.375 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 0.75 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 1.5 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 3.0 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) placebo twice daily, in addition to tiotropium"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-05-01",
+        "end_date": "2019-11-15"
+      },
+      {
+        "nct_id": "NCT04780984",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium bromide inhalation solution"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-11-01",
+        "end_date": "2021-04-26"
+      },
+      {
+        "nct_id": "NCT07016412",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine 3 mg",
+          "Glycopyrrolate 21.25 mcg",
+          "Glycopyrrolate 42.5 mcg"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-07-31",
+        "end_date": "2026-08-17"
+      },
+      {
+        "nct_id": "NCT07132983",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine 3 mg",
+          "Glycopyrrolate 42.5 mcg",
+          "Ensifentrine 1.5 mg",
+          "Ensifentrine 3 mg (marketed formulation)"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-10-06",
+        "end_date": "2025-11-28"
+      },
+      {
+        "nct_id": "NCT02172443",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "tiotropium inhalation powder capsules",
+          "Atrovent",
+          "placebo to Atrovent",
+          "placebo to tiotropium inhalation capsules"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2001-06",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00157235",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium bromide"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-09",
+        "end_date": "2006-04"
+      },
+      {
+        "nct_id": "NCT00240435",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "5 mcg once daily tiotropium inhalation solution delivered by the Respimat inhaler",
+          "10 mcg once daily tiotropium inhalation solution delivered by the Respimat inhaler"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-11",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00424268",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-01",
+        "end_date": "2008-07"
+      },
+      {
+        "nct_id": "NCT00877383",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Indacaterol 150 \u03bcg",
+          "Tiotropium 18 \u03bcg",
+          "Placebo to indacaterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-04",
+        "end_date": "2010-02"
+      },
+      {
+        "nct_id": "NCT00900731",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Indacaterol 150 \u03bcg",
+          "Tiotropium 18 \u03bcg",
+          "Placebo to indacaterol",
+          "Placebo to tiotropium"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-06",
+        "end_date": "2010-03"
+      },
+      {
+        "nct_id": "NCT01040689",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olodaterol (BI1744) Low",
+          "Placebo (for olodaterol BI1744)",
+          "Placebo (for Tiotropium)",
+          "Olodaterol (BI1744) High",
+          "Tiotropium 18 mcg"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-01",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01315249",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "indacaterol and glycopyrronium (QVA149)",
+          "Placebo to fluticasone/salmeterol",
+          "fluticasone/salmeterol",
+          "Placebo to indacaterol and glycopyrronium (QVA149)"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-03",
+        "end_date": "2012-03"
+      },
+      {
+        "nct_id": "NCT01431274",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "tiotropium + olodaterol",
+          "tiotropium",
+          "olodaterol",
+          "tiotropium",
+          "tiotropium + olodaterol",
+          "Respimat"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-09",
+        "end_date": "2013-09"
+      },
+      {
+        "nct_id": "NCT01525615",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Respimat inhaler",
+          "tiotropium+olodaterol (low dose)",
+          "tiotropium + olodaterol (high dose)",
+          "Respimat inhaler",
+          "Respimat inhaler",
+          "placebo to tiotropium+olodaterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-02",
+        "end_date": "2013-09"
+      },
+      {
+        "nct_id": "NCT01610037",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "QVA149",
+          "Tiotropium"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2015-02"
+      },
+      {
+        "nct_id": "NCT01879410",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "UMEC/VI Inhalation Powder 62.5/25 mcg via NDPI",
+          "FSC Inhalation Powder 250/50 mcg via ACCUHALER/DISKUS",
+          "Placebo DISKUS",
+          "Placebo NDPI"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-06-13",
+        "end_date": "2014-01-09"
+      },
+      {
+        "nct_id": "NCT01957163",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF",
+          "VI",
+          "UMEC"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-10-01",
+        "end_date": "2014-04-01"
+      },
+      {
+        "nct_id": "NCT02729051",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF/UMEC/VI",
+          "FF/VI",
+          "UMEC",
+          "Albuterol/salbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-06-29",
+        "end_date": "2017-05-23"
+      },
+      {
+        "nct_id": "NCT03162055",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Glycopyrronium/Formoterol Fumarate",
+          "umeclidinium/vilanterol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-05-25",
+        "end_date": "2018-05-04"
+      },
+      {
+        "nct_id": "NCT04320342",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Beclomethasone Dipropionate",
+          "Glycopyrronium Bromide",
+          "Formoterol Fumarate"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-04-27",
+        "end_date": "2026-01-12"
+      },
+      {
+        "nct_id": "NCT00996697",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Budesonide/formoterol and tiotropium",
+          "Budesonide/formoterol and placebo"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-10",
+        "end_date": "2008-09"
+      },
+      {
+        "nct_id": "NCT02375724",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Aclidinium Bromide"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-03",
+        "end_date": "2015-11"
+      },
+      {
+        "nct_id": "NCT02872090",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Indacaterol",
+          "Glycopyrronium",
+          "Tiotropium",
+          "photoplethysmography"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-03",
+        "end_date": "2021-06-01"
+      },
+      {
+        "nct_id": "NCT02799784",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "UMEC/VI",
+          "TIO/OLO",
+          "Albuterol/salbutamol"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-07-14",
+        "end_date": "2017-04-27"
+      },
+      {
+        "nct_id": "NCT02853123",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tiotropium",
+          "Olodaterol",
+          "Tiotropium"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-09-22",
+        "end_date": "2017-08-14"
+      },
+      {
+        "nct_id": "NCT03081156",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Glycopyrrolate / Formoterol Inhaler vs Placebo Inhaler"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-03-27",
+        "end_date": "2019-01-31"
+      },
+      {
+        "nct_id": "NCT03034915",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "UMEC/VI 62.5/25 mcg via ELLIPTA",
+          "UMEC 62.5 mcg via ELLIPTA",
+          "Salmeterol 50 mcg via DISKUS",
+          "Placebo via ELLIPTA",
+          "Placebo via DISKUS"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-06-16",
+        "end_date": "2018-06-18"
+      },
+      {
+        "nct_id": "NCT05342558",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Fluticasone Furoate/Vilanterol 100/25 mcgs",
+          "Umeclidinium/Vilanterol 62.5/25 mcgs"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-09-19",
+        "end_date": "2021-02-01"
+      },
+      {
+        "nct_id": "NCT03474081",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF/UMEC/VI",
+          "Tiotropium",
+          "Albuterol/salbutamol",
+          "Placebo to match FF/UMEC/VI",
+          "Placebo to match tiotropium",
+          "ELLIPTA inhaler",
+          "HANDIHALER",
+          "MDI"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-03-29",
+        "end_date": "2019-07-17"
+      },
+      {
+        "nct_id": "NCT03611699",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Umeclidinium / Vilanterol Dry Powder Inhaler"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-01-24",
+        "end_date": "2020-04-01"
+      },
+      {
+        "nct_id": "NCT04231214",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olodaterol-Tiotropium"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-01-28",
+        "end_date": "2023-04-18"
+      },
+      {
+        "nct_id": "NCT04671355",
+        "phase": "PHASE4",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "Beclometasone Dipropionate / Formoterol Fumarate / Glycopyrronium 100/6/10 mcg",
+          "Fluticasone Furoate / Vilanterol Trifenatate 100/25 mcg"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Continuing delays due to COVID-19 pandemic",
+        "quote_verified": false,
+        "start_date": "2021-10-04",
+        "end_date": "2022-02-18"
+      },
+      {
+        "nct_id": "NCT04923347",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "FF/UMEC/VI",
+          "ELLIPTA"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "CHRM1",
+          "CHRM3",
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-06-06",
+        "end_date": "2024-03-14"
+      }
+    ],
+    "ENSG00000184588": [
+      {
+        "nct_id": "NCT02015767",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-02-01",
+        "end_date": "2016-08-31"
+      },
+      {
+        "nct_id": "NCT01354782",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-05",
+        "end_date": "2011-09"
+      },
+      {
+        "nct_id": "NCT05758428",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine",
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-03-06",
+        "end_date": "2023-04-18"
+      },
+      {
+        "nct_id": "NCT01473758",
+        "phase": "PHASE2",
+        "status": "TERMINATED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Company decision: No Safety or Efficacy Concerns",
+        "quote_verified": false,
+        "start_date": "2012-02",
+        "end_date": "2014-03"
+      },
+      {
+        "nct_id": "NCT01730404",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "CHF6001 DPI",
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2013-10"
+      },
+      {
+        "nct_id": "NCT02671942",
+        "phase": "PHASE2",
+        "status": "TERMINATED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-03",
+        "end_date": "2018-06-13"
+      },
+      {
+        "nct_id": "NCT03937479",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine (formerly RPL554) 0.375 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 0.75 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 1.5 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) 3.0 mg twice daily plus placebo, in addition to tiotropium",
+          "Ensifentrine (formerly RPL554) placebo twice daily, in addition to tiotropium"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-05-01",
+        "end_date": "2019-11-15"
+      },
+      {
+        "nct_id": "NCT05270525",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-05-27",
+        "end_date": "2027-03-01"
+      },
+      {
+        "nct_id": "NCT07016412",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine 3 mg",
+          "Glycopyrrolate 21.25 mcg",
+          "Glycopyrrolate 42.5 mcg"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-07-31",
+        "end_date": "2026-08-17"
+      },
+      {
+        "nct_id": "NCT07132983",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine 3 mg",
+          "Glycopyrrolate 42.5 mcg",
+          "Ensifentrine 1.5 mg",
+          "Ensifentrine 3 mg (marketed formulation)"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-10-06",
+        "end_date": "2025-11-28"
+      },
+      {
+        "nct_id": "NCT00076089",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-12",
+        "end_date": "2005-12"
+      },
+      {
+        "nct_id": "NCT00108823",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-10",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00297102",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-02",
+        "end_date": "2008-09"
+      },
+      {
+        "nct_id": "NCT00297115",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-03",
+        "end_date": "2008-08"
+      },
+      {
+        "nct_id": "NCT00313209",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "ADRB2",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-04",
+        "end_date": "2008-02"
+      },
+      {
+        "nct_id": "NCT00424268",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "CHRM1",
+          "CHRM3",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-01",
+        "end_date": "2008-07"
+      },
+      {
+        "nct_id": "NCT02340520",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Theophylline",
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "ADORA1",
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-12",
+        "end_date": "2016-08"
+      },
+      {
+        "nct_id": "NCT04122547",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-01",
+        "end_date": "2015-12"
+      },
+      {
+        "nct_id": "NCT04542057",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-09-22",
+        "end_date": "2022-07-06"
+      },
+      {
+        "nct_id": "NCT04535986",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-09-29",
+        "end_date": "2022-12-02"
+      },
+      {
+        "nct_id": "NCT05743075",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-03-10",
+        "end_date": "2025-03-07"
+      },
+      {
+        "nct_id": "NCT06460493",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ensifentrine 3 mg twice daily"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-06-11",
+        "end_date": "2024-12-03"
+      },
+      {
+        "nct_id": "NCT01480661",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast",
+          "Placebo of Roflumilast",
+          "Functional Respiratory Imaging"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-12",
+        "end_date": "2013-04"
+      },
+      {
+        "nct_id": "NCT01595750",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Roflumilast 500"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-05",
+        "end_date": "2012-08"
+      },
+      {
+        "nct_id": "NCT01849341",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Roflumilast alternated days",
+          "Roflumilast 500 mcg per day"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-07",
+        "end_date": "2014-07"
+      },
+      {
+        "nct_id": "NCT02018432",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Roflumilast escalation dosage",
+          "Roflumilast conventional dosage"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-12",
+        "end_date": "2015-12"
+      },
+      {
+        "nct_id": "NCT07795086",
+        "phase": "PHASE4",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Roflumilast Oral Tablet",
+          "Azithromycin 250 mg"
+        ],
+        "target_genes": [
+          "PDE4A",
+          "PDE4B",
+          "PDE4D"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2027-02",
+        "end_date": "2027-02"
+      }
+    ]
+  }
+}

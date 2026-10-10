@@ -1,8 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { fetchGenes, fetchJudgment, fetchTrials } from "@/lib/api";
-import type { Gene, JudgmentCard, Trial } from "@/lib/types";
+import {
+  fetchDiseases,
+  fetchGenes,
+  fetchJudgment,
+  fetchTrials,
+} from "@/lib/api";
+import type { DiseaseInfo, Gene, JudgmentCard, Trial } from "@/lib/types";
 import { QUADRANT_META } from "@/lib/quadrant";
 import { DrugPanel, type SelectedDrug } from "./DrugPanel";
 import { GeneSpace3DLazy } from "./GeneSpace3DLazy";
@@ -21,7 +26,9 @@ export function RadarApp({ initialTab = "map", onHome }: Props) {
   const [genes, setGenes] = useState<Gene[]>([]);
   const [dataAsOf, setDataAsOf] = useState<string>("");
   const [cached, setCached] = useState(true);
-  const [disease, setDisease] = useState("asthma");
+  const [diseases, setDiseases] = useState<DiseaseInfo[]>([]);
+  const [diseaseSlug, setDiseaseSlug] = useState("asthma");
+  const [diseaseLabel, setDiseaseLabel] = useState("asthma");
   const [loadError, setLoadError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -36,15 +43,42 @@ export function RadarApp({ initialTab = "map", onHome }: Props) {
 
   useEffect(() => {
     let cancelled = false;
+    fetchDiseases()
+      .then((list) => {
+        if (!cancelled) setDiseases(list);
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setDiseases([
+            {
+              slug: "asthma",
+              label: "Asthma",
+              efo_id: "MONDO_0004979",
+              name: "asthma",
+            },
+          ]);
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
     setLoading(true);
     setLoadError(null);
-    fetchGenes("asthma")
+    setSelected(null);
+    setSelectedDrug(null);
+    setJudgment(null);
+    setTrials([]);
+    fetchGenes(diseaseSlug)
       .then((res) => {
         if (cancelled) return;
         setGenes(res.genes);
         setDataAsOf(res.data_as_of);
         setCached(res.cached);
-        setDisease(res.disease);
+        setDiseaseLabel(res.disease);
       })
       .catch((err: Error) => {
         if (!cancelled) setLoadError(err.message);
@@ -55,7 +89,7 @@ export function RadarApp({ initialTab = "map", onHome }: Props) {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [diseaseSlug]);
 
   async function selectGene(gene: Gene) {
     setSelectedDrug(null);
@@ -66,8 +100,8 @@ export function RadarApp({ initialTab = "map", onHome }: Props) {
     setTrials([]);
     try {
       const [j, t] = await Promise.all([
-        fetchJudgment(gene.id),
-        fetchTrials(gene.id),
+        fetchJudgment(gene.id, diseaseSlug),
+        fetchTrials(gene.id, diseaseSlug),
       ]);
       setJudgment(j);
       setTrials(t);
@@ -90,7 +124,8 @@ export function RadarApp({ initialTab = "map", onHome }: Props) {
     }
     return {
       app: "Evidence Radar",
-      disease,
+      disease: diseaseLabel,
+      disease_slug: diseaseSlug,
       data_as_of: dataAsOf,
       view: networkMode ? "network" : "map",
       protective_variant_filter: protectiveOnly,
@@ -124,10 +159,10 @@ export function RadarApp({ initialTab = "map", onHome }: Props) {
         : null,
       judgment: judgment
         ? {
-            note: "Judgment narrative may still be mock/default until Gemini judgment assembly ships.",
             confidence: judgment.confidence,
             card_confidence: judgment.card_confidence,
             robustness: judgment.robustness,
+            enrollment_risk: judgment.enrollment_risk,
             for: judgment.for,
             against: judgment.against,
             missing: judgment.missing,
@@ -157,7 +192,8 @@ export function RadarApp({ initialTab = "map", onHome }: Props) {
     };
   }, [
     dataAsOf,
-    disease,
+    diseaseLabel,
+    diseaseSlug,
     genes.length,
     judgment,
     networkMode,
@@ -190,7 +226,7 @@ export function RadarApp({ initialTab = "map", onHome }: Props) {
           )}
           {!networkMode && (
             <h1>
-              One live map for {disease}
+              One live map for {diseaseLabel}
               <span className="h1-sub">
                 Genetic evidence versus trial activity — with proof beside every
                 score.
@@ -199,11 +235,27 @@ export function RadarApp({ initialTab = "map", onHome }: Props) {
           )}
           {networkMode && (
             <p className="network-title">
-              {disease} · gene–drug network
+              {diseaseLabel} · gene–drug network
             </p>
           )}
         </div>
         <div className="header-meta">
+          {diseases.length > 0 && (
+            <label className="disease-select">
+              <span className="disease-select-label">Disease</span>
+              <select
+                value={diseaseSlug}
+                aria-label="Select disease"
+                onChange={(e) => setDiseaseSlug(e.target.value)}
+              >
+                {diseases.map((d) => (
+                  <option key={d.slug} value={d.slug}>
+                    {d.label}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
           <div className="view-tabs" role="tablist" aria-label="Map views">
             <button
               type="button"
@@ -280,6 +332,7 @@ export function RadarApp({ initialTab = "map", onHome }: Props) {
               }}
               onClearDrug={() => setSelectedDrug(null)}
               protectiveOnly={protectiveOnly}
+              disease={diseaseSlug}
             />
           )}
         </section>

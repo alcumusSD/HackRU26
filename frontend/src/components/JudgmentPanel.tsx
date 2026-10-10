@@ -76,6 +76,63 @@ export function JudgmentPanel({
             </p>
           </section>
 
+          {judgment.enrollment_risk && (
+            <section className="enrollment-risk">
+              <h3>Enrollment risk</h3>
+              <p
+                className={`enrollment-risk__level enrollment-risk__level--${judgment.enrollment_risk.level}`}
+              >
+                {judgment.enrollment_risk.level} risk
+              </p>
+              <p className="enrollment-risk__summary">
+                {judgment.enrollment_risk.summary}
+              </p>
+              <ul className="enrollment-risk__stats">
+                <li>
+                  <strong>
+                    {judgment.enrollment_risk.stopped_low_enrollment}
+                  </strong>{" "}
+                  stopped for enrollment / recruitment
+                </li>
+                <li>
+                  <strong>{judgment.enrollment_risk.recruiting}</strong>{" "}
+                  currently recruiting
+                </li>
+                <li>
+                  <strong>
+                    {judgment.enrollment_risk.active_not_recruiting}
+                  </strong>{" "}
+                  active, not recruiting
+                </li>
+                <li>
+                  <strong>{judgment.enrollment_risk.linked_trials}</strong>{" "}
+                  linked trials in cache
+                </li>
+              </ul>
+              {judgment.enrollment_risk.sample_ncts.length > 0 && (
+                <p className="muted tiny">
+                  Examples:{" "}
+                  {judgment.enrollment_risk.sample_ncts.map((nct, i) => (
+                    <span key={nct}>
+                      {i > 0 ? ", " : ""}
+                      <a
+                        className="trial-link"
+                        href={`https://clinicaltrials.gov/study/${nct}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {nct}
+                      </a>
+                    </span>
+                  ))}
+                </p>
+              )}
+              <p className="muted tiny">
+                Pattern from linked CT.gov stops — not a patient-count forecast.
+              </p>
+            </section>
+          )}
+
           <section>
             <h3>For</h3>
             <ul>

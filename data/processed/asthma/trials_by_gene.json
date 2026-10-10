@@ -1,18 +1,19 @@
 {
-  "built_at": "2026-10-10T19:43:22.512499+00:00",
+  "built_at": "2026-10-10T23:17:50.940548+00:00",
   "disease": "asthma",
+  "slug": "asthma",
   "summary": {
     "studies_fetched": 298,
     "studies_flattened": 298,
     "studies_mapped_to_demo_genes": 173,
     "genes_with_trials": 12,
     "genes_without_trials": 3,
-    "stop_reasons_classified": 17,
-    "stop_quotes_verified": 17,
-    "classify_stops": true,
-    "classify_engine": "heuristic",
-    "parsed_at": "2026-10-10T19:43:22.512419+00:00",
-    "notes": "activity_score from ClinicalTrials.gov volume/phase/recency; drug\u2192gene join uses curated synonym map + symbol mentions; stop reasons classified (17 categorized, 17 quotes verified; heuristic); light futility penalty applied when category=futility"
+    "stop_reasons_classified": 0,
+    "stop_quotes_verified": 0,
+    "classify_stops": false,
+    "classify_engine": "none",
+    "parsed_at": "2026-10-10T23:17:50.940500+00:00",
+    "notes": "activity_score from ClinicalTrials.gov volume/phase/recency; drug\u2192gene join uses curated synonym map + symbol mentions; stop-reason classification skipped (pass --classify-stops)"
   },
   "trials_by_gene": {
     "ENSG00000143631": [],
@@ -725,9 +726,9 @@
         "target_genes": [
           "IL5"
         ],
-        "stop_reason_category": "other",
+        "stop_reason_category": null,
         "stop_reason_quote": "Study personnel diverted to other activities and the study was not commenced",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2017-11-14",
         "end_date": "2018-10-19"
       },
@@ -1207,9 +1208,9 @@
         "target_genes": [
           "IL5"
         ],
-        "stop_reason_category": "business",
+        "stop_reason_category": null,
         "stop_reason_quote": "Business decision",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2011-06",
         "end_date": "2015-01"
       },
@@ -1306,9 +1307,9 @@
         "target_genes": [
           "IL5"
         ],
-        "stop_reason_category": "futility",
+        "stop_reason_category": null,
         "stop_reason_quote": "Parent Studies didn't meet their primary endpoint so study was terminated.",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2017-03-10",
         "end_date": "2018-02-22"
       },
@@ -1371,9 +1372,9 @@
         "target_genes": [
           "IL5"
         ],
-        "stop_reason_category": "low_enrollment",
+        "stop_reason_category": null,
         "stop_reason_quote": "The study was terminated early due to challenges in recruitment. The decision to terminate the study was not related to any safety issues or concerns.",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2017-05-08",
         "end_date": "2017-05-24"
       },
@@ -1821,9 +1822,9 @@
           "PDE4A",
           "PDE4D"
         ],
-        "stop_reason_category": "low_enrollment",
+        "stop_reason_category": null,
         "stop_reason_quote": "Enrollment stopped secondary to completion of funding",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2019-01-21",
         "end_date": "2023-08-15"
       },
@@ -2038,9 +2039,9 @@
           "CHRM2",
           "NR3C1"
         ],
-        "stop_reason_category": "business",
+        "stop_reason_category": null,
         "stop_reason_quote": "Funding was terminated",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2008-06",
         "end_date": "2011-09"
       },
@@ -2055,9 +2056,9 @@
         "target_genes": [
           "NR3C1"
         ],
-        "stop_reason_category": "business",
+        "stop_reason_category": null,
         "stop_reason_quote": "Funding complete",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2012-08",
         "end_date": "2018-04"
       },
@@ -2314,9 +2315,9 @@
         "target_genes": [
           "NR3C1"
         ],
-        "stop_reason_category": "safety",
+        "stop_reason_category": null,
         "stop_reason_quote": "Terminated for non-safety reasons when Sponsor felt that sufficient long-term safety data was obtained.",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2011-05-31",
         "end_date": "2014-12-31"
       },
@@ -2615,9 +2616,9 @@
           "CHRM2",
           "NR3C1"
         ],
-        "stop_reason_category": "business",
+        "stop_reason_category": null,
         "stop_reason_quote": "Funding was terminated",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2008-06",
         "end_date": "2011-09"
       },
@@ -2633,9 +2634,9 @@
           "ADRB2",
           "CHRM2"
         ],
-        "stop_reason_category": "low_enrollment",
+        "stop_reason_category": null,
         "stop_reason_quote": "The trainee for whom I designed the study did not begin enrollment and has left our institution.",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2015-07",
         "end_date": "2020-11-11"
       },
@@ -3146,9 +3147,9 @@
           "CHRM2",
           "NR3C1"
         ],
-        "stop_reason_category": "business",
+        "stop_reason_category": null,
         "stop_reason_quote": "Funding was terminated",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2008-06",
         "end_date": "2011-09"
       },
@@ -3164,9 +3165,9 @@
           "ADRB2",
           "CHRM2"
         ],
-        "stop_reason_category": "low_enrollment",
+        "stop_reason_category": null,
         "stop_reason_quote": "The trainee for whom I designed the study did not begin enrollment and has left our institution.",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2015-07",
         "end_date": "2020-11-11"
       },
@@ -3436,9 +3437,9 @@
         "target_genes": [
           "CHRM2"
         ],
-        "stop_reason_category": "low_enrollment",
+        "stop_reason_category": null,
         "stop_reason_quote": "No subjects enrolled and no ongoing funding.",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2007-11",
         "end_date": "2014-01"
       },
@@ -3528,9 +3529,9 @@
         "target_genes": [
           "IGHE"
         ],
-        "stop_reason_category": "other",
+        "stop_reason_category": null,
         "stop_reason_quote": "Completed",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2004-11",
         "end_date": "2007-10"
       },
@@ -3765,9 +3766,9 @@
         "target_genes": [
           "IGHE"
         ],
-        "stop_reason_category": "other",
+        "stop_reason_category": null,
         "stop_reason_quote": "could not find subject population",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2005-11",
         "end_date": "2009-01"
       },
@@ -3832,9 +3833,9 @@
         "target_genes": [
           "IGHE"
         ],
-        "stop_reason_category": "low_enrollment",
+        "stop_reason_category": null,
         "stop_reason_quote": "Terminated due to poor enrollment.",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2009-02",
         "end_date": "2011-02"
       },
@@ -4233,9 +4234,9 @@
           "PDE4A",
           "PDE4D"
         ],
-        "stop_reason_category": "low_enrollment",
+        "stop_reason_category": null,
         "stop_reason_quote": "Enrollment stopped secondary to completion of funding",
-        "quote_verified": true,
+        "quote_verified": false,
         "start_date": "2019-01-21",
         "end_date": "2023-08-15"
       },

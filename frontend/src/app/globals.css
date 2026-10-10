@@ -200,6 +200,35 @@ button.brand-mark--home:hover {
   animation: rise 0.8s ease-out 0.1s both;
 }
 
+.disease-select {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.disease-select-label {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.72rem;
+}
+
+.disease-select select {
+  border: 1px solid var(--line);
+  background: var(--surface-strong);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 0.3rem 0.55rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.disease-select select:focus {
+  border-color: var(--teal);
+}
+
 .view-tabs {
   display: flex;
   gap: 0.35rem;
@@ -366,8 +395,7 @@ button.brand-mark--home:hover {
   position: absolute;
   z-index: 4;
   top: 0.75rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 1rem;
   width: min(20rem, calc(100% - 10rem));
 }
 
@@ -818,6 +846,52 @@ button.brand-mark--home:hover {
   color: var(--teal);
 }
 
+.enrollment-risk__level {
+  margin: 0 0 0.45rem;
+  font-family: var(--font-display), Syne, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: -0.02em;
+}
+
+.enrollment-risk__level--high {
+  color: #fb7185;
+}
+
+.enrollment-risk__level--moderate {
+  color: var(--amber);
+}
+
+.enrollment-risk__level--low {
+  color: var(--teal);
+}
+
+.enrollment-risk__level--unknown {
+  color: var(--ink-soft);
+}
+
+.enrollment-risk__summary {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.enrollment-risk__stats {
+  list-style: none;
+  padding: 0;
+  margin: 0.65rem 0 0.35rem;
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+}
+
+.enrollment-risk__stats strong {
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
 .chips {
   list-style: none;
   padding: 0;
@@ -869,10 +943,17 @@ button.brand-mark--home:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 0.75rem;
+  align-items: flex-end;
+  gap: 0.75rem 1.25rem;
   padding: 0.75rem 1.75rem 1.25rem;
   font-size: 0.8rem;
   color: var(--ink-soft);
+}
+
+.radar-footer > p {
+  margin: 0;
+  line-height: 1.35;
+  max-width: 28rem;
 }
 
 .legend {
@@ -925,13 +1006,56 @@ button.brand-mark--home:hover {
 
 .radar-chat-toggle {
   border: 1px solid var(--line);
-  background: var(--panel);
+  background: var(--surface-strong);
   color: var(--ink);
   font: inherit;
   font-size: 0.88rem;
   font-weight: 600;
   padding: 0.65rem 0.9rem;
   cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  white-space: nowrap;
+}
+
+.radar-chat-toggle-short {
+  display: none;
+}
+
+/* Wide map: keep Ask clear of footer source line */
+@media (min-width: 720px) {
+  .radar-stage:not(.radar-stage--network) .radar-chat {
+    bottom: 4.5rem;
+  }
+
+  .radar-stage:not(.radar-stage--network) .radar-footer {
+    padding-right: 12rem;
+  }
+}
+
+/* Narrow: leave bottom strip for Ask; shorten label */
+@media (max-width: 719px) {
+  .radar-stage:not(.radar-stage--network) .radar-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.65rem 1rem 4.75rem;
+  }
+
+  .radar-stage:not(.radar-stage--network) .radar-footer > p {
+    max-width: 100%;
+  }
+
+  .radar-chat-toggle-full {
+    display: none;
+  }
+
+  .radar-chat-toggle-short {
+    display: inline;
+  }
+
+  .radar-chat {
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
 }
 
 .radar-chat-toggle:hover {
@@ -1239,7 +1363,6 @@ button.brand-mark--home:hover {
 
   .radar-chat {
     right: 0.65rem;
-    bottom: 0.65rem;
   }
 
   .landing-inner {

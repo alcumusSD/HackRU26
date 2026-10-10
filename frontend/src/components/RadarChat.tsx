@@ -58,8 +58,10 @@ export function RadarChat({ context }: Props) {
           className="radar-chat-toggle"
           onClick={() => setOpen(true)}
           aria-expanded={false}
+          aria-label="Ask about this view"
         >
-          Ask about this view
+          <span className="radar-chat-toggle-full">Ask about this view</span>
+          <span className="radar-chat-toggle-short">Ask</span>
         </button>
       ) : (
         <section className="radar-chat-panel" aria-label="Evidence Radar chat">
