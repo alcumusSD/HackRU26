@@ -1,0 +1,340 @@
+{
+  "fetched_at": "2026-10-10T17:55:57.190956+00:00",
+  "query": {
+    "source": "open_targets_graphql",
+    "url": "https://api.platform.opentargets.org/api/v4/graphql",
+    "disease_id": "MONDO_0004979",
+    "limit": 15
+  },
+  "response": {
+    "data": {
+      "disease": {
+        "id": "MONDO_0004979",
+        "name": "asthma",
+        "associatedTargets": {
+          "count": 7772,
+          "rows": [
+            {
+              "score": 0.7491090795778099,
+              "target": {
+                "id": "ENSG00000143631",
+                "approvedSymbol": "FLG",
+                "approvedName": "filaggrin"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.4089529880751863
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9785117676400652
+                }
+              ]
+            },
+            {
+              "score": 0.746773466615787,
+              "target": {
+                "id": "ENSG00000077238",
+                "approvedSymbol": "IL4R",
+                "approvedName": "interleukin 4 receptor"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.6559275606110533
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.40272375687781836
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9584858728437942
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9691539645718391
+                }
+              ]
+            },
+            {
+              "score": 0.736503889146964,
+              "target": {
+                "id": "ENSG00000145777",
+                "approvedSymbol": "TSLP",
+                "approvedName": "thymic stromal lymphopoietin"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9720845999812302
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.944240247370436
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9538310307798042
+                }
+              ]
+            },
+            {
+              "score": 0.7334358116097813,
+              "target": {
+                "id": "ENSG00000163485",
+                "approvedSymbol": "ADORA1",
+                "approvedName": "adenosine A1 receptor"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.16657964466309413
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8546391635437983
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9890846572746229
+                }
+              ]
+            },
+            {
+              "score": 0.7295739445353943,
+              "target": {
+                "id": "ENSG00000113525",
+                "approvedSymbol": "IL5",
+                "approvedName": "interleukin 5"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.7833813284028249
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8030380069009645
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9819257642584052
+                }
+              ]
+            },
+            {
+              "score": 0.7291041342871766,
+              "target": {
+                "id": "ENSG00000137033",
+                "approvedSymbol": "IL33",
+                "approvedName": "interleukin 33"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.962922207638213
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9337373081597884
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.17201650053440248
+                }
+              ]
+            },
+            {
+              "score": 0.7009923410497906,
+              "target": {
+                "id": "ENSG00000169194",
+                "approvedSymbol": "IL13",
+                "approvedName": "interleukin 13"
+              },
+              "datatypeScores": [
+                {
+                  "id": "rna_expression",
+                  "score": 0.08508783118489587
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.6635649477239475
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9802059940781486
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9610218190287644
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.29624467767614293
+                }
+              ]
+            },
+            {
+              "score": 0.6835189751515444,
+              "target": {
+                "id": "ENSG00000113448",
+                "approvedSymbol": "PDE4D",
+                "approvedName": "phosphodiesterase 4D"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.2792496300991152
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.5114251910771247
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9902749673035801
+                }
+              ]
+            },
+            {
+              "score": 0.6342010294225594,
+              "target": {
+                "id": "ENSG00000113580",
+                "approvedSymbol": "NR3C1",
+                "approvedName": "nuclear receptor subfamily 3 group C member 1"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.8880328644773411
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9988108933249413
+                }
+              ]
+            },
+            {
+              "score": 0.6340823380638957,
+              "target": {
+                "id": "ENSG00000169252",
+                "approvedSymbol": "ADRB2",
+                "approvedName": "adrenoceptor beta 2"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.8792576947992983
+                },
+                {
+                  "id": "rna_expression",
+                  "score": 0.016957668054408362
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9986775764685687
+                }
+              ]
+            },
+            {
+              "score": 0.6329094545116098,
+              "target": {
+                "id": "ENSG00000181072",
+                "approvedSymbol": "CHRM2",
+                "approvedName": "cholinergic receptor muscarinic 2"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.15259455475659958
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.45904366067326074
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9229360886195679
+                }
+              ]
+            },
+            {
+              "score": 0.6291184652112587,
+              "target": {
+                "id": "ENSG00000211891",
+                "approvedSymbol": "IGHE",
+                "approvedName": "immunoglobulin heavy constant epsilon"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9919125455495513
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9852564770786066
+                }
+              ]
+            },
+            {
+              "score": 0.6233740718220604,
+              "target": {
+                "id": "ENSG00000173198",
+                "approvedSymbol": "CYSLTR1",
+                "approvedName": "cysteinyl leukotriene receptor 1"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.5906299901595534
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.995871513912483
+                }
+              ]
+            },
+            {
+              "score": 0.6231089670796988,
+              "target": {
+                "id": "ENSG00000065989",
+                "approvedSymbol": "PDE4A",
+                "approvedName": "phosphodiesterase 4A"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.6938393789184193
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9902749673035801
+                }
+              ]
+            },
+            {
+              "score": 0.6152878439982719,
+              "target": {
+                "id": "ENSG00000150594",
+                "approvedSymbol": "ADRA2A",
+                "approvedName": "adrenoceptor alpha 2A"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.6596520438307025
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9791191804711535
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

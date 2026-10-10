@@ -1,23 +1,14 @@
-"""Evidence Radar FastAPI — mock mode for hour-1 UI unblock."""
+"""Evidence Radar FastAPI — mock or Open Targets cached genes; judgment/trials mock."""
 
 from __future__ import annotations
 
-import json
-from pathlib import Path
-from typing import Dict, List
+from typing import List
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.mock_data import (
-    DATA_AS_OF,
-    DISEASE,
-    EVENTS,
-    GENES,
-    gene_by_id,
-    judgment_for,
-    trials_for,
-)
+from app import data_store
+from app.mock_data import EVENTS
 from app.models import (
     Event,
     Gene,
@@ -30,8 +21,11 @@ from app.models import (
 
 app = FastAPI(
     title="Evidence Radar API",
-    description="Mock-backed API for Evidence Radar + Trials. Live fetch comes later.",
-    version="0.1.0",
+    description=(
+        "Evidence Radar + Trials API. Genes may come from Open Targets cache; "
+        "judgment and trials remain mock/default until those pipelines are wired."
+    ),
+    version="0.2.0",
 )
 
 app.add_middleware(
@@ -46,40 +40,41 @@ app.add_middleware(
 )
 
 
-def _load_config() -> Dict:
-    config_path = Path(__file__).resolve().parents[1] / "config.json"
-    if config_path.exists():
-        return json.loads(config_path.read_text())
-    return {"disease": {"name": DISEASE}, "data_as_of": DATA_AS_OF}
-
-
 @app.get("/health", response_model=HealthResponse)
 def health() -> HealthResponse:
-    return HealthResponse(status="ok", service="evidence-radar", mode="mock")
+    meta = data_store.meta()
+    return HealthResponse(
+        status="ok",
+        service="evidence-radar",
+        mode=meta["mode"],
+    )
 
 
 @app.get("/genes", response_model=GeneListResponse)
 def list_genes(
-    disease: str = Query(default=DISEASE, description="Disease name or EFO id"),
+    disease: str = Query(default="asthma", description="Disease name or ontology id"),
 ) -> GeneListResponse:
-    config = _load_config()
-    expected = config.get("disease", {}).get("name", DISEASE).lower()
-    if disease.lower() not in {expected, "asthma", "efo_0000270"}:
+    meta = data_store.meta()
+    expected = meta["disease"].lower()
+    disease_l = disease.lower()
+    config = data_store.load_config()
+    efo = (config.get("disease") or {}).get("efo_id", "").lower()
+    if disease_l not in {expected, "asthma", efo, "mondo_0004979", "efo_0000270"}:
         raise HTTPException(
             status_code=404,
-            detail=f"Disease '{disease}' not in mock set. Try disease=asthma",
+            detail=f"Disease '{disease}' not configured. Try disease=asthma",
         )
     return GeneListResponse(
-        disease=expected,
-        data_as_of=config.get("data_as_of", DATA_AS_OF),
+        disease=meta["disease"],
+        data_as_of=meta["data_as_of"],
         cached=True,
-        genes=GENES,
+        genes=data_store.list_genes(),
     )
 
 
 @app.get("/genes/{gene_id}", response_model=Gene)
 def get_gene(gene_id: str) -> Gene:
-    gene = gene_by_id(gene_id)
+    gene = data_store.get_gene(gene_id)
     if gene is None:
         raise HTTPException(status_code=404, detail=f"Gene '{gene_id}' not found")
     return gene
@@ -87,14 +82,14 @@ def get_gene(gene_id: str) -> Gene:
 
 @app.get("/genes/{gene_id}/trials", response_model=List[Trial])
 def get_trials(gene_id: str) -> List[Trial]:
-    if gene_by_id(gene_id) is None:
+    if data_store.get_gene(gene_id) is None:
         raise HTTPException(status_code=404, detail=f"Gene '{gene_id}' not found")
-    return trials_for(gene_id)
+    return data_store.get_trials(gene_id)
 
 
 @app.get("/genes/{gene_id}/judgment", response_model=JudgmentCard)
 def get_judgment(gene_id: str) -> JudgmentCard:
-    card = judgment_for(gene_id)
+    card = data_store.get_judgment(gene_id)
     if card is None:
         raise HTTPException(status_code=404, detail=f"Gene '{gene_id}' not found")
     return card
@@ -102,7 +97,7 @@ def get_judgment(gene_id: str) -> JudgmentCard:
 
 @app.get("/genes/{gene_id}/robustness", response_model=Robustness)
 def get_robustness(gene_id: str) -> Robustness:
-    card = judgment_for(gene_id)
+    card = data_store.get_judgment(gene_id)
     if card is None:
         raise HTTPException(status_code=404, detail=f"Gene '{gene_id}' not found")
     return card.robustness

@@ -1,0 +1,672 @@
+{
+  "built_at": "2026-10-10T17:55:57.489154+00:00",
+  "disease": {
+    "id": "MONDO_0004979",
+    "name": "asthma"
+  },
+  "source": "open_targets",
+  "gene_count": 15,
+  "summary": {
+    "disease_id": "MONDO_0004979",
+    "disease_name": "asthma",
+    "ot_association_count": 7772,
+    "parsed_genes": 15,
+    "skipped_rows": 0,
+    "partial_activity_count": 1,
+    "parsed_at": "2026-10-10T17:55:57.489144+00:00",
+    "notes": "activity_score uses Open Targets 'clinical' datatype as a proxy; genetic_score uses genetic_association when present else overall score."
+  },
+  "genes": [
+    {
+      "id": "ENSG00000143631",
+      "symbol": "FLG",
+      "genetic_score": 0.9785117676400652,
+      "activity_score": 0.0,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.7491090795778099,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.4089529880751863,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.9785117676400652,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "white_space",
+      "contradictions": [],
+      "partial_data": true,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000077238",
+      "symbol": "IL4R",
+      "genetic_score": 0.9584858728437942,
+      "activity_score": 0.9691539645718391,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.746773466615787,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.6559275606110533,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "animal_model",
+          "value": 0.40272375687781836,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.9584858728437942,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.9691539645718391,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000145777",
+      "symbol": "TSLP",
+      "genetic_score": 0.944240247370436,
+      "activity_score": 0.9538310307798042,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.736503889146964,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.9720845999812302,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.944240247370436,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.9538310307798042,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000163485",
+      "symbol": "ADORA1",
+      "genetic_score": 0.8546391635437983,
+      "activity_score": 0.9890846572746229,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.7334358116097813,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.16657964466309413,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.8546391635437983,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.9890846572746229,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000113525",
+      "symbol": "IL5",
+      "genetic_score": 0.8030380069009645,
+      "activity_score": 0.9819257642584052,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.7295739445353943,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.7833813284028249,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.8030380069009645,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.9819257642584052,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000137033",
+      "symbol": "IL33",
+      "genetic_score": 0.9337373081597884,
+      "activity_score": 0.17201650053440248,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.7291041342871766,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.962922207638213,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.9337373081597884,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.17201650053440248,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "white_space",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000169194",
+      "symbol": "IL13",
+      "genetic_score": 0.9610218190287644,
+      "activity_score": 0.6635649477239475,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.7009923410497906,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "rna_expression",
+          "value": 0.08508783118489587,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.6635649477239475,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.9802059940781486,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.9610218190287644,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "animal_model",
+          "value": 0.29624467767614293,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000113448",
+      "symbol": "PDE4D",
+      "genetic_score": 0.5114251910771247,
+      "activity_score": 0.9902749673035801,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6835189751515444,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.2792496300991152,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.5114251910771247,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.9902749673035801,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000113580",
+      "symbol": "NR3C1",
+      "genetic_score": 0.6342010294225594,
+      "activity_score": 0.9988108933249413,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6342010294225594,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.8880328644773411,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.9988108933249413,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000169252",
+      "symbol": "ADRB2",
+      "genetic_score": 0.6340823380638957,
+      "activity_score": 0.9986775764685687,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6340823380638957,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.8792576947992983,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "rna_expression",
+          "value": 0.016957668054408362,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.9986775764685687,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000181072",
+      "symbol": "CHRM2",
+      "genetic_score": 0.45904366067326074,
+      "activity_score": 0.9229360886195679,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6329094545116098,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.15259455475659958,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "genetic_association",
+          "value": 0.45904366067326074,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.9229360886195679,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "caution",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000211891",
+      "symbol": "IGHE",
+      "genetic_score": 0.6291184652112587,
+      "activity_score": 0.9852564770786066,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6291184652112587,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.9919125455495513,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.9852564770786066,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000173198",
+      "symbol": "CYSLTR1",
+      "genetic_score": 0.6233740718220604,
+      "activity_score": 0.995871513912483,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6233740718220604,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.5906299901595534,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.995871513912483,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000065989",
+      "symbol": "PDE4A",
+      "genetic_score": 0.6231089670796988,
+      "activity_score": 0.9902749673035801,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6231089670796988,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.6938393789184193,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.9902749673035801,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    },
+    {
+      "id": "ENSG00000150594",
+      "symbol": "ADRA2A",
+      "genetic_score": 0.6152878439982719,
+      "activity_score": 0.9791191804711535,
+      "score_breakdown": [
+        {
+          "component": "open_targets_overall",
+          "value": 0.6152878439982719,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets associatedTargets.score"
+          ]
+        },
+        {
+          "component": "literature",
+          "value": 0.6596520438307025,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        },
+        {
+          "component": "clinical",
+          "value": 0.9791191804711535,
+          "weight": 0.0,
+          "sources": [
+            "Open Targets datatypeScores"
+          ]
+        }
+      ],
+      "protective_variant": false,
+      "quadrant": "validated",
+      "contradictions": [],
+      "partial_data": false,
+      "safety_flag": false
+    }
+  ]
+}

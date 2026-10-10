@@ -1,6 +1,14 @@
 # Evidence Radar — Backend
 
-FastAPI service for Evidence Radar + Trials. **Hour-1 mode serves hardcoded mocks** so the frontend can build before live Open Targets / ClinicalTrials.gov fetch.
+FastAPI service for Evidence Radar + Trials.
+
+**Data modes** (`DATA_MODE` in `.env`):
+
+| Mode | Genes | Judgment / trials |
+|------|--------|-------------------|
+| `auto` (default) | Open Targets processed file if present, else mocks | Mock / default cards |
+| `cached` | `data/processed/genes.json` | Mock / default cards |
+| `mock` | Hardcoded mocks | Mocks |
 
 ## Setup
 
@@ -9,10 +17,28 @@ cd backend
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env   # add GEMINI_API_KEY later; not needed for mocks
+cp .env.example .env
 ```
 
-## Run (mock API)
+## Fetch Open Targets (asthma, top 15)
+
+```bash
+cd backend
+source .venv/bin/activate
+python fetch_all.py          # skip if raw cache exists
+python fetch_all.py --force  # refetch
+```
+
+Writes:
+
+- `data/raw/genes.json` — raw GraphQL response
+- `data/processed/genes.json` — UI-shaped genes
+- `data/validation_report.md`
+
+Disease ID: **`MONDO_0004979`** (asthma in current Open Targets).  
+`activity_score` currently uses the Open Targets **clinical** datatype as a proxy until ClinicalTrials.gov is wired.
+
+## Run API
 
 ```bash
 cd backend
@@ -20,29 +46,24 @@ source .venv/bin/activate
 uvicorn app.main:app --reload --port 8000
 ```
 
-Open docs: http://127.0.0.1:8000/docs
+- Docs: http://127.0.0.1:8000/docs  
+- Health mode field shows `cached` or `mock`
 
 ## Endpoints
 
 | Method | Path | Notes |
 |--------|------|--------|
-| GET | `/health` | Liveness |
+| GET | `/health` | Includes `mode` |
 | GET | `/genes?disease=asthma` | Quadrant points |
 | GET | `/genes/{id}` | Detail + score breakdown |
-| GET | `/genes/{id}/trials` | Trial timeline |
-| GET | `/genes/{id}/judgment` | Judgment card |
-| GET | `/genes/{id}/robustness` | Rank stability |
-| GET | `/events` | Change feed (mock events labeled `simulated`) |
-
-Gene ids are Ensembl IDs (e.g. `ENSG00000134352`) or symbols (e.g. `IL6R`).
+| GET | `/genes/{id}/trials` | Mock trials when available |
+| GET | `/genes/{id}/judgment` | Mock/default judgment |
+| GET | `/genes/{id}/robustness` | From judgment |
+| GET | `/events` | Mock change feed (`simulated`) |
 
 ## Contract notes
 
 - Scores are **evidence strength, not recommendations**.
-- Judgment field `for` is serialized as JSON key `for` (Pydantic alias).
-- Gemini key stays in `.env` only; never in the frontend.
-- Next: `fetch_all.py` → cache under `/data/raw` → replace mocks.
-
-## Disease config
-
-See `config.json` (asthma / `EFO_0000270`). Confirm the ID in Open Targets before live pull.
+- Judgment field `for` serializes as JSON key `for`.
+- Gemini key stays in `.env` only.
+- Frontend keeps the same shapes — only gene scores/source change in cached mode.

@@ -1,14 +1,18 @@
 {
   "disease": {
     "name": "asthma",
-    "efo_id": "EFO_0000270",
-    "label": "asthma"
+    "efo_id": "MONDO_0004979",
+    "label": "asthma",
+    "notes": "Open Targets search resolves asthma to MONDO_0004979 (not EFO_0000270)."
   },
-  "gene_limit": 30,
+  "gene_limit": 15,
   "quadrant_cutoff": {
     "genetic": 0.5,
     "activity": 0.5
   },
   "data_as_of": "2026-10-10",
-  "notes": "Confirm EFO ID in Open Targets before live fetch."
+  "open_targets": {
+    "graphql_url": "https://api.platform.opentargets.org/api/v4/graphql"
+  },
+  "notes": "Small-scale: top 15 Open Targets associations. Activity score uses OT clinical datatype as proxy until ClinicalTrials.gov is wired."
 }

@@ -4,21 +4,28 @@ Interactive evidence map: genetic support × clinical trial activity, plus a **j
 
 ## Status
 
-- **Backend:** mock FastAPI API (Person A hour-1 handoff)
-- **Frontend:** not scaffolded yet (Person B)
-- **Live fetch:** not started — use mocks first
+- **Backend:** FastAPI with mock **or** Open Targets cached genes (`DATA_MODE=auto`)
+- **Frontend:** interactive Evidence × Activity map + judgment panel
+- **Live fetch:** Open Targets asthma (top 15) wired; ClinicalTrials.gov / Gemini not yet
 
-## Quick start (API)
+## Quick start
 
 ```bash
+# Terminal 1 — API (+ optional Open Targets pull)
 cd backend
-python3 -m venv .venv
-source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+python fetch_all.py --force    # once: cache asthma genes from Open Targets
 uvicorn app.main:app --reload --port 8000
+
+# Terminal 2 — UI
+cd frontend
+npm install
+npm run dev
 ```
 
-Try: http://127.0.0.1:8000/genes?disease=asthma
+- API: http://127.0.0.1:8000/genes?disease=asthma  
+- UI: http://localhost:3000
 
 ## Layout
 
@@ -27,7 +34,7 @@ backend/          FastAPI + Pydantic contract + mocks
 data/raw/         Cached API pulls (later)
 data/processed/   Joined tables (later)
 data/snapshots/   Change-feed snapshots (later)
-frontend/         Next.js UI (Person B)
+frontend/         Next.js map UI
 ```
 
 ## Design rules
