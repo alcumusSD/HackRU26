@@ -148,6 +148,30 @@ body {
   animation: rise 0.7s ease-out both;
 }
 
+button.brand-mark--home {
+  display: block;
+  border: none;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  font-family: var(--font-display), Syne, sans-serif;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  color: var(--ink);
+}
+
+button.brand-mark--home:hover {
+  color: var(--teal);
+}
+
+.radar-stage--network button.brand-mark--home {
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+}
+
 .radar-header h1 {
   margin: 0.55rem 0 0;
   max-width: 34rem;
@@ -1022,6 +1046,180 @@ body {
   cursor: not-allowed;
 }
 
+/* —— Landing → Radar shell —— */
+.app-shell {
+  min-height: 100vh;
+  height: 100%;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+.app-shell--in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.app-shell--out {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+.landing {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.landing-sweep {
+  left: 18%;
+  top: 8%;
+  opacity: 0.85;
+}
+
+.landing-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 8vh, 5rem) 1.5rem 3.5rem;
+}
+
+.landing-hero {
+  min-height: min(72vh, 36rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  animation: rise 0.7s ease-out both;
+}
+
+.landing-brand {
+  font-size: clamp(3rem, 9vw, 5.2rem);
+}
+
+.landing-headline {
+  margin: 1.1rem 0 0;
+  max-width: 28rem;
+  font-family: var(--font-display), Syne, sans-serif;
+  font-size: clamp(1.2rem, 2.6vw, 1.55rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.landing-support {
+  margin: 0.75rem 0 0;
+  max-width: 26rem;
+  font-size: 1.02rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.landing-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.75rem;
+  animation: rise 0.8s ease-out 0.12s both;
+}
+
+.landing-cta {
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.65rem 1.15rem;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.landing-cta--primary {
+  border: 1px solid var(--teal);
+  background: rgba(45, 212, 191, 0.16);
+  color: var(--ink);
+}
+
+.landing-cta--primary:hover {
+  background: rgba(45, 212, 191, 0.28);
+}
+
+.landing-cta--secondary {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+}
+
+.landing-cta--secondary:hover {
+  border-color: rgba(231, 241, 239, 0.35);
+  color: var(--teal);
+}
+
+.landing-cta--ghost {
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 2px solid var(--teal);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.25rem 0;
+  border-radius: 0;
+}
+
+.landing-cta--ghost:hover {
+  color: var(--teal);
+}
+
+.landing-explore {
+  margin-top: clamp(2rem, 6vh, 3.5rem);
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  animation: rise 0.85s ease-out 0.18s both;
+}
+
+.landing-tabs {
+  gap: 0.5rem;
+  padding-bottom: 0.55rem;
+}
+
+.landing-tabs button {
+  font-size: 1rem;
+  padding: 0.35rem 0.65rem;
+}
+
+.landing-panel {
+  margin-top: 1.15rem;
+  max-width: 32rem;
+  min-height: 8.5rem;
+  animation: landing-panel-in 0.28s ease both;
+}
+
+.landing-panel h2 {
+  margin: 0;
+  font-family: var(--font-display), Syne, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.landing-panel p {
+  margin: 0.55rem 0 0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+@keyframes landing-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 900px) {
   .radar-stage.has-panel .radar-main {
     grid-template-columns: 1fr;
@@ -1042,5 +1240,14 @@ body {
   .radar-chat {
     right: 0.65rem;
     bottom: 0.65rem;
+  }
+
+  .landing-inner {
+    padding-top: 2rem;
+  }
+
+  .landing-hero {
+    min-height: auto;
+    padding-bottom: 1rem;
   }
 }

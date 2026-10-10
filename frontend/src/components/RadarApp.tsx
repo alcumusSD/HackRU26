@@ -12,7 +12,12 @@ import { RadarChat } from "./RadarChat";
 
 type ViewTab = "map" | "space3d";
 
-export function RadarApp() {
+type Props = {
+  initialTab?: ViewTab;
+  onHome?: () => void;
+};
+
+export function RadarApp({ initialTab = "map", onHome }: Props) {
   const [genes, setGenes] = useState<Gene[]>([]);
   const [dataAsOf, setDataAsOf] = useState<string>("");
   const [cached, setCached] = useState(true);
@@ -27,7 +32,7 @@ export function RadarApp() {
   const [detailLoading, setDetailLoading] = useState(false);
   const [detailError, setDetailError] = useState<string | null>(null);
   const [protectiveOnly, setProtectiveOnly] = useState(false);
-  const [tab, setTab] = useState<ViewTab>("map");
+  const [tab, setTab] = useState<ViewTab>(initialTab);
 
   useEffect(() => {
     let cancelled = false;
@@ -171,7 +176,18 @@ export function RadarApp() {
 
       <header className="radar-header">
         <div>
-          <p className="brand-mark">Evidence Radar</p>
+          {onHome ? (
+            <button
+              type="button"
+              className="brand-mark brand-mark--home"
+              onClick={onHome}
+              aria-label="Back to Evidence Radar home"
+            >
+              Evidence Radar
+            </button>
+          ) : (
+            <p className="brand-mark">Evidence Radar</p>
+          )}
           {!networkMode && (
             <h1>
               One live map for {disease}
