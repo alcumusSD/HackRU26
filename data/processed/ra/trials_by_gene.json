@@ -1,0 +1,4006 @@
+{
+  "built_at": "2026-10-11T05:02:08.356421+00:00",
+  "disease": "Rheumatoid Arthritis",
+  "slug": "ra",
+  "summary": {
+    "studies_fetched": 257,
+    "studies_flattened": 257,
+    "studies_mapped_to_demo_genes": 119,
+    "genes_with_trials": 7,
+    "genes_without_trials": 8,
+    "stop_reasons_classified": 0,
+    "stop_quotes_verified": 0,
+    "classify_stops": false,
+    "classify_engine": "none",
+    "parsed_at": "2026-10-11T05:02:08.356361+00:00",
+    "notes": "activity_score from ClinicalTrials.gov volume/phase/recency; drug\u2192gene join uses curated synonym map + symbol mentions; stop-reason classification skipped (pass --classify-stops)"
+  },
+  "trials_by_gene": {
+    "ENSG00000105397": [
+      {
+        "nct_id": "NCT04159597",
+        "phase": "NA",
+        "status": "AVAILABLE",
+        "drugs": [
+          "Upadacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": null,
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01932372",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib (Xeljanz)",
+          "Etanercept, other Biologics, Disease-modifying antirheumatic drugs (DMARDs), etc"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-07-26",
+        "end_date": "2021-08-24"
+      },
+      {
+        "nct_id": "NCT04674085",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-06-01",
+        "end_date": "2019-12-30"
+      },
+      {
+        "nct_id": "NCT03440892",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "methotrexate",
+          "sulfasalazine",
+          "abatacept",
+          "tocilizumab",
+          "tofacitinib/baricitinib"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-11-01",
+        "end_date": "2025-01"
+      },
+      {
+        "nct_id": "NCT03975790",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-05-29",
+        "end_date": "2018-10-02"
+      },
+      {
+        "nct_id": "NCT03981900",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib",
+          "Tofacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-01-04",
+        "end_date": "2023-02-06"
+      },
+      {
+        "nct_id": "NCT04267536",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-02-06",
+        "end_date": "2022-02-01"
+      },
+      {
+        "nct_id": "NCT04340115",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-04-24",
+        "end_date": "2025-08-15"
+      },
+      {
+        "nct_id": "NCT03992781",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-07-23",
+        "end_date": "2024-02-07"
+      },
+      {
+        "nct_id": "NCT04079920",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-09-22",
+        "end_date": "2023-02-08"
+      },
+      {
+        "nct_id": "NCT04574492",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-10-07",
+        "end_date": "2024-07-30"
+      },
+      {
+        "nct_id": "NCT04530305",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Upadacitinib <15 MG [Rinvoq]"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-01-07",
+        "end_date": "2024-10"
+      },
+      {
+        "nct_id": "NCT04541810",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-01-26",
+        "end_date": "2025-12-31"
+      },
+      {
+        "nct_id": "NCT04798287",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib",
+          "TNF Inhibitor"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-03-10",
+        "end_date": "2022-05-16"
+      },
+      {
+        "nct_id": "NCT05112120",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olumiant"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-07-21",
+        "end_date": "2023-08-03"
+      },
+      {
+        "nct_id": "NCT05170646",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-03-14",
+        "end_date": "2024-01-31"
+      },
+      {
+        "nct_id": "NCT06418529",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "tofacitinib",
+          "tumor necrosis factor inhibitors (TNFi)",
+          "abatacept",
+          "tocilizumab or sarilumab"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-05-15",
+        "end_date": "2024-07-19"
+      },
+      {
+        "nct_id": "NCT06712628",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-11-07",
+        "end_date": "2028-12"
+      },
+      {
+        "nct_id": "NCT06977035",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "Nerve Conduction Study"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-05-05",
+        "end_date": "2026-06"
+      },
+      {
+        "nct_id": "NCT06979271",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "Telitacicept Tofacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-06-01",
+        "end_date": "2027-04-30"
+      },
+      {
+        "nct_id": "NCT06016517",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Etanercept",
+          "Adalimumab",
+          "Upadacitinib",
+          "Tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-09-01",
+        "end_date": "2028-12-15"
+      },
+      {
+        "nct_id": "NCT04916756",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib 2 MG"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-01-16",
+        "end_date": "2021-03-25"
+      },
+      {
+        "nct_id": "NCT04496960",
+        "phase": "PHASE1",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "tofacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-05-18",
+        "end_date": "2026-09-22"
+      },
+      {
+        "nct_id": "NCT02049138",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Upadacitinib",
+          "Pneumococcal 13-valent conjugate vaccine (PCV-13)"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-01-24",
+        "end_date": "2021-07-29"
+      },
+      {
+        "nct_id": "NCT03755466",
+        "phase": "PHASE2",
+        "status": "UNKNOWN",
+        "drugs": [
+          "\"Baricitinib\", \"olumiant\u00ae\"",
+          "\"Biologics\"",
+          "Tofacitinib 5 MG [Xeljanz]"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-11-21",
+        "end_date": "2025-11-20"
+      },
+      {
+        "nct_id": "NCT01710358",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Adalimumab",
+          "Baricitinib",
+          "Methotrexate",
+          "Adalimumab Placebo",
+          "Baricitinib Placebo"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2015-09"
+      },
+      {
+        "nct_id": "NCT01721057",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "cDMARD"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-12",
+        "end_date": "2014-12"
+      },
+      {
+        "nct_id": "NCT01721044",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "cDMARD"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-01",
+        "end_date": "2014-09"
+      },
+      {
+        "nct_id": "NCT02675426",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Upadacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-12-17",
+        "end_date": "2022-03-10"
+      },
+      {
+        "nct_id": "NCT02706873",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Placebo to Upadacitinib",
+          "Methotrexate",
+          "Placebo to Methotrexate",
+          "Upadacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-02-23",
+        "end_date": "2022-11-10"
+      },
+      {
+        "nct_id": "NCT03025308",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Filgotinib",
+          "Placebo to match filgotinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-02-28",
+        "end_date": "2025-05-16"
+      },
+      {
+        "nct_id": "NCT02955212",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Upadacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-01-03",
+        "end_date": "2020-09-03"
+      },
+      {
+        "nct_id": "NCT05814627",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Upadacitinib",
+          "Adalimumab",
+          "Upadacitinib Matching Placebo",
+          "Adalimumab Matching Placebo"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-06-15",
+        "end_date": "2026-07-15"
+      },
+      {
+        "nct_id": "NCT07791199",
+        "phase": "PHASE3",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Deucravacitinib"
+        ],
+        "target_genes": [
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-12-31",
+        "end_date": "2030-10-31"
+      },
+      {
+        "nct_id": "NCT02187055",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib with methotrexate",
+          "Tofacitinib without methotrexate",
+          "Adalimumab with methotrexate"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-08",
+        "end_date": "2016-12"
+      },
+      {
+        "nct_id": "NCT03915964",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "TNF Inhibitor"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-04-25",
+        "end_date": "2025-05-28"
+      },
+      {
+        "nct_id": "NCT04086745",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "TNF Inhibitor"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-02-14",
+        "end_date": "2025-05-19"
+      },
+      {
+        "nct_id": "NCT05660655",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib 4 MG Oral Tablet",
+          "Baricitinib 2 MG"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-10-01",
+        "end_date": "2023-09-30"
+      },
+      {
+        "nct_id": "NCT05827497",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Baricitinib 2 MG",
+          "Methotrexate 25mg"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-04-01",
+        "end_date": "2024-03-31"
+      },
+      {
+        "nct_id": "NCT05955066",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Baricitinib 4 MG"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-12-01",
+        "end_date": "2026-06"
+      },
+      {
+        "nct_id": "NCT06687551",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Baricitinib (LY3009104) 4 mg",
+          "filgotinib 200mg/day",
+          "Tofacitinib 5 mg twice daily",
+          "Upadacitinib 15 MG",
+          "Baricitinib (LY3009104) 4 mg",
+          "filgotinib 200mg/day",
+          "Tofacitinib 5 mg twice daily",
+          "Upadacitinib 15 MG"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-06-06",
+        "end_date": "2029-04-01"
+      },
+      {
+        "nct_id": "NCT07636057",
+        "phase": "PHASE4",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "JAK inhibitor(tofacitinib/upadacitinib) as advised by the rheumatologist as add on to 25 mg methotrexate"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-07-05",
+        "end_date": "2027-05-10"
+      }
+    ],
+    "ENSG00000160712": [
+      {
+        "nct_id": "NCT01337388",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-08",
+        "end_date": "2013-10"
+      },
+      {
+        "nct_id": "NCT01921478",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-08",
+        "end_date": "2010-11"
+      },
+      {
+        "nct_id": "NCT01672970",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-07",
+        "end_date": "2015-01"
+      },
+      {
+        "nct_id": "NCT01705730",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-07-31",
+        "end_date": "2014-12-12"
+      },
+      {
+        "nct_id": "NCT03109470",
+        "phase": "NA",
+        "status": "WITHDRAWN",
+        "drugs": [],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Insufficient enrollment potential",
+        "quote_verified": false,
+        "start_date": "2012-11",
+        "end_date": "2014-11"
+      },
+      {
+        "nct_id": "NCT03440892",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "methotrexate",
+          "sulfasalazine",
+          "abatacept",
+          "tocilizumab",
+          "tofacitinib/baricitinib"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-11-01",
+        "end_date": "2025-01"
+      },
+      {
+        "nct_id": "NCT04115423",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Tocilizumab",
+          "Tumor Necrosis Factor Inhibitor (etanercept, infliximab, adalimumab, and golimumab)"
+        ],
+        "target_genes": [
+          "IL6R",
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-04-01",
+        "end_date": "2021-10-01"
+      },
+      {
+        "nct_id": "NCT06418529",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "tofacitinib",
+          "tumor necrosis factor inhibitors (TNFi)",
+          "abatacept",
+          "tocilizumab or sarilumab"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-05-15",
+        "end_date": "2024-07-19"
+      },
+      {
+        "nct_id": "NCT06016517",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Etanercept",
+          "Adalimumab",
+          "Upadacitinib",
+          "Tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-09-01",
+        "end_date": "2028-12-15"
+      },
+      {
+        "nct_id": "NCT02287922",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "ALX-0061",
+          "Tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-03",
+        "end_date": "2016-07"
+      },
+      {
+        "nct_id": "NCT00106548",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "tocilizumab [RoActemra/Actemra]",
+          "tocilizumab [RoActemra/Actemra]",
+          "Methotrexate"
+        ],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": null,
+        "end_date": "2007-10"
+      },
+      {
+        "nct_id": "NCT00106522",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Methotrexate",
+          "tocilizumab [RoActemra/Actemra]",
+          "tocilizumab [RoActemra/Actemra]"
+        ],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-05",
+        "end_date": "2007-11"
+      },
+      {
+        "nct_id": "NCT00721123",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-08",
+        "end_date": "2012-05"
+      },
+      {
+        "nct_id": "NCT01258712",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tocilizumab + methotrexate(MTX)",
+          "Tocilizumab placebo + methotrexate(MTX)"
+        ],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-12",
+        "end_date": "2012-10"
+      },
+      {
+        "nct_id": "NCT01665430",
+        "phase": "PHASE3",
+        "status": "TERMINATED",
+        "drugs": [
+          "Tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Study was terminated by sponsor due to market authorization of tocilizumab for the study population.",
+        "quote_verified": false,
+        "start_date": "2012-07",
+        "end_date": "2015-02"
+      },
+      {
+        "nct_id": "NCT02031471",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-01",
+        "end_date": "2015-09"
+      },
+      {
+        "nct_id": "NCT06475508",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Complarate\u00ae",
+          "Actemra\u00ae"
+        ],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-02-13",
+        "end_date": "2024-06-11"
+      },
+      {
+        "nct_id": "NCT01120366",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tocilizumab plus methotrexate",
+          "Tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-10",
+        "end_date": "2014-12"
+      },
+      {
+        "nct_id": "NCT04157010",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tocilizumab",
+          "Methotrexate"
+        ],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-05",
+        "end_date": "2016-03-29"
+      },
+      {
+        "nct_id": "NCT01878318",
+        "phase": "PHASE4",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "methotrexate",
+          "tocilizumab [RoActemra/Actemra]"
+        ],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-06",
+        "end_date": "2015-06"
+      },
+      {
+        "nct_id": "NCT02353780",
+        "phase": "PHASE4",
+        "status": "TERMINATED",
+        "drugs": [
+          "TNF Antagonist (enbrel, humire, remicade, cimzia, symponi)",
+          "Abatacept",
+          "Tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R",
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Low enrollment",
+        "quote_verified": false,
+        "start_date": "2015-03",
+        "end_date": "2018-11-30"
+      },
+      {
+        "nct_id": "NCT02659150",
+        "phase": "PHASE4",
+        "status": "TERMINATED",
+        "drugs": [
+          "tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Terminated by sponsor owing to slow enrollment",
+        "quote_verified": false,
+        "start_date": "2016-05-18",
+        "end_date": "2019-11-16"
+      },
+      {
+        "nct_id": "NCT03737708",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "tacrolimus",
+          "methotrexate",
+          "adalimumab",
+          "tocilizumab",
+          "abatacept"
+        ],
+        "target_genes": [
+          "IL6R",
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-02-13",
+        "end_date": "2020-06-16"
+      }
+    ],
+    "ENSG00000113302": [],
+    "ENSG00000162434": [
+      {
+        "nct_id": "NCT04159597",
+        "phase": "NA",
+        "status": "AVAILABLE",
+        "drugs": [
+          "Upadacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": null,
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01932372",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib (Xeljanz)",
+          "Etanercept, other Biologics, Disease-modifying antirheumatic drugs (DMARDs), etc"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-07-26",
+        "end_date": "2021-08-24"
+      },
+      {
+        "nct_id": "NCT04674085",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-06-01",
+        "end_date": "2019-12-30"
+      },
+      {
+        "nct_id": "NCT03440892",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "methotrexate",
+          "sulfasalazine",
+          "abatacept",
+          "tocilizumab",
+          "tofacitinib/baricitinib"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-11-01",
+        "end_date": "2025-01"
+      },
+      {
+        "nct_id": "NCT03975790",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-05-29",
+        "end_date": "2018-10-02"
+      },
+      {
+        "nct_id": "NCT03981900",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib",
+          "Tofacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-01-04",
+        "end_date": "2023-02-06"
+      },
+      {
+        "nct_id": "NCT04267536",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-02-06",
+        "end_date": "2022-02-01"
+      },
+      {
+        "nct_id": "NCT04340115",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-04-24",
+        "end_date": "2025-08-15"
+      },
+      {
+        "nct_id": "NCT03992781",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-07-23",
+        "end_date": "2024-02-07"
+      },
+      {
+        "nct_id": "NCT04079920",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-09-22",
+        "end_date": "2023-02-08"
+      },
+      {
+        "nct_id": "NCT04574492",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-10-07",
+        "end_date": "2024-07-30"
+      },
+      {
+        "nct_id": "NCT04530305",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Upadacitinib <15 MG [Rinvoq]"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-01-07",
+        "end_date": "2024-10"
+      },
+      {
+        "nct_id": "NCT04541810",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-01-26",
+        "end_date": "2025-12-31"
+      },
+      {
+        "nct_id": "NCT04798287",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib",
+          "TNF Inhibitor"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-03-10",
+        "end_date": "2022-05-16"
+      },
+      {
+        "nct_id": "NCT05112120",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olumiant"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-07-21",
+        "end_date": "2023-08-03"
+      },
+      {
+        "nct_id": "NCT05170646",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-03-14",
+        "end_date": "2024-01-31"
+      },
+      {
+        "nct_id": "NCT06418529",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "tofacitinib",
+          "tumor necrosis factor inhibitors (TNFi)",
+          "abatacept",
+          "tocilizumab or sarilumab"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-05-15",
+        "end_date": "2024-07-19"
+      },
+      {
+        "nct_id": "NCT06712628",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-11-07",
+        "end_date": "2028-12"
+      },
+      {
+        "nct_id": "NCT06977035",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "Nerve Conduction Study"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-05-05",
+        "end_date": "2026-06"
+      },
+      {
+        "nct_id": "NCT06979271",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "Telitacicept Tofacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-06-01",
+        "end_date": "2027-04-30"
+      },
+      {
+        "nct_id": "NCT06016517",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Etanercept",
+          "Adalimumab",
+          "Upadacitinib",
+          "Tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-09-01",
+        "end_date": "2028-12-15"
+      },
+      {
+        "nct_id": "NCT04916756",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib 2 MG"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-01-16",
+        "end_date": "2021-03-25"
+      },
+      {
+        "nct_id": "NCT04496960",
+        "phase": "PHASE1",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "tofacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-05-18",
+        "end_date": "2026-09-22"
+      },
+      {
+        "nct_id": "NCT02049138",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Upadacitinib",
+          "Pneumococcal 13-valent conjugate vaccine (PCV-13)"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-01-24",
+        "end_date": "2021-07-29"
+      },
+      {
+        "nct_id": "NCT03755466",
+        "phase": "PHASE2",
+        "status": "UNKNOWN",
+        "drugs": [
+          "\"Baricitinib\", \"olumiant\u00ae\"",
+          "\"Biologics\"",
+          "Tofacitinib 5 MG [Xeljanz]"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-11-21",
+        "end_date": "2025-11-20"
+      },
+      {
+        "nct_id": "NCT01710358",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Adalimumab",
+          "Baricitinib",
+          "Methotrexate",
+          "Adalimumab Placebo",
+          "Baricitinib Placebo"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2015-09"
+      },
+      {
+        "nct_id": "NCT01721057",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "cDMARD"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-12",
+        "end_date": "2014-12"
+      },
+      {
+        "nct_id": "NCT01721044",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "cDMARD"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-01",
+        "end_date": "2014-09"
+      },
+      {
+        "nct_id": "NCT02675426",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Upadacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-12-17",
+        "end_date": "2022-03-10"
+      },
+      {
+        "nct_id": "NCT02706873",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Placebo to Upadacitinib",
+          "Methotrexate",
+          "Placebo to Methotrexate",
+          "Upadacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-02-23",
+        "end_date": "2022-11-10"
+      },
+      {
+        "nct_id": "NCT03025308",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Filgotinib",
+          "Placebo to match filgotinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-02-28",
+        "end_date": "2025-05-16"
+      },
+      {
+        "nct_id": "NCT02955212",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Upadacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-01-03",
+        "end_date": "2020-09-03"
+      },
+      {
+        "nct_id": "NCT05814627",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Upadacitinib",
+          "Adalimumab",
+          "Upadacitinib Matching Placebo",
+          "Adalimumab Matching Placebo"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-06-15",
+        "end_date": "2026-07-15"
+      },
+      {
+        "nct_id": "NCT02187055",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib with methotrexate",
+          "Tofacitinib without methotrexate",
+          "Adalimumab with methotrexate"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-08",
+        "end_date": "2016-12"
+      },
+      {
+        "nct_id": "NCT03915964",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "TNF Inhibitor"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-04-25",
+        "end_date": "2025-05-28"
+      },
+      {
+        "nct_id": "NCT04086745",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "TNF Inhibitor"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-02-14",
+        "end_date": "2025-05-19"
+      },
+      {
+        "nct_id": "NCT05660655",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib 4 MG Oral Tablet",
+          "Baricitinib 2 MG"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-10-01",
+        "end_date": "2023-09-30"
+      },
+      {
+        "nct_id": "NCT05827497",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Baricitinib 2 MG",
+          "Methotrexate 25mg"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-04-01",
+        "end_date": "2024-03-31"
+      },
+      {
+        "nct_id": "NCT05955066",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Baricitinib 4 MG"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-12-01",
+        "end_date": "2026-06"
+      },
+      {
+        "nct_id": "NCT06687551",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Baricitinib (LY3009104) 4 mg",
+          "filgotinib 200mg/day",
+          "Tofacitinib 5 mg twice daily",
+          "Upadacitinib 15 MG",
+          "Baricitinib (LY3009104) 4 mg",
+          "filgotinib 200mg/day",
+          "Tofacitinib 5 mg twice daily",
+          "Upadacitinib 15 MG"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-06-06",
+        "end_date": "2029-04-01"
+      },
+      {
+        "nct_id": "NCT07636057",
+        "phase": "PHASE4",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "JAK inhibitor(tofacitinib/upadacitinib) as advised by the rheumatologist as add on to 25 mg methotrexate"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-07-05",
+        "end_date": "2027-05-10"
+      }
+    ],
+    "ENSG00000056972": [],
+    "ENSG00000232810": [
+      {
+        "nct_id": "NCT00078793",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Enbrel\u00ae"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2000-06",
+        "end_date": "2008-01"
+      },
+      {
+        "nct_id": "NCT00116727",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "ENBREL\u00ae"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-10",
+        "end_date": "2008-10"
+      },
+      {
+        "nct_id": "NCT00234884",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "adalimumab"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-09",
+        "end_date": "2010-07"
+      },
+      {
+        "nct_id": "NCT01086059",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-11",
+        "end_date": "2019-10"
+      },
+      {
+        "nct_id": "NCT01078558",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-05-13",
+        "end_date": "2018-01-11"
+      },
+      {
+        "nct_id": "NCT00503503",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Enbrel (etanercept)"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-03",
+        "end_date": "2007-10"
+      },
+      {
+        "nct_id": "NCT00443443",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-01",
+        "end_date": "2013-09"
+      },
+      {
+        "nct_id": "NCT00503139",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Enbrel (etanercept)"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-07",
+        "end_date": "2013-04"
+      },
+      {
+        "nct_id": "NCT00963703",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Rituximab"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-12",
+        "end_date": "2012-03"
+      },
+      {
+        "nct_id": "NCT01083160",
+        "phase": "NA",
+        "status": "TERMINATED",
+        "drugs": [],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "The study was terminated due to low enrollment because inclusion criteria are obsolete.",
+        "quote_verified": false,
+        "start_date": "2008-04",
+        "end_date": "2010-11"
+      },
+      {
+        "nct_id": "NCT00948610",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Remicade"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-11",
+        "end_date": "2011-04"
+      },
+      {
+        "nct_id": "NCT00901550",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Methotrexate",
+          "Infliximab"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-11",
+        "end_date": "2011-10"
+      },
+      {
+        "nct_id": "NCT01081717",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "systemic non-biological treatments",
+          "anti-TNF biologics",
+          "golimumab",
+          "non-anti-TNF biologics",
+          "general population"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-04-14",
+        "end_date": "2015-05-31"
+      },
+      {
+        "nct_id": "NCT01141413",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-01",
+        "end_date": "2010-08"
+      },
+      {
+        "nct_id": "NCT01098201",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Certolizumab"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-10",
+        "end_date": "2014-07"
+      },
+      {
+        "nct_id": "NCT01288287",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-07",
+        "end_date": "2014-12"
+      },
+      {
+        "nct_id": "NCT01646385",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "etanercept",
+          "non-biologic anti-rheumatic drugs"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-02",
+        "end_date": "2012-08"
+      },
+      {
+        "nct_id": "NCT01764321",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-12",
+        "end_date": "2020-06-16"
+      },
+      {
+        "nct_id": "NCT01932372",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib (Xeljanz)",
+          "Etanercept, other Biologics, Disease-modifying antirheumatic drugs (DMARDs), etc"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-07-26",
+        "end_date": "2021-08-24"
+      },
+      {
+        "nct_id": "NCT02605642",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "CT-P13"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-09-10",
+        "end_date": "2018-12-31"
+      },
+      {
+        "nct_id": "NCT02714881",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Certolizumab"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-10-17",
+        "end_date": "2022-12-21"
+      },
+      {
+        "nct_id": "NCT03348046",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Biosimilar Infliximab"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-03-23",
+        "end_date": "2019-04-14"
+      },
+      {
+        "nct_id": "NCT04115423",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Tocilizumab",
+          "Tumor Necrosis Factor Inhibitor (etanercept, infliximab, adalimumab, and golimumab)"
+        ],
+        "target_genes": [
+          "IL6R",
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-04-01",
+        "end_date": "2021-10-01"
+      },
+      {
+        "nct_id": "NCT04798287",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib",
+          "TNF Inhibitor"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-03-10",
+        "end_date": "2022-05-16"
+      },
+      {
+        "nct_id": "NCT05379049",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Infliximab: Adalimumab; Etanercept;"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-03-01",
+        "end_date": "2022-10-01"
+      },
+      {
+        "nct_id": "NCT05190484",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-04-30",
+        "end_date": "2024-04-30"
+      },
+      {
+        "nct_id": "NCT05913817",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "AVT02 (Alvotech Biosimilar to Adalimumab)"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-01-09",
+        "end_date": "2025-08-25"
+      },
+      {
+        "nct_id": "NCT06418529",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "tofacitinib",
+          "tumor necrosis factor inhibitors (TNFi)",
+          "abatacept",
+          "tocilizumab or sarilumab"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-05-15",
+        "end_date": "2024-07-19"
+      },
+      {
+        "nct_id": "NCT06712628",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-11-07",
+        "end_date": "2028-12"
+      },
+      {
+        "nct_id": "NCT07120152",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Subcutaneous infliximab CT-P13 Remsima\u00aeSC"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-09-01",
+        "end_date": "2027-03-01"
+      },
+      {
+        "nct_id": "NCT06016517",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Etanercept",
+          "Adalimumab",
+          "Upadacitinib",
+          "Tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-09-01",
+        "end_date": "2028-12-15"
+      },
+      {
+        "nct_id": "NCT00650156",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "adalimumab",
+          "adalimumab"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-06",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01635686",
+        "phase": "PHASE1",
+        "status": "UNKNOWN",
+        "drugs": [
+          "DWP422 25mg",
+          "ENBREL 25MG PFS INJ."
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-09",
+        "end_date": "2013-06"
+      },
+      {
+        "nct_id": "NCT02154425",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Breast milk sampling",
+          "Certolizumab Pegol"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-09",
+        "end_date": "2016-01"
+      },
+      {
+        "nct_id": "NCT02481180",
+        "phase": "PHASE1",
+        "status": "TERMINATED",
+        "drugs": [
+          "T0001",
+          "T0001",
+          "T0001",
+          "T0001",
+          "Enbrel"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-07-31",
+        "end_date": "2017-11-06"
+      },
+      {
+        "nct_id": "NCT01960855",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "ABT-494"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-10",
+        "end_date": "2015-07"
+      },
+      {
+        "nct_id": "NCT00236028",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Infliximab"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": null,
+        "end_date": "2003-04"
+      },
+      {
+        "nct_id": "NCT00269867",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Infliximab 3 mg/kg",
+          "Infliximab 10 mg/kg"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "1997-03",
+        "end_date": "2000-03"
+      },
+      {
+        "nct_id": "NCT02097745",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "methotrexate",
+          "rituximab [MabThera/Rituxan]"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-06",
+        "end_date": "2013-06"
+      },
+      {
+        "nct_id": "NCT00413452",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Etanercept"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-12",
+        "end_date": "2007-10"
+      },
+      {
+        "nct_id": "NCT01710358",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Adalimumab",
+          "Baricitinib",
+          "Methotrexate",
+          "Adalimumab Placebo",
+          "Baricitinib Placebo"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2015-09"
+      },
+      {
+        "nct_id": "NCT02115750",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Etanercept",
+          "CHS-0214"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-05",
+        "end_date": "2016-05"
+      },
+      {
+        "nct_id": "NCT02480153",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "PF-06410293",
+          "Adalimumab"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-06-25",
+        "end_date": "2017-12-06"
+      },
+      {
+        "nct_id": "NCT02990806",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "NI-071",
+          "Remicade"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-01-19",
+        "end_date": "2019-05-20"
+      },
+      {
+        "nct_id": "NCT04178850",
+        "phase": "PHASE3",
+        "status": "UNKNOWN",
+        "drugs": [
+          "GB242",
+          "Infliximab"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-10-13",
+        "end_date": "2021-04"
+      },
+      {
+        "nct_id": "NCT04079374",
+        "phase": "PHASE3",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Etanercept",
+          "Enbrel"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-09-03",
+        "end_date": "2023-12-03"
+      },
+      {
+        "nct_id": "NCT03789292",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "CT-P17 SC",
+          "Humira SC"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-11-26",
+        "end_date": "2020-04-24"
+      },
+      {
+        "nct_id": "NCT05428488",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "drugs": [
+          "Abatacept (W12-W48)",
+          "TNF Inhibitor (W12-W48)",
+          "TNF Inhibitor (W0-W12)"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-11-28",
+        "end_date": "2027-11"
+      },
+      {
+        "nct_id": "NCT05379322",
+        "phase": "PHASE3",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "Anti-TNF",
+          "JAK inhibitor"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Decision of the local healthcare authority",
+        "quote_verified": false,
+        "start_date": "2023-03-01",
+        "end_date": "2023-03-01"
+      },
+      {
+        "nct_id": "NCT05814627",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Upadacitinib",
+          "Adalimumab",
+          "Upadacitinib Matching Placebo",
+          "Adalimumab Matching Placebo"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-06-15",
+        "end_date": "2026-07-15"
+      },
+      {
+        "nct_id": "NCT00396747",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Infliximab, methylprednisolone, methotrexate",
+          "Methotrexate",
+          "Methotrexate + Methylprednisolone",
+          "Methotrexate + Infliximab"
+        ],
+        "target_genes": [
+          "NR3C1",
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-06",
+        "end_date": "2005-09"
+      },
+      {
+        "nct_id": "NCT00259610",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "methotrexate",
+          "sulfasalazine",
+          "hydroxychloroquine",
+          "etanercept"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-05",
+        "end_date": "2009-06"
+      },
+      {
+        "nct_id": "NCT01270087",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Adalimumab"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-05",
+        "end_date": "2007-02"
+      },
+      {
+        "nct_id": "NCT00346294",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Etanercept"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-01",
+        "end_date": "2006-07"
+      },
+      {
+        "nct_id": "NCT01303874",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Etanercept (ETN)"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-09",
+        "end_date": "2010-11-05"
+      },
+      {
+        "nct_id": "NCT00796705",
+        "phase": "PHASE4",
+        "status": "TERMINATED",
+        "drugs": [
+          "Adalimumab",
+          "Adalimumab placebo",
+          "Etanercept"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Lack of Enrollment",
+        "quote_verified": false,
+        "start_date": "2008-11",
+        "end_date": "2010-10"
+      },
+      {
+        "nct_id": "NCT01500278",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Certolizumab Pegol (CZP)",
+          "Adalimumab (ADA)",
+          "Methotrexate (MTX)"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-12",
+        "end_date": "2016-01"
+      },
+      {
+        "nct_id": "NCT01602302",
+        "phase": "PHASE4",
+        "status": "TERMINATED",
+        "drugs": [
+          "bDMARD withdrawal (etanercept, adalimumab, infliximab, certolizumab, golimumab, tozilizumab, abatacept)"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "low recruitment",
+        "quote_verified": false,
+        "start_date": "2012-06",
+        "end_date": "2020-11-19"
+      },
+      {
+        "nct_id": "NCT02187055",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib with methotrexate",
+          "Tofacitinib without methotrexate",
+          "Adalimumab with methotrexate"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-08",
+        "end_date": "2016-12"
+      },
+      {
+        "nct_id": "NCT02148640",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Innovator infliximab",
+          "Biosimilar infliximab"
+        ],
+        "target_genes": [
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-10",
+        "end_date": "2017-01"
+      },
+      {
+        "nct_id": "NCT02353780",
+        "phase": "PHASE4",
+        "status": "TERMINATED",
+        "drugs": [
+          "TNF Antagonist (enbrel, humire, remicade, cimzia, symponi)",
+          "Abatacept",
+          "Tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R",
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Low enrollment",
+        "quote_verified": false,
+        "start_date": "2015-03",
+        "end_date": "2018-11-30"
+      },
+      {
+        "nct_id": "NCT03737708",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "tacrolimus",
+          "methotrexate",
+          "adalimumab",
+          "tocilizumab",
+          "abatacept"
+        ],
+        "target_genes": [
+          "IL6R",
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-02-13",
+        "end_date": "2020-06-16"
+      },
+      {
+        "nct_id": "NCT03915964",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "TNF Inhibitor"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-04-25",
+        "end_date": "2025-05-28"
+      },
+      {
+        "nct_id": "NCT04086745",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "TNF Inhibitor"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-02-14",
+        "end_date": "2025-05-19"
+      }
+    ],
+    "ENSG00000159339": [],
+    "ENSG00000096968": [
+      {
+        "nct_id": "NCT04159597",
+        "phase": "NA",
+        "status": "AVAILABLE",
+        "drugs": [
+          "Upadacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": null,
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01932372",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib (Xeljanz)",
+          "Etanercept, other Biologics, Disease-modifying antirheumatic drugs (DMARDs), etc"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-07-26",
+        "end_date": "2021-08-24"
+      },
+      {
+        "nct_id": "NCT04674085",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-06-01",
+        "end_date": "2019-12-30"
+      },
+      {
+        "nct_id": "NCT03440892",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "methotrexate",
+          "sulfasalazine",
+          "abatacept",
+          "tocilizumab",
+          "tofacitinib/baricitinib"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-11-01",
+        "end_date": "2025-01"
+      },
+      {
+        "nct_id": "NCT03975790",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-05-29",
+        "end_date": "2018-10-02"
+      },
+      {
+        "nct_id": "NCT03981900",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib",
+          "Tofacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-01-04",
+        "end_date": "2023-02-06"
+      },
+      {
+        "nct_id": "NCT04267536",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-02-06",
+        "end_date": "2022-02-01"
+      },
+      {
+        "nct_id": "NCT04340115",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-04-24",
+        "end_date": "2025-08-15"
+      },
+      {
+        "nct_id": "NCT03992781",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-07-23",
+        "end_date": "2024-02-07"
+      },
+      {
+        "nct_id": "NCT04079920",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-09-22",
+        "end_date": "2023-02-08"
+      },
+      {
+        "nct_id": "NCT04574492",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-10-07",
+        "end_date": "2024-07-30"
+      },
+      {
+        "nct_id": "NCT04530305",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Upadacitinib <15 MG [Rinvoq]"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-01-07",
+        "end_date": "2024-10"
+      },
+      {
+        "nct_id": "NCT04541810",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-01-26",
+        "end_date": "2025-12-31"
+      },
+      {
+        "nct_id": "NCT04798287",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib",
+          "TNF Inhibitor"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-03-10",
+        "end_date": "2022-05-16"
+      },
+      {
+        "nct_id": "NCT05112120",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Olumiant"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-07-21",
+        "end_date": "2023-08-03"
+      },
+      {
+        "nct_id": "NCT05170646",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-03-14",
+        "end_date": "2024-01-31"
+      },
+      {
+        "nct_id": "NCT06418529",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "tofacitinib",
+          "tumor necrosis factor inhibitors (TNFi)",
+          "abatacept",
+          "tocilizumab or sarilumab"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-05-15",
+        "end_date": "2024-07-19"
+      },
+      {
+        "nct_id": "NCT06712628",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-11-07",
+        "end_date": "2028-12"
+      },
+      {
+        "nct_id": "NCT06977035",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "Nerve Conduction Study"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-05-05",
+        "end_date": "2026-06"
+      },
+      {
+        "nct_id": "NCT06979271",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "Telitacicept Tofacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-06-01",
+        "end_date": "2027-04-30"
+      },
+      {
+        "nct_id": "NCT06016517",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Etanercept",
+          "Adalimumab",
+          "Upadacitinib",
+          "Tocilizumab"
+        ],
+        "target_genes": [
+          "IL6R",
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-09-01",
+        "end_date": "2028-12-15"
+      },
+      {
+        "nct_id": "NCT04916756",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib 2 MG"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-01-16",
+        "end_date": "2021-03-25"
+      },
+      {
+        "nct_id": "NCT04496960",
+        "phase": "PHASE1",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "tofacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-05-18",
+        "end_date": "2026-09-22"
+      },
+      {
+        "nct_id": "NCT02049138",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Upadacitinib",
+          "Pneumococcal 13-valent conjugate vaccine (PCV-13)"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-01-24",
+        "end_date": "2021-07-29"
+      },
+      {
+        "nct_id": "NCT03755466",
+        "phase": "PHASE2",
+        "status": "UNKNOWN",
+        "drugs": [
+          "\"Baricitinib\", \"olumiant\u00ae\"",
+          "\"Biologics\"",
+          "Tofacitinib 5 MG [Xeljanz]"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-11-21",
+        "end_date": "2025-11-20"
+      },
+      {
+        "nct_id": "NCT01710358",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Adalimumab",
+          "Baricitinib",
+          "Methotrexate",
+          "Adalimumab Placebo",
+          "Baricitinib Placebo"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-10",
+        "end_date": "2015-09"
+      },
+      {
+        "nct_id": "NCT01721057",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "cDMARD"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-12",
+        "end_date": "2014-12"
+      },
+      {
+        "nct_id": "NCT01721044",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "cDMARD"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-01",
+        "end_date": "2014-09"
+      },
+      {
+        "nct_id": "NCT02675426",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Upadacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-12-17",
+        "end_date": "2022-03-10"
+      },
+      {
+        "nct_id": "NCT02706873",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Placebo to Upadacitinib",
+          "Methotrexate",
+          "Placebo to Methotrexate",
+          "Upadacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-02-23",
+        "end_date": "2022-11-10"
+      },
+      {
+        "nct_id": "NCT03025308",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Filgotinib",
+          "Placebo to match filgotinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-02-28",
+        "end_date": "2025-05-16"
+      },
+      {
+        "nct_id": "NCT02955212",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Upadacitinib"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-01-03",
+        "end_date": "2020-09-03"
+      },
+      {
+        "nct_id": "NCT05814627",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Upadacitinib",
+          "Adalimumab",
+          "Upadacitinib Matching Placebo",
+          "Adalimumab Matching Placebo"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-06-15",
+        "end_date": "2026-07-15"
+      },
+      {
+        "nct_id": "NCT02187055",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tofacitinib with methotrexate",
+          "Tofacitinib without methotrexate",
+          "Adalimumab with methotrexate"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-08",
+        "end_date": "2016-12"
+      },
+      {
+        "nct_id": "NCT03915964",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "TNF Inhibitor"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-04-25",
+        "end_date": "2025-05-28"
+      },
+      {
+        "nct_id": "NCT04086745",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib",
+          "TNF Inhibitor"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TNF",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-02-14",
+        "end_date": "2025-05-19"
+      },
+      {
+        "nct_id": "NCT05660655",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Baricitinib 4 MG Oral Tablet",
+          "Baricitinib 2 MG"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-10-01",
+        "end_date": "2023-09-30"
+      },
+      {
+        "nct_id": "NCT05827497",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Baricitinib 2 MG",
+          "Methotrexate 25mg"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-04-01",
+        "end_date": "2024-03-31"
+      },
+      {
+        "nct_id": "NCT05955066",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Baricitinib 4 MG"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-12-01",
+        "end_date": "2026-06"
+      },
+      {
+        "nct_id": "NCT06687551",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Baricitinib (LY3009104) 4 mg",
+          "filgotinib 200mg/day",
+          "Tofacitinib 5 mg twice daily",
+          "Upadacitinib 15 MG",
+          "Baricitinib (LY3009104) 4 mg",
+          "filgotinib 200mg/day",
+          "Tofacitinib 5 mg twice daily",
+          "Upadacitinib 15 MG"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-06-06",
+        "end_date": "2029-04-01"
+      },
+      {
+        "nct_id": "NCT07636057",
+        "phase": "PHASE4",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "JAK inhibitor(tofacitinib/upadacitinib) as advised by the rheumatologist as add on to 25 mg methotrexate"
+        ],
+        "target_genes": [
+          "JAK1",
+          "JAK2",
+          "TYK2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-07-05",
+        "end_date": "2027-05-10"
+      }
+    ],
+    "ENSG00000134242": [],
+    "ENSG00000240972": [],
+    "ENSG00000113580": [
+      {
+        "nct_id": "NCT07207954",
+        "phase": "PHASE1",
+        "status": "RECRUITING",
+        "drugs": [
+          "LFD-200",
+          "Oral Prednisone"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-10-06",
+        "end_date": "2027-07-16"
+      },
+      {
+        "nct_id": "NCT01316770",
+        "phase": "PHASE2",
+        "status": "TERMINATED",
+        "drugs": [
+          "Dexamethasone Parotid Irrigation",
+          "Placebo Parotid Irrigation"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Slow enrollment",
+        "quote_verified": false,
+        "start_date": "2011-05-01",
+        "end_date": "2017-04-17"
+      },
+      {
+        "nct_id": "NCT00299130",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Folate",
+          "Methotrexate",
+          "Methylprednisolone",
+          "Rituximab"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-10",
+        "end_date": "2013-07"
+      },
+      {
+        "nct_id": "NCT00299104",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "folate",
+          "methotrexate",
+          "methylprednisolone",
+          "rituximab"
+        ],
+        "target_genes": [
+          "NR3C1"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-01",
+        "end_date": "2013-07"
+      },
+      {
+        "nct_id": "NCT00396747",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Infliximab, methylprednisolone, methotrexate",
+          "Methotrexate",
+          "Methotrexate + Methylprednisolone",
+          "Methotrexate + Infliximab"
+        ],
+        "target_genes": [
+          "NR3C1",
+          "TNF"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-06",
+        "end_date": "2005-09"
+      }
+    ],
+    "ENSG00000128604": [],
+    "ENSG00000073756": [
+      {
+        "nct_id": "NCT02182739",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Meloxicam"
+        ],
+        "target_genes": [
+          "PTGS2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2001-01",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00141102",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Celecoxib",
+          "Diclofenac + Omeprazole"
+        ],
+        "target_genes": [
+          "PTGS2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-10",
+        "end_date": "2009-05"
+      }
+    ],
+    "ENSG00000112115": [],
+    "ENSG00000110944": []
+  }
+}

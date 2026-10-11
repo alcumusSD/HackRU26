@@ -1,20 +1,20 @@
 # Validation report
 
-## Disease: `asthma`
+## Disease: `alz`
 
 ## Open Targets
 
-- Disease: `asthma` (`MONDO_0004979`)
-- Association count in OT: 7772
+- Disease: `Alzheimer disease` (`MONDO_0004975`)
+- Association count in OT: 13006
 - Genes parsed: 15
 - Skipped OT rows: 0
 
 ## ClinicalTrials.gov
 
-- Studies fetched: 298
-- Studies mapped to demo genes: 173
-- Genes with ≥1 linked trial: 12
-- Genes with no linked trial (partial_data): 3
+- Studies fetched: 261
+- Studies mapped to demo genes: 146
+- Genes with ≥1 linked trial: 8
+- Genes with no linked trial (partial_data): 7
 - Stop reasons classified: 0
 - Stop quotes verified: 0
 - Classify engine: none

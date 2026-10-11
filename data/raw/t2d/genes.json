@@ -1,0 +1,448 @@
+{
+  "fetched_at": "2026-10-11T04:50:03.820340+00:00",
+  "query": {
+    "source": "open_targets_graphql",
+    "url": "https://api.platform.opentargets.org/api/v4/graphql",
+    "disease_id": "MONDO_0005148",
+    "limit": 15
+  },
+  "response": {
+    "data": {
+      "disease": {
+        "id": "MONDO_0005148",
+        "name": "type 2 diabetes mellitus",
+        "associatedTargets": {
+          "count": 10206,
+          "rows": [
+            {
+              "score": 0.8772147341544883,
+              "target": {
+                "id": "ENSG00000187486",
+                "approvedSymbol": "KCNJ11",
+                "approvedName": "potassium inwardly rectifying channel subfamily J member 11"
+              },
+              "datatypeScores": [
+                {
+                  "id": "genetic_literature",
+                  "score": 0.865457038266544
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9984847978522379
+                },
+                {
+                  "id": "literature",
+                  "score": 0.938931423307246
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9214601900100006
+                },
+                {
+                  "id": "somatic_mutation",
+                  "score": 0.7133145042531812
+                }
+              ]
+            },
+            {
+              "score": 0.8764122840406745,
+              "target": {
+                "id": "ENSG00000006071",
+                "approvedSymbol": "ABCC8",
+                "approvedName": "ATP binding cassette subfamily C member 8"
+              },
+              "datatypeScores": [
+                {
+                  "id": "clinical",
+                  "score": 0.9984835835668301
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.8897742701710087
+                },
+                {
+                  "id": "literature",
+                  "score": 0.7758237980601571
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9173713763530777
+                },
+                {
+                  "id": "somatic_mutation",
+                  "score": 0.6189714963749121
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.5515115604087089
+                }
+              ]
+            },
+            {
+              "score": 0.8679864643690597,
+              "target": {
+                "id": "ENSG00000106633",
+                "approvedSymbol": "GCK",
+                "approvedName": "glucokinase"
+              },
+              "datatypeScores": [
+                {
+                  "id": "genetic_literature",
+                  "score": 0.8139517901355594
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.6098787576660025
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9611162418265885
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9303607608240911
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.7543682319495564
+                }
+              ]
+            },
+            {
+              "score": 0.8609754807916995,
+              "target": {
+                "id": "ENSG00000132170",
+                "approvedSymbol": "PPARG",
+                "approvedName": "peroxisome proliferator activated receptor gamma"
+              },
+              "datatypeScores": [
+                {
+                  "id": "clinical",
+                  "score": 0.9972358433076591
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.9190679877429972
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9525526048990725
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8977188386358025
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.609424223250191
+                }
+              ]
+            },
+            {
+              "score": 0.8498006482361665,
+              "target": {
+                "id": "ENSG00000135100",
+                "approvedSymbol": "HNF1A",
+                "approvedName": "HNF1 homeobox A"
+              },
+              "datatypeScores": [
+                {
+                  "id": "genetic_literature",
+                  "score": 0.8274613634158176
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9728939491485709
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9464470693030463
+                },
+                {
+                  "id": "somatic_mutation",
+                  "score": 0.24610727383978453
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.5247274466493356
+                }
+              ]
+            },
+            {
+              "score": 0.7992035751395097,
+              "target": {
+                "id": "ENSG00000101076",
+                "approvedSymbol": "HNF4A",
+                "approvedName": "hepatocyte nuclear factor 4 alpha"
+              },
+              "datatypeScores": [
+                {
+                  "id": "genetic_literature",
+                  "score": 0.6687238773727832
+                },
+                {
+                  "id": "literature",
+                  "score": 0.6402380038624214
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8656311895134291
+                },
+                {
+                  "id": "somatic_mutation",
+                  "score": 0.19757750922377684
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.48124139678267924
+                }
+              ]
+            },
+            {
+              "score": 0.7768015094007761,
+              "target": {
+                "id": "ENSG00000275410",
+                "approvedSymbol": "HNF1B",
+                "approvedName": "HNF1 homeobox B"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.7836371124260042
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.3639073754503164
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8391513705831514
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.7998470374406326
+                }
+              ]
+            },
+            {
+              "score": 0.7702043607097213,
+              "target": {
+                "id": "ENSG00000171105",
+                "approvedSymbol": "INSR",
+                "approvedName": "insulin receptor"
+              },
+              "datatypeScores": [
+                {
+                  "id": "clinical",
+                  "score": 0.9983637394799427
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.3039653988058105
+                },
+                {
+                  "id": "literature",
+                  "score": 0.5451942499436822
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.5974682664039399
+                },
+                {
+                  "id": "somatic_mutation",
+                  "score": 0.19453785523571876
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.5448517763197686
+                }
+              ]
+            },
+            {
+              "score": 0.7686888126020472,
+              "target": {
+                "id": "ENSG00000112164",
+                "approvedSymbol": "GLP1R",
+                "approvedName": "glucagon like peptide 1 receptor"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9905973362541052
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.27344727276570713
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.7750512826380022
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9980303496590591
+                }
+              ]
+            },
+            {
+              "score": 0.7639156818834071,
+              "target": {
+                "id": "ENSG00000109501",
+                "approvedSymbol": "WFS1",
+                "approvedName": "wolframin ER transmembrane glycoprotein"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.6609575579942248
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.5824826455539326
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9273813012560197
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.7599134970145264
+                }
+              ]
+            },
+            {
+              "score": 0.745443006103505,
+              "target": {
+                "id": "ENSG00000163581",
+                "approvedSymbol": "SLC2A2",
+                "approvedName": "solute carrier family 2 member 2"
+              },
+              "datatypeScores": [
+                {
+                  "id": "rna_expression",
+                  "score": 0.01451421064690412
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.793687430215172
+                },
+                {
+                  "id": "literature",
+                  "score": 0.7182950905851246
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8938365131480893
+                },
+                {
+                  "id": "somatic_mutation",
+                  "score": 0.19892846655180269
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.4455676798394974
+                }
+              ]
+            },
+            {
+              "score": 0.7343882913133891,
+              "target": {
+                "id": "ENSG00000106331",
+                "approvedSymbol": "PAX4",
+                "approvedName": "paired box 4"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.6874557311945019
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8097811312448804
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.3647584785669727
+                }
+              ]
+            },
+            {
+              "score": 0.7236769788709322,
+              "target": {
+                "id": "ENSG00000164756",
+                "approvedSymbol": "SLC30A8",
+                "approvedName": "solute carrier family 30 member 8"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.762749017968423
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.5518289171720286
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8643267074520187
+                }
+              ]
+            },
+            {
+              "score": 0.7207451387369469,
+              "target": {
+                "id": "ENSG00000105221",
+                "approvedSymbol": "AKT2",
+                "approvedName": "AKT serine/threonine kinase 2"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.6586094381252227
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.6458078646411998
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.7139434365211427
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.8304334695374743
+                }
+              ]
+            },
+            {
+              "score": 0.7093948664405427,
+              "target": {
+                "id": "ENSG00000115159",
+                "approvedSymbol": "GPD2",
+                "approvedName": "glycerol-3-phosphate dehydrogenase 2"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.18338498840371928
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.5245758861240977
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.6173874989078019
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9986042597462473
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

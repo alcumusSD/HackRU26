@@ -1,8 +1,8 @@
 """Small-scale drug → gene synonyms for demo disease genes.
 
 Used to join ClinicalTrials.gov interventions to Open Targets genes.
-Covers asthma + COPD demo sets. Expand or replace with ChEMBL / OT known-drugs
-when available.
+Covers asthma + COPD + T2D + RA + Alzheimer demo sets. Expand or replace with
+ChEMBL / OT known-drugs when available.
 """
 
 from __future__ import annotations
@@ -109,6 +109,151 @@ DRUG_TO_GENES: Dict[str, List[str]] = {
     "varenicline": ["CHRNA4"],
     "chantix": ["CHRNA4"],
     "nicotine": ["CHRNA4"],
+    # --- Type 2 diabetes ---
+    # GLP-1 receptor agonists (+ dual GIP/GLP-1)
+    "semaglutide": ["GLP1R"],
+    "ozempic": ["GLP1R"],
+    "wegovy": ["GLP1R"],
+    "rybelsus": ["GLP1R"],
+    "liraglutide": ["GLP1R"],
+    "victoza": ["GLP1R"],
+    "saxenda": ["GLP1R"],
+    "dulaglutide": ["GLP1R"],
+    "trulicity": ["GLP1R"],
+    "exenatide": ["GLP1R"],
+    "byetta": ["GLP1R"],
+    "bydureon": ["GLP1R"],
+    "lixisenatide": ["GLP1R"],
+    "albiglutide": ["GLP1R"],
+    "tirzepatide": ["GLP1R"],
+    "mounjaro": ["GLP1R"],
+    "zepbound": ["GLP1R"],
+    # Sulfonylureas / meglitinides → KATP channel (KCNJ11 / ABCC8)
+    "glipizide": ["KCNJ11", "ABCC8"],
+    "glucotrol": ["KCNJ11", "ABCC8"],
+    "glimepiride": ["KCNJ11", "ABCC8"],
+    "amaryl": ["KCNJ11", "ABCC8"],
+    "glyburide": ["KCNJ11", "ABCC8"],
+    "glibenclamide": ["KCNJ11", "ABCC8"],
+    "gliclazide": ["KCNJ11", "ABCC8"],
+    "tolbutamide": ["KCNJ11", "ABCC8"],
+    "chlorpropamide": ["KCNJ11", "ABCC8"],
+    "repaglinide": ["KCNJ11", "ABCC8"],
+    "prandin": ["KCNJ11", "ABCC8"],
+    "nateglinide": ["KCNJ11", "ABCC8"],
+    "starlix": ["KCNJ11", "ABCC8"],
+    # Thiazolidinediones → PPARG
+    "pioglitazone": ["PPARG"],
+    "actos": ["PPARG"],
+    "rosiglitazone": ["PPARG"],
+    "avandia": ["PPARG"],
+    "thiazolidinedione": ["PPARG"],
+    # Insulin → INSR
+    "insulin": ["INSR"],
+    "glargine": ["INSR"],
+    "lantus": ["INSR"],
+    "basaglar": ["INSR"],
+    "toujeo": ["INSR"],
+    "detemir": ["INSR"],
+    "levemir": ["INSR"],
+    "degludec": ["INSR"],
+    "tresiba": ["INSR"],
+    "aspart": ["INSR"],
+    "novolog": ["INSR"],
+    "lispro": ["INSR"],
+    "humalog": ["INSR"],
+    "glulisine": ["INSR"],
+    "apidra": ["INSR"],
+    "nph": ["INSR"],
+    "humulin": ["INSR"],
+    "novolin": ["INSR"],
+    # Metformin → mitochondrial GPD2 (mechanistic target in OT T2D set)
+    "metformin": ["GPD2"],
+    "glucophage": ["GPD2"],
+    "fortamet": ["GPD2"],
+    "glumetza": ["GPD2"],
+    # --- Rheumatoid arthritis ---
+    # TNF inhibitors
+    "adalimumab": ["TNF"],
+    "humira": ["TNF"],
+    "amjevita": ["TNF"],
+    "etanercept": ["TNF"],
+    "enbrel": ["TNF"],
+    "infliximab": ["TNF"],
+    "remicade": ["TNF"],
+    "inflectra": ["TNF"],
+    "certolizumab": ["TNF"],
+    "cimzia": ["TNF"],
+    "golimumab": ["TNF"],
+    "simponi": ["TNF"],
+    # IL-6 receptor
+    "tocilizumab": ["IL6R"],
+    "actemra": ["IL6R"],
+    "sarilumab": ["IL6R"],
+    "kevzara": ["IL6R"],
+    # JAK inhibitors (TYK2 / JAK1 / JAK2)
+    "tofacitinib": ["JAK1", "JAK2", "TYK2"],
+    "xeljanz": ["JAK1", "JAK2", "TYK2"],
+    "baricitinib": ["JAK1", "JAK2", "TYK2"],
+    "olumiant": ["JAK1", "JAK2", "TYK2"],
+    "upadacitinib": ["JAK1", "JAK2", "TYK2"],
+    "rinvoq": ["JAK1", "JAK2", "TYK2"],
+    "filgotinib": ["JAK1", "JAK2", "TYK2"],
+    "jyseleca": ["JAK1", "JAK2", "TYK2"],
+    "deucravacitinib": ["TYK2"],
+    "sotyktu": ["TYK2"],
+    # IL-12/23 (p40 = IL12B) and IL-23 (IL23A)
+    "ustekinumab": ["IL12B", "IL23A"],
+    "stelara": ["IL12B", "IL23A"],
+    "guselkumab": ["IL23A"],
+    "tremfya": ["IL23A"],
+    "risankizumab": ["IL23A"],
+    "skyrizi": ["IL23A"],
+    # IL-17A
+    "secukinumab": ["IL17A"],
+    "cosentyx": ["IL17A"],
+    "ixekizumab": ["IL17A"],
+    "taltz": ["IL17A"],
+    # COX-2 / NSAIDs → PTGS2
+    "celecoxib": ["PTGS2"],
+    "celebrex": ["PTGS2"],
+    "ibuprofen": ["PTGS2"],
+    "naproxen": ["PTGS2"],
+    "diclofenac": ["PTGS2"],
+    "meloxicam": ["PTGS2"],
+    "etoricoxib": ["PTGS2"],
+    # MIF antagonists (investigational naming)
+    "imilkimod": ["MIF"],
+    # --- Alzheimer disease ---
+    # Acetylcholinesterase inhibitors → ACHE
+    "donepezil": ["ACHE"],
+    "aricept": ["ACHE"],
+    "rivastigmine": ["ACHE"],
+    "exelon": ["ACHE"],
+    "galantamine": ["ACHE"],
+    "razadyne": ["ACHE"],
+    "reminyl": ["ACHE"],
+    # NMDA (memantine) → GRIN subunits in OT Alzheimer set
+    "memantine": ["GRIN1", "GRIN2B", "GRIN3B"],
+    "namenda": ["GRIN1", "GRIN2B", "GRIN3B"],
+    "namzaric": ["ACHE", "GRIN1", "GRIN2B", "GRIN3B"],
+    # Anti-amyloid monoclonal antibodies → APP
+    "lecanemab": ["APP"],
+    "leqembi": ["APP"],
+    "aducanumab": ["APP"],
+    "aduhelm": ["APP"],
+    "donanemab": ["APP"],
+    "kisunla": ["APP"],
+    "gantenerumab": ["APP"],
+    "bapineuzumab": ["APP"],
+    "solanezumab": ["APP"],
+    # Gamma-secretase / PSEN pathway
+    "semagacestat": ["PSEN1", "PSEN2", "APH1B"],
+    "avagacestat": ["PSEN1", "PSEN2", "APH1B"],
+    # BACE1 inhibitors still mention APP pathway in many trial titles
+    "verubecestat": ["APP"],
+    "atabecestat": ["APP"],
+    "lanabecestat": ["APP"],
 }
 
 # Normalize keys

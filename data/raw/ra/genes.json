@@ -1,0 +1,388 @@
+{
+  "fetched_at": "2026-10-11T05:00:25.243193+00:00",
+  "query": {
+    "source": "open_targets_graphql",
+    "url": "https://api.platform.opentargets.org/api/v4/graphql",
+    "disease_id": "MONDO_0008383",
+    "limit": 15
+  },
+  "response": {
+    "data": {
+      "disease": {
+        "id": "MONDO_0008383",
+        "name": "rheumatoid arthritis",
+        "associatedTargets": {
+          "count": 8420,
+          "rows": [
+            {
+              "score": 0.763825465200706,
+              "target": {
+                "id": "ENSG00000105397",
+                "approvedSymbol": "TYK2",
+                "approvedName": "tyrosine kinase 2"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.8271193810235968
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.26827986098600837
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9731961765839988
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9914019175206491
+                }
+              ]
+            },
+            {
+              "score": 0.751690492375485,
+              "target": {
+                "id": "ENSG00000160712",
+                "approvedSymbol": "IL6R",
+                "approvedName": "interleukin 6 receptor"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.833520493962114
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8978311373726781
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9934933197802531
+                }
+              ]
+            },
+            {
+              "score": 0.7452752344606981,
+              "target": {
+                "id": "ENSG00000113302",
+                "approvedSymbol": "IL12B",
+                "approvedName": "interleukin 12B"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.5134218944030698
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9189901043348859
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9847642681127319
+                }
+              ]
+            },
+            {
+              "score": 0.718689448504761,
+              "target": {
+                "id": "ENSG00000162434",
+                "approvedSymbol": "JAK1",
+                "approvedName": "Janus kinase 1"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.5167851228398721
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.319893185703235
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.6935060372649307
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9933302824928972
+                }
+              ]
+            },
+            {
+              "score": 0.7183131839800645,
+              "target": {
+                "id": "ENSG00000056972",
+                "approvedSymbol": "TRAF3IP2",
+                "approvedName": "TRAF3 interacting protein 2"
+              },
+              "datatypeScores": [
+                {
+                  "id": "rna_expression",
+                  "score": 0.024730415607504327
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9457466776013786
+                },
+                {
+                  "id": "literature",
+                  "score": 0.5898295413257296
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.871471757008798
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.3720688464082524
+                }
+              ]
+            },
+            {
+              "score": 0.7164118889890062,
+              "target": {
+                "id": "ENSG00000232810",
+                "approvedSymbol": "TNF",
+                "approvedName": "tumor necrosis factor"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9977421498027513
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.45499905068577773
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9986009227001763
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.607930797611621
+                }
+              ]
+            },
+            {
+              "score": 0.6923380096806654,
+              "target": {
+                "id": "ENSG00000159339",
+                "approvedSymbol": "PADI4",
+                "approvedName": "peptidyl arginine deiminase 4"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9850014018755117
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.2507106609350326
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8726010548324679
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.3039653988058105
+                }
+              ]
+            },
+            {
+              "score": 0.6885846799619112,
+              "target": {
+                "id": "ENSG00000096968",
+                "approvedSymbol": "JAK2",
+                "approvedName": "Janus kinase 2"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.5138003824834689
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.32475663208412797
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.4955164299619426
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9933131604978239
+                }
+              ]
+            },
+            {
+              "score": 0.6878443398922724,
+              "target": {
+                "id": "ENSG00000134242",
+                "approvedSymbol": "PTPN22",
+                "approvedName": "protein tyrosine phosphatase non-receptor type 22"
+              },
+              "datatypeScores": [
+                {
+                  "id": "rna_expression",
+                  "score": 0.0334432182644848
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.607930797611621
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9636109129592879
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.7989105300149955
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.29673102231423226
+                }
+              ]
+            },
+            {
+              "score": 0.680249427109468,
+              "target": {
+                "id": "ENSG00000240972",
+                "approvedSymbol": "MIF",
+                "approvedName": "macrophage migration inhibitory factor"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9553174713819784
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.607930797611621
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9457466776013786
+                }
+              ]
+            },
+            {
+              "score": 0.6393100479077852,
+              "target": {
+                "id": "ENSG00000113580",
+                "approvedSymbol": "NR3C1",
+                "approvedName": "nuclear receptor subfamily 3 group C member 1"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.5131735604211178
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.17387709846042657
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9967433525000303
+                }
+              ]
+            },
+            {
+              "score": 0.6375596757742555,
+              "target": {
+                "id": "ENSG00000128604",
+                "approvedSymbol": "IRF5",
+                "approvedName": "interferon regulatory factor 5"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.6115930760657016
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8831635981161035
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.607930797611621
+                }
+              ]
+            },
+            {
+              "score": 0.634733199239636,
+              "target": {
+                "id": "ENSG00000073756",
+                "approvedSymbol": "PTGS2",
+                "approvedName": "prostaglandin-endoperoxide synthase 2"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.8754334130914997
+                },
+                {
+                  "id": "rna_expression",
+                  "score": 0.054021158550519095
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9991157746440081
+                }
+              ]
+            },
+            {
+              "score": 0.6327318325072068,
+              "target": {
+                "id": "ENSG00000112115",
+                "approvedSymbol": "IL17A",
+                "approvedName": "interleukin 17A"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9939536266196222
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.27587899595615367
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9849674934981697
+                }
+              ]
+            },
+            {
+              "score": 0.6311620870976691,
+              "target": {
+                "id": "ENSG00000110944",
+                "approvedSymbol": "IL23A",
+                "approvedName": "interleukin 23 subunit alpha"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9342983357547979
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.3030535026093931
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9847642681127319
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -34,6 +34,58 @@
         "itepekimab",
         "ensifentrine"
       ]
+    },
+    "t2d": {
+      "name": "Type 2 Diabetes",
+      "efo_id": "MONDO_0005148",
+      "label": "Type 2 Diabetes",
+      "notes": "Open Targets uses MONDO_0005148 for type 2 diabetes mellitus.",
+      "extra_interventions": [
+        "metformin",
+        "semaglutide",
+        "liraglutide",
+        "dulaglutide",
+        "tirzepatide",
+        "empagliflozin",
+        "dapagliflozin",
+        "canagliflozin",
+        "sitagliptin",
+        "pioglitazone"
+      ]
+    },
+    "ra": {
+      "name": "Rheumatoid Arthritis",
+      "efo_id": "MONDO_0008383",
+      "label": "Rheumatoid Arthritis",
+      "notes": "Open Targets uses MONDO_0008383 for rheumatoid arthritis.",
+      "extra_interventions": [
+        "methotrexate",
+        "adalimumab",
+        "etanercept",
+        "infliximab",
+        "tocilizumab",
+        "abatacept",
+        "rituximab",
+        "tofacitinib",
+        "baricitinib",
+        "upadacitinib"
+      ]
+    },
+    "alz": {
+      "name": "Alzheimer Disease",
+      "efo_id": "MONDO_0004975",
+      "label": "Alzheimer's Disease",
+      "notes": "Open Targets uses MONDO_0004975 for Alzheimer disease.",
+      "extra_interventions": [
+        "donepezil",
+        "rivastigmine",
+        "galantamine",
+        "memantine",
+        "lecanemab",
+        "aducanumab",
+        "donanemab",
+        "gantenerumab"
+      ]
     }
   },
   "gene_limit": 15,
@@ -41,7 +93,7 @@
     "genetic": 0.5,
     "activity": 0.5
   },
-  "data_as_of": "2026-10-10",
+  "data_as_of": "2026-10-11",
   "open_targets": {
     "graphql_url": "https://api.platform.opentargets.org/api/v4/graphql"
   },

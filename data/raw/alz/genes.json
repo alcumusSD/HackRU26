@@ -1,0 +1,420 @@
+{
+  "fetched_at": "2026-10-11T05:06:39.260303+00:00",
+  "query": {
+    "source": "open_targets_graphql",
+    "url": "https://api.platform.opentargets.org/api/v4/graphql",
+    "disease_id": "MONDO_0004975",
+    "limit": 15
+  },
+  "response": {
+    "data": {
+      "disease": {
+        "id": "MONDO_0004975",
+        "name": "Alzheimer disease",
+        "associatedTargets": {
+          "count": 13006,
+          "rows": [
+            {
+              "score": 0.8743017509514485,
+              "target": {
+                "id": "ENSG00000142192",
+                "approvedSymbol": "APP",
+                "approvedName": "amyloid beta precursor protein"
+              },
+              "datatypeScores": [
+                {
+                  "id": "genetic_literature",
+                  "score": 0.607930797611621
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9775231241955992
+                },
+                {
+                  "id": "affected_pathway",
+                  "score": 0.607930797611621
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9972599521523058
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.927092402006943
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.47538638787264004
+                }
+              ]
+            },
+            {
+              "score": 0.8678833473880588,
+              "target": {
+                "id": "ENSG00000080815",
+                "approvedSymbol": "PSEN1",
+                "approvedName": "presenilin 1"
+              },
+              "datatypeScores": [
+                {
+                  "id": "rna_expression",
+                  "score": 0.04988096311450684
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.8880632854712809
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.6426855212816258
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9860459628256597
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.954496377837
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.6968061402275691
+                }
+              ]
+            },
+            {
+              "score": 0.818963537542181,
+              "target": {
+                "id": "ENSG00000143801",
+                "approvedSymbol": "PSEN2",
+                "approvedName": "presenilin 2"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.8866352900841123
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9105732536393558
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.7717343736347523
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.6426855212816258
+                }
+              ]
+            },
+            {
+              "score": 0.7882988926262811,
+              "target": {
+                "id": "ENSG00000130203",
+                "approvedSymbol": "APOE",
+                "approvedName": "apolipoprotein E"
+              },
+              "datatypeScores": [
+                {
+                  "id": "rna_expression",
+                  "score": 0.017251532679053088
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.607930797611621
+                },
+                {
+                  "id": "affected_pathway",
+                  "score": 0.2670020417823128
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9992205238110711
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.9115233387812932
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.42296389477088336
+                }
+              ]
+            },
+            {
+              "score": 0.740796098932307,
+              "target": {
+                "id": "ENSG00000064687",
+                "approvedSymbol": "ABCA7",
+                "approvedName": "ATP binding cassette subfamily A member 7"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.973273568642197
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8616280175986917
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.607930797611621
+                }
+              ]
+            },
+            {
+              "score": 0.7146776827220991,
+              "target": {
+                "id": "ENSG00000137642",
+                "approvedSymbol": "SORL1",
+                "approvedName": "sortilin related receptor 1"
+              },
+              "datatypeScores": [
+                {
+                  "id": "rna_expression",
+                  "score": 0.04768036208430157
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.3647584785669727
+                },
+                {
+                  "id": "literature",
+                  "score": 0.9816093940986609
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.7885172448639786
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.3268843898757687
+                }
+              ]
+            },
+            {
+              "score": 0.7049058021654173,
+              "target": {
+                "id": "ENSG00000176884",
+                "approvedSymbol": "GRIN1",
+                "approvedName": "glutamate ionotropic receptor NMDA type subunit 1"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.8752802787547966
+                },
+                {
+                  "id": "affected_pathway",
+                  "score": 0.5815977506239859
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.5374519955132447
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9879482584169764
+                }
+              ]
+            },
+            {
+              "score": 0.68705203316385,
+              "target": {
+                "id": "ENSG00000137845",
+                "approvedSymbol": "ADAM10",
+                "approvedName": "ADAM metallopeptidase domain 10"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9412848816131375
+                },
+                {
+                  "id": "rna_expression",
+                  "score": 0.02040312242200407
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.7886885287475386
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.607930797611621
+                }
+              ]
+            },
+            {
+              "score": 0.6802283721851972,
+              "target": {
+                "id": "ENSG00000164885",
+                "approvedSymbol": "CDK5",
+                "approvedName": "cyclin dependent kinase 5"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9452247503486507
+                },
+                {
+                  "id": "affected_pathway",
+                  "score": 0.877437422074483
+                },
+                {
+                  "id": "rna_expression",
+                  "score": 0.08977986793197987
+                }
+              ]
+            },
+            {
+              "score": 0.6771580875817478,
+              "target": {
+                "id": "ENSG00000116032",
+                "approvedSymbol": "GRIN3B",
+                "approvedName": "glutamate ionotropic receptor NMDA type subunit 3B"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.3021303714107068
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.289131887344087
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.46238888038262355
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9879482584169764
+                }
+              ]
+            },
+            {
+              "score": 0.6500686439034259,
+              "target": {
+                "id": "ENSG00000159640",
+                "approvedSymbol": "ACE",
+                "approvedName": "angiotensin I converting enzyme"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.977845420257691
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8880018248916495
+                },
+                {
+                  "id": "genetic_literature",
+                  "score": 0.607930797611621
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.12158615952232422
+                }
+              ]
+            },
+            {
+              "score": 0.6458500209243263,
+              "target": {
+                "id": "ENSG00000138613",
+                "approvedSymbol": "APH1B",
+                "approvedName": "aph-1B gamma-secretase subunit"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.44588362790280606
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8917943376402444
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.6426855212816258
+                }
+              ]
+            },
+            {
+              "score": 0.6415699813554469,
+              "target": {
+                "id": "ENSG00000087085",
+                "approvedSymbol": "ACHE",
+                "approvedName": "acetylcholinesterase (Yt blood group)"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9566766407732888
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.5289747376767766
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9957450767217717
+                }
+              ]
+            },
+            {
+              "score": 0.6371636272211622,
+              "target": {
+                "id": "ENSG00000030582",
+                "approvedSymbol": "GRN",
+                "approvedName": "granulin precursor"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.9544734320854464
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.45119821667821
+                },
+                {
+                  "id": "genetic_association",
+                  "score": 0.8169882292374255
+                }
+              ]
+            },
+            {
+              "score": 0.6347573469243794,
+              "target": {
+                "id": "ENSG00000273079",
+                "approvedSymbol": "GRIN2B",
+                "approvedName": "glutamate ionotropic receptor NMDA type subunit 2B"
+              },
+              "datatypeScores": [
+                {
+                  "id": "literature",
+                  "score": 0.8921974825015186
+                },
+                {
+                  "id": "rna_expression",
+                  "score": 0.03279389384323798
+                },
+                {
+                  "id": "animal_model",
+                  "score": 0.5021811171583134
+                },
+                {
+                  "id": "clinical",
+                  "score": 0.9879482584169764
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

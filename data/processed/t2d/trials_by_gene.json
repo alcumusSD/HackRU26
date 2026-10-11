@@ -1,0 +1,3863 @@
+{
+  "built_at": "2026-10-11T04:51:13.820126+00:00",
+  "disease": "Type 2 Diabetes",
+  "slug": "t2d",
+  "summary": {
+    "studies_fetched": 272,
+    "studies_flattened": 272,
+    "studies_mapped_to_demo_genes": 138,
+    "genes_with_trials": 6,
+    "genes_without_trials": 9,
+    "stop_reasons_classified": 0,
+    "stop_quotes_verified": 0,
+    "classify_stops": false,
+    "classify_engine": "none",
+    "parsed_at": "2026-10-11T04:51:13.820050+00:00",
+    "notes": "activity_score from ClinicalTrials.gov volume/phase/recency; drug\u2192gene join uses curated synonym map + symbol mentions; stop-reason classification skipped (pass --classify-stops)"
+  },
+  "trials_by_gene": {
+    "ENSG00000187486": [
+      {
+        "nct_id": "NCT00775684",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Exenatide",
+          "Sitagliptin",
+          "Glimepiride"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-10",
+        "end_date": "2012-11"
+      },
+      {
+        "nct_id": "NCT00106340",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "vildagliptin",
+          "glimepiride",
+          "Metformin",
+          "Vildagliptin matching placebo",
+          "Glimepiride matching placebo"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-03",
+        "end_date": "2008-05-20"
+      },
+      {
+        "nct_id": "NCT00839527",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "placebo to match albiglutide",
+          "albiglutide",
+          "metformin",
+          "glimepiride",
+          "pioglitazone",
+          "placebo to match pioglitazone"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "GPD2",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-02",
+        "end_date": "2013-04"
+      },
+      {
+        "nct_id": "NCT00885352",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Sitagliptin",
+          "Comparator: Placebo",
+          "Pioglitazone",
+          "Metformin",
+          "Glipizide"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-04-15",
+        "end_date": "2010-11-10"
+      },
+      {
+        "nct_id": "NCT01296412",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "sitagliptin",
+          "liraglutide",
+          "glimepiride",
+          "metformin"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-03-11",
+        "end_date": "2012-02-29"
+      },
+      {
+        "nct_id": "NCT02099110",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Matching Placebo to Ertugliflozin 5 mg",
+          "Matching Placebo to Ertugliflozin 10 mg",
+          "Matching Placebo to sitagliptin 100 mg",
+          "Ertugliflozin 5 mg",
+          "Ertugliflozin 10 mg",
+          "Sitagliptin 100 mg",
+          "Metformin >= 1500 mg/day",
+          "Insulin Glargine Rescue Medication",
+          "Glimepiride Rescue Medication"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "INSR",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-04-22",
+        "end_date": "2016-05-26"
+      },
+      {
+        "nct_id": "NCT02226003",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ertugliflozin",
+          "Sitagliptin",
+          "Placebo to Ertugliflozin",
+          "Placebo to Sitagliptin",
+          "Glimepiride"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-09-23",
+        "end_date": "2016-02-23"
+      },
+      {
+        "nct_id": "NCT00333723",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Rosiglitazone"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2000-07-28",
+        "end_date": "2003-01-06"
+      },
+      {
+        "nct_id": "NCT00035568",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Glucovance (metformin HCl/glyburide)",
+          "or Metformin HCl alone",
+          "or Glyburide alone."
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-02",
+        "end_date": "2003-06"
+      },
+      {
+        "nct_id": "NCT00576784",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "pioglitazone and glimepiride"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "INSR",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-04",
+        "end_date": "2007-04"
+      },
+      {
+        "nct_id": "NCT00347100",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Insulin Glargine",
+          "Glyburide",
+          "Glyclazide",
+          "Glimiperide",
+          "Glipizide",
+          "Metformin"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "INSR",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-06",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT03068065",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Liraglutide",
+          "Metformin",
+          "Gliclazide"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-05",
+        "end_date": "2015-10"
+      },
+      {
+        "nct_id": "NCT04183868",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Empagliflozin 10 MG",
+          "Glimepiride 2 mg"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-04",
+        "end_date": "2021-10"
+      },
+      {
+        "nct_id": "NCT02728453",
+        "phase": "PHASE4",
+        "status": "TERMINATED",
+        "drugs": [
+          "Empagliflozin",
+          "Glimepiride"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Insufficient recruitment.",
+        "quote_verified": false,
+        "start_date": "2016-04-27",
+        "end_date": "2017-09-27"
+      }
+    ],
+    "ENSG00000006071": [
+      {
+        "nct_id": "NCT00775684",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Exenatide",
+          "Sitagliptin",
+          "Glimepiride"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-10",
+        "end_date": "2012-11"
+      },
+      {
+        "nct_id": "NCT00106340",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "vildagliptin",
+          "glimepiride",
+          "Metformin",
+          "Vildagliptin matching placebo",
+          "Glimepiride matching placebo"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-03",
+        "end_date": "2008-05-20"
+      },
+      {
+        "nct_id": "NCT00839527",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "placebo to match albiglutide",
+          "albiglutide",
+          "metformin",
+          "glimepiride",
+          "pioglitazone",
+          "placebo to match pioglitazone"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "GPD2",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-02",
+        "end_date": "2013-04"
+      },
+      {
+        "nct_id": "NCT00885352",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Sitagliptin",
+          "Comparator: Placebo",
+          "Pioglitazone",
+          "Metformin",
+          "Glipizide"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-04-15",
+        "end_date": "2010-11-10"
+      },
+      {
+        "nct_id": "NCT01296412",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "sitagliptin",
+          "liraglutide",
+          "glimepiride",
+          "metformin"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-03-11",
+        "end_date": "2012-02-29"
+      },
+      {
+        "nct_id": "NCT02099110",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Matching Placebo to Ertugliflozin 5 mg",
+          "Matching Placebo to Ertugliflozin 10 mg",
+          "Matching Placebo to sitagliptin 100 mg",
+          "Ertugliflozin 5 mg",
+          "Ertugliflozin 10 mg",
+          "Sitagliptin 100 mg",
+          "Metformin >= 1500 mg/day",
+          "Insulin Glargine Rescue Medication",
+          "Glimepiride Rescue Medication"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "INSR",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-04-22",
+        "end_date": "2016-05-26"
+      },
+      {
+        "nct_id": "NCT02226003",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Ertugliflozin",
+          "Sitagliptin",
+          "Placebo to Ertugliflozin",
+          "Placebo to Sitagliptin",
+          "Glimepiride"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-09-23",
+        "end_date": "2016-02-23"
+      },
+      {
+        "nct_id": "NCT00333723",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Rosiglitazone"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2000-07-28",
+        "end_date": "2003-01-06"
+      },
+      {
+        "nct_id": "NCT00035568",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Glucovance (metformin HCl/glyburide)",
+          "or Metformin HCl alone",
+          "or Glyburide alone."
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-02",
+        "end_date": "2003-06"
+      },
+      {
+        "nct_id": "NCT00576784",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "pioglitazone and glimepiride"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "INSR",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-04",
+        "end_date": "2007-04"
+      },
+      {
+        "nct_id": "NCT00347100",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Insulin Glargine",
+          "Glyburide",
+          "Glyclazide",
+          "Glimiperide",
+          "Glipizide",
+          "Metformin"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "INSR",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-06",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT03068065",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Liraglutide",
+          "Metformin",
+          "Gliclazide"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-05",
+        "end_date": "2015-10"
+      },
+      {
+        "nct_id": "NCT04183868",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Empagliflozin 10 MG",
+          "Glimepiride 2 mg"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-04",
+        "end_date": "2021-10"
+      },
+      {
+        "nct_id": "NCT02728453",
+        "phase": "PHASE4",
+        "status": "TERMINATED",
+        "drugs": [
+          "Empagliflozin",
+          "Glimepiride"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Insufficient recruitment.",
+        "quote_verified": false,
+        "start_date": "2016-04-27",
+        "end_date": "2017-09-27"
+      }
+    ],
+    "ENSG00000106633": [],
+    "ENSG00000132170": [
+      {
+        "nct_id": "NCT01637935",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Pioglitazone"
+        ],
+        "target_genes": [
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-07",
+        "end_date": "2014-08"
+      },
+      {
+        "nct_id": "NCT02678676",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "No Intervention",
+          "No Intervention"
+        ],
+        "target_genes": [
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2004-11",
+        "end_date": "2011-11"
+      },
+      {
+        "nct_id": "NCT00364988",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "pioglitazone+losartan",
+          "losartan"
+        ],
+        "target_genes": [
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-01",
+        "end_date": "2006-01"
+      },
+      {
+        "nct_id": "NCT02002975",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Pioglitazone"
+        ],
+        "target_genes": [
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-10-16",
+        "end_date": "2013-06-30"
+      },
+      {
+        "nct_id": "NCT01206400",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [],
+        "target_genes": [
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-09",
+        "end_date": "2012-01"
+      },
+      {
+        "nct_id": "NCT05513729",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Canagliflozin",
+          "Pioglitazone"
+        ],
+        "target_genes": [
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-08-18",
+        "end_date": "2024-03-01"
+      },
+      {
+        "nct_id": "NCT00500331",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "GSK189075",
+          "pioglitazone"
+        ],
+        "target_genes": [
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-01-23",
+        "end_date": "2008-02-14"
+      },
+      {
+        "nct_id": "NCT00814372",
+        "phase": "PHASE2",
+        "status": "TERMINATED",
+        "drugs": [
+          "MBX-102",
+          "Actos",
+          "Metformin"
+        ],
+        "target_genes": [
+          "GPD2",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "MBX-102 did not meet the target efficacy profile of HbA1c change.",
+        "quote_verified": false,
+        "start_date": "2008-12",
+        "end_date": "2010-02"
+      },
+      {
+        "nct_id": "NCT01028963",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "pioglitazone",
+          "CCX140-B",
+          "CCX140-B"
+        ],
+        "target_genes": [
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-01",
+        "end_date": "2010-11"
+      },
+      {
+        "nct_id": "NCT00839527",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "placebo to match albiglutide",
+          "albiglutide",
+          "metformin",
+          "glimepiride",
+          "pioglitazone",
+          "placebo to match pioglitazone"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "GPD2",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-02",
+        "end_date": "2013-04"
+      },
+      {
+        "nct_id": "NCT00885352",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Sitagliptin",
+          "Comparator: Placebo",
+          "Pioglitazone",
+          "Metformin",
+          "Glipizide"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-04-15",
+        "end_date": "2010-11-10"
+      },
+      {
+        "nct_id": "NCT00970424",
+        "phase": "PHASE3",
+        "status": "TERMINATED",
+        "drugs": [
+          "Dutogliptin"
+        ],
+        "target_genes": [
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-08",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01106690",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Canagliflozin",
+          "Sitagliptin",
+          "Metformin",
+          "Pioglitazone"
+        ],
+        "target_genes": [
+          "GPD2",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-06",
+        "end_date": "2012-07"
+      },
+      {
+        "nct_id": "NCT00333723",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Rosiglitazone"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2000-07-28",
+        "end_date": "2003-01-06"
+      },
+      {
+        "nct_id": "NCT00044460",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "rosiglitazone"
+        ],
+        "target_genes": [
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-05",
+        "end_date": "2003-04-10"
+      },
+      {
+        "nct_id": "NCT00241605",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "rosiglitazone/metformin"
+        ],
+        "target_genes": [
+          "GPD2",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-06-25",
+        "end_date": "2005-12-16"
+      },
+      {
+        "nct_id": "NCT00576784",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "pioglitazone and glimepiride"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "INSR",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-04",
+        "end_date": "2007-04"
+      },
+      {
+        "nct_id": "NCT00300911",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Rosiglitazone(drug), cardiac adverse effects"
+        ],
+        "target_genes": [
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-12",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00845182",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Pioglitazone",
+          "Exenatide",
+          "Pioglitazone and Exenatide"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-06",
+        "end_date": "2010-07"
+      },
+      {
+        "nct_id": "NCT02292290",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Liraglutide",
+          "Liraglutide",
+          "Sulfonylurea or Pioglitazone",
+          "Maintain dual therapy (Sulf/Pio) as comparator to Liraglutide"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-04",
+        "end_date": "2012-12"
+      },
+      {
+        "nct_id": "NCT02365233",
+        "phase": "PHASE4",
+        "status": "TERMINATED",
+        "drugs": [
+          "DPP4 inhibitor",
+          "Pioglitazone",
+          "Lantus insulin"
+        ],
+        "target_genes": [
+          "INSR",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "IRB withheld the data due to inadequate supporting documentation",
+        "quote_verified": false,
+        "start_date": "2013-05-01",
+        "end_date": "2016-12-31"
+      },
+      {
+        "nct_id": "NCT04976283",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Pioglitazone",
+          "Empagliflozin",
+          "Pioglitazone + Empagliflozin"
+        ],
+        "target_genes": [
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-09-15",
+        "end_date": "2023-11-15"
+      },
+      {
+        "nct_id": "NCT05305287",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Pioglitazone"
+        ],
+        "target_genes": [
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-11-01",
+        "end_date": "2027-03-31"
+      },
+      {
+        "nct_id": "NCT06657209",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Insulin resistance testing",
+          "OGTT",
+          "Fat biopsy",
+          "DXA scan",
+          "MRI",
+          "1H-MRS",
+          "Tirzepatide",
+          "Pioglitazone"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-01-13",
+        "end_date": "2027-12-15"
+      },
+      {
+        "nct_id": "NCT06851962",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Metformin",
+          "Dulaglutide",
+          "Semaglutide 1.0 mg",
+          "Empagliflozin (BI 10773)",
+          "Canagliflozin",
+          "Dapagliflozin",
+          "pioglitazone",
+          "Sitagliptin",
+          "Vildagliptin (Galvus)",
+          "linagliptin"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-05-26",
+        "end_date": "2026-06-30"
+      }
+    ],
+    "ENSG00000135100": [],
+    "ENSG00000101076": [],
+    "ENSG00000275410": [],
+    "ENSG00000171105": [
+      {
+        "nct_id": "NCT02563834",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "thiapalmitate tracer",
+          "Saline",
+          "Insulin"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-01",
+        "end_date": "2009-06"
+      },
+      {
+        "nct_id": "NCT01484262",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "liraglutide",
+          "insulin"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-11-14",
+        "end_date": "2014-10-31"
+      },
+      {
+        "nct_id": "NCT02754817",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "insulin degludec/liraglutide"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-04-26",
+        "end_date": "2016-10-20"
+      },
+      {
+        "nct_id": "NCT02846233",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "GLP1 receptor agonist",
+          "basal insulin",
+          "SGLT2 inhibitor",
+          "Metformin"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-08",
+        "end_date": "2018-12"
+      },
+      {
+        "nct_id": "NCT04791371",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "Cardiovascular exercise"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-06-17",
+        "end_date": "2027-02-15"
+      },
+      {
+        "nct_id": "NCT06428968",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "160 units nasal insulin spray"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-09-06",
+        "end_date": "2025-06-30"
+      },
+      {
+        "nct_id": "NCT07011147",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "Bionic Pancreas",
+          "Routine Care"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-01-16",
+        "end_date": "2029-04-01"
+      },
+      {
+        "nct_id": "NCT07808398",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Carbohydrate-counting-based prandial rapid-acting insulin dosing",
+          "Flexible fixed mealtime rapid-acting insulin dosing based on percentage of meal consumed"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-10",
+        "end_date": "2027-05"
+      },
+      {
+        "nct_id": "NCT01786707",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Autologous stem cells",
+          "Hyperbaric oxygen therapy",
+          "Insulin",
+          "Metformin"
+        ],
+        "target_genes": [
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-07",
+        "end_date": "2013-03"
+      },
+      {
+        "nct_id": "NCT00964964",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "insulin degludec",
+          "insulin degludec"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-08",
+        "end_date": "2009-09"
+      },
+      {
+        "nct_id": "NCT01154881",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "insulin degludec"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-06",
+        "end_date": "2010-11"
+      },
+      {
+        "nct_id": "NCT02623465",
+        "phase": "PHASE1",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "Insulin Lispro"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Change in clinical strategy",
+        "quote_verified": false,
+        "start_date": "2018-01",
+        "end_date": "2018-04"
+      },
+      {
+        "nct_id": "NCT03723785",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Insulin icodec"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-11-09",
+        "end_date": "2019-09-06"
+      },
+      {
+        "nct_id": "NCT04276428",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "LY3209590",
+          "Insulin Degludec"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-02-28",
+        "end_date": "2020-11-28"
+      },
+      {
+        "nct_id": "NCT00228891",
+        "phase": "PHASE2",
+        "status": "TERMINATED",
+        "drugs": [
+          "Effect of Pulsatile IV insulin on diabetic neuropathy",
+          "Effect of Pulsatile IV Insulin on diabetic neuropathy"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Administrative",
+        "quote_verified": false,
+        "start_date": "2004-02",
+        "end_date": "2009-08"
+      },
+      {
+        "nct_id": "NCT01194245",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Insulin lispro",
+          "recombinant human hyaluronidase PH20",
+          "Insulin aspart",
+          "Insulin glulisine",
+          "Insulin glargine"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-08",
+        "end_date": "2011-08"
+      },
+      {
+        "nct_id": "NCT00627445",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "biphasic insulin aspart 30",
+          "metformin",
+          "biphasic insulin aspart 50"
+        ],
+        "target_genes": [
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-02",
+        "end_date": "2009-01"
+      },
+      {
+        "nct_id": "NCT01584232",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "LY2189265",
+          "Insulin glargine",
+          "Sulfonylureas (SU)",
+          "Biguanide (BG)"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-04",
+        "end_date": "2013-07"
+      },
+      {
+        "nct_id": "NCT01621178",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dulaglutide",
+          "Insulin glargine",
+          "Insulin lispro"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-07",
+        "end_date": "2016-12"
+      },
+      {
+        "nct_id": "NCT02100475",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "insulin degludec/liraglutide",
+          "insulin aspart"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-04",
+        "end_date": "2015-04"
+      },
+      {
+        "nct_id": "NCT02099110",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Matching Placebo to Ertugliflozin 5 mg",
+          "Matching Placebo to Ertugliflozin 10 mg",
+          "Matching Placebo to sitagliptin 100 mg",
+          "Ertugliflozin 5 mg",
+          "Ertugliflozin 10 mg",
+          "Sitagliptin 100 mg",
+          "Metformin >= 1500 mg/day",
+          "Insulin Glargine Rescue Medication",
+          "Glimepiride Rescue Medication"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "INSR",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-04-22",
+        "end_date": "2016-05-26"
+      },
+      {
+        "nct_id": "NCT03172494",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Insulin degludec/liraglutide",
+          "Insulin degludec",
+          "Liraglutide"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-05-26",
+        "end_date": "2019-07-13"
+      },
+      {
+        "nct_id": "NCT04537923",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide",
+          "Insulin Lispro (U100)"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-10-19",
+        "end_date": "2022-11-01"
+      },
+      {
+        "nct_id": "NCT05260021",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide Dose 1",
+          "Tirzepatide Dose 2"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-04-13",
+        "end_date": "2025-01-28"
+      },
+      {
+        "nct_id": "NCT00576784",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "pioglitazone and glimepiride"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "INSR",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-04",
+        "end_date": "2007-04"
+      },
+      {
+        "nct_id": "NCT00347100",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Insulin Glargine",
+          "Glyburide",
+          "Glyclazide",
+          "Glimiperide",
+          "Glipizide",
+          "Metformin"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "INSR",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-06",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00591227",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "insulin aspart",
+          "insulin detemir"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-05",
+        "end_date": "2009-07"
+      },
+      {
+        "nct_id": "NCT01654120",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Liraglutide",
+          "Insulin"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-12",
+        "end_date": "2013-11"
+      },
+      {
+        "nct_id": "NCT02365233",
+        "phase": "PHASE4",
+        "status": "TERMINATED",
+        "drugs": [
+          "DPP4 inhibitor",
+          "Pioglitazone",
+          "Lantus insulin"
+        ],
+        "target_genes": [
+          "INSR",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "IRB withheld the data due to inadequate supporting documentation",
+        "quote_verified": false,
+        "start_date": "2013-05-01",
+        "end_date": "2016-12-31"
+      },
+      {
+        "nct_id": "NCT02175784",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "ipragliflozin"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-03-31",
+        "end_date": "2015-12-07"
+      },
+      {
+        "nct_id": "NCT02597309",
+        "phase": "PHASE4",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "Canagliflozin"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-11",
+        "end_date": "2017-07"
+      },
+      {
+        "nct_id": "NCT02561130",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "insulin glargine",
+          "metformin",
+          "Forxiga",
+          "Lifestyle therapy"
+        ],
+        "target_genes": [
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-12",
+        "end_date": "2018-12-31"
+      },
+      {
+        "nct_id": "NCT04120623",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Dapagliflozin 10 MG",
+          "Insulin Aspart"
+        ],
+        "target_genes": [
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-10-01",
+        "end_date": "2020-02-28"
+      },
+      {
+        "nct_id": "NCT04135287",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "GLP-1 receptor agonist"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-03-01",
+        "end_date": "2023-07-15"
+      },
+      {
+        "nct_id": "NCT06657209",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Insulin resistance testing",
+          "OGTT",
+          "Fat biopsy",
+          "DXA scan",
+          "MRI",
+          "1H-MRS",
+          "Tirzepatide",
+          "Pioglitazone"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-01-13",
+        "end_date": "2027-12-15"
+      }
+    ],
+    "ENSG00000112164": [
+      {
+        "nct_id": "NCT00775684",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Exenatide",
+          "Sitagliptin",
+          "Glimepiride"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-10",
+        "end_date": "2012-11"
+      },
+      {
+        "nct_id": "NCT01484262",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "liraglutide",
+          "insulin"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-11-14",
+        "end_date": "2014-10-31"
+      },
+      {
+        "nct_id": "NCT01890993",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "liraglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-08",
+        "end_date": "2014-06"
+      },
+      {
+        "nct_id": "NCT04184947",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "SGLT2 inhibitor",
+          "GLP-1 receptor agonist"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-03-01",
+        "end_date": "2020-02-29"
+      },
+      {
+        "nct_id": "NCT02754817",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "insulin degludec/liraglutide"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-04-26",
+        "end_date": "2016-10-20"
+      },
+      {
+        "nct_id": "NCT02846233",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "GLP1 receptor agonist",
+          "basal insulin",
+          "SGLT2 inhibitor",
+          "Metformin"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-08",
+        "end_date": "2018-12"
+      },
+      {
+        "nct_id": "NCT03457012",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Semaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-03-29",
+        "end_date": "2019-12-19"
+      },
+      {
+        "nct_id": "NCT05946148",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Empagliflozin",
+          "Dulaglutide",
+          "Control Rx"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-06-01",
+        "end_date": "2021-05-31"
+      },
+      {
+        "nct_id": "NCT04067999",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Semaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-08-05",
+        "end_date": "2021-07-19"
+      },
+      {
+        "nct_id": "NCT04374578",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dulaglutide 1.5 MG/ML"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-05-08",
+        "end_date": "2021-06-30"
+      },
+      {
+        "nct_id": "NCT04537637",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Oral Semaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-08-28",
+        "end_date": "2023-05-08"
+      },
+      {
+        "nct_id": "NCT04295005",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Empagliflozin",
+          "DPP-4i",
+          "GLP-1-RA"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-11-16",
+        "end_date": "2021-09-30"
+      },
+      {
+        "nct_id": "NCT05220917",
+        "phase": "NA",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "SGLT2 inhibitor",
+          "DPP-4 inhibitor",
+          "GLP-1RA",
+          "2nd generation SU"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-08-01",
+        "end_date": "2027-09-30"
+      },
+      {
+        "nct_id": "NCT05492305",
+        "phase": "NA",
+        "status": "UNKNOWN",
+        "drugs": [
+          "GLP-1 receptor agonist"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-09",
+        "end_date": "2023-08"
+      },
+      {
+        "nct_id": "NCT07309094",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "GLP-1 receptor agonist",
+          "SGLT2 inhibitor",
+          "Tirzepatide",
+          "Other drugs"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-09-15",
+        "end_date": "2028-12-31"
+      },
+      {
+        "nct_id": "NCT06629688",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "semaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-11-01",
+        "end_date": "2024-04-01"
+      },
+      {
+        "nct_id": "NCT06492330",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "CS0159",
+          "CS0159 placebo"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-07-19",
+        "end_date": "2025-04-22"
+      },
+      {
+        "nct_id": "NCT07281196",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Semaglutide Subcutaneous Injection"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-01-01",
+        "end_date": "2026-01-31"
+      },
+      {
+        "nct_id": "NCT06914141",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide",
+          "Semaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-01-14",
+        "end_date": "2025-06-01"
+      },
+      {
+        "nct_id": "NCT07847593",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "Four-strain probiotic formulation",
+          "Maltodextrin (Placebo)"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-07-09",
+        "end_date": "2026-07-15"
+      },
+      {
+        "nct_id": "NCT07779343",
+        "phase": "NA",
+        "status": "RECRUITING",
+        "drugs": [
+          "Semaglutide (Wegovy) weekly injection",
+          "Behavioral Treatment",
+          "Weight loss"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-01-22",
+        "end_date": "2028-01-23"
+      },
+      {
+        "nct_id": "NCT07728318",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Tirzepatide + Standard Therapy (Intervention Group)",
+          "Standard Oral Antidiabetic Drugs (OADs)"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-08-12",
+        "end_date": "2027-05-12"
+      },
+      {
+        "nct_id": "NCT05714683",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Semaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2027-01-31",
+        "end_date": "2027-10-31"
+      },
+      {
+        "nct_id": "NCT01615978",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "liraglutide",
+          "liraglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-12",
+        "end_date": "2004-03"
+      },
+      {
+        "nct_id": "NCT01272973",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "semaglutide",
+          "semaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-01",
+        "end_date": "2011-07"
+      },
+      {
+        "nct_id": "NCT01436201",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Digoxin",
+          "Dulaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-09",
+        "end_date": "2011-11"
+      },
+      {
+        "nct_id": "NCT02650206",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Victoza (liraglutide) with dietician monitoring",
+          "Placebo with dietician monitoring"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-01",
+        "end_date": "2019-09-27"
+      },
+      {
+        "nct_id": "NCT02759107",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide",
+          "Dulaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-05-11",
+        "end_date": "2017-06-26"
+      },
+      {
+        "nct_id": "NCT04259801",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "NNC0480-0389",
+          "Semaglutide",
+          "Placebo (NNC0480-0389)",
+          "Placebo (semaglutide)"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-02-17",
+        "end_date": "2022-03-16"
+      },
+      {
+        "nct_id": "NCT04050553",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-02-24",
+        "end_date": "2022-01-25"
+      },
+      {
+        "nct_id": "NCT04407234",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide",
+          "Acetaminophen"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-09-15",
+        "end_date": "2021-01-07"
+      },
+      {
+        "nct_id": "NCT04235959",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-10-21",
+        "end_date": "2021-08-17"
+      },
+      {
+        "nct_id": "NCT05377333",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "LY3457263",
+          "Dulaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-06-02",
+        "end_date": "2023-11-22"
+      },
+      {
+        "nct_id": "NCT05407961",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "LY3532226",
+          "Dulaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-06-07",
+        "end_date": "2024-01-12"
+      },
+      {
+        "nct_id": "NCT01508923",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "liraglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2001-05",
+        "end_date": "2002-02"
+      },
+      {
+        "nct_id": "NCT00696657",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "semaglutide",
+          "semaglutide",
+          "semaglutide",
+          "semaglutide",
+          "semaglutide",
+          "semaglutide",
+          "liraglutide",
+          "liraglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-06-03",
+        "end_date": "2009-02-05"
+      },
+      {
+        "nct_id": "NCT03426085",
+        "phase": "PHASE2",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Liraglutide 6 mg Solution for Injection"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-05",
+        "end_date": "2020-08"
+      },
+      {
+        "nct_id": "NCT03131687",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "tirzepatide",
+          "Dulaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-05-24",
+        "end_date": "2018-08-01"
+      },
+      {
+        "nct_id": "NCT04965506",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "IBI362",
+          "Dulaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-09-06",
+        "end_date": "2022-06-11"
+      },
+      {
+        "nct_id": "NCT05536804",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-02-08",
+        "end_date": "2026-07-30"
+      },
+      {
+        "nct_id": "NCT06603571",
+        "phase": "PHASE2",
+        "status": "COMPLETED",
+        "drugs": [
+          "LY3841136",
+          "Tirzepatide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-09-20",
+        "end_date": "2026-09-14"
+      },
+      {
+        "nct_id": "NCT06897475",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "drugs": [
+          "LY3457263"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-03-28",
+        "end_date": "2027-06"
+      },
+      {
+        "nct_id": "NCT07172867",
+        "phase": "PHASE2",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "HT-6184",
+          "HT-6184 Matching Placebo",
+          "Semaglutide 1 mg"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "Business decision to move away from this indication with this intervention, and low enrollment.",
+        "quote_verified": false,
+        "start_date": "2026-01-06",
+        "end_date": "2026-01-23"
+      },
+      {
+        "nct_id": "NCT00839527",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "placebo to match albiglutide",
+          "albiglutide",
+          "metformin",
+          "glimepiride",
+          "pioglitazone",
+          "placebo to match pioglitazone"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "GPD2",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-02",
+        "end_date": "2013-04"
+      },
+      {
+        "nct_id": "NCT01784965",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "liraglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-12",
+        "end_date": "2012-12"
+      },
+      {
+        "nct_id": "NCT01296412",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "sitagliptin",
+          "liraglutide",
+          "glimepiride",
+          "metformin"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-03-11",
+        "end_date": "2012-02-29"
+      },
+      {
+        "nct_id": "NCT01394952",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dulaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-07-22",
+        "end_date": "2018-08-21"
+      },
+      {
+        "nct_id": "NCT01584232",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "LY2189265",
+          "Insulin glargine",
+          "Sulfonylureas (SU)",
+          "Biguanide (BG)"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-04",
+        "end_date": "2013-07"
+      },
+      {
+        "nct_id": "NCT01621178",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dulaglutide",
+          "Insulin glargine",
+          "Insulin lispro"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2012-07",
+        "end_date": "2016-12"
+      },
+      {
+        "nct_id": "NCT02100475",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "insulin degludec/liraglutide",
+          "insulin aspart"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-04",
+        "end_date": "2015-04"
+      },
+      {
+        "nct_id": "NCT02597049",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dulaglutide",
+          "SGLT2 inhibitor",
+          "Metformin"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-11",
+        "end_date": "2017-02"
+      },
+      {
+        "nct_id": "NCT02863419",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "semaglutide",
+          "liraglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-08-10",
+        "end_date": "2018-03-30"
+      },
+      {
+        "nct_id": "NCT03015220",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Semaglutide",
+          "Dulaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-01-10",
+        "end_date": "2018-07-12"
+      },
+      {
+        "nct_id": "NCT02964247",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "liraglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-03-03",
+        "end_date": "2018-05-08"
+      },
+      {
+        "nct_id": "NCT03172494",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Insulin degludec/liraglutide",
+          "Insulin degludec",
+          "Liraglutide"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-05-26",
+        "end_date": "2019-07-13"
+      },
+      {
+        "nct_id": "NCT03495102",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dulaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-04-05",
+        "end_date": "2019-10-10"
+      },
+      {
+        "nct_id": "NCT03861052",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide",
+          "Dulaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-05-07",
+        "end_date": "2021-03-31"
+      },
+      {
+        "nct_id": "NCT03954834",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-06-03",
+        "end_date": "2020-10-28"
+      },
+      {
+        "nct_id": "NCT03987919",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide",
+          "Semaglutide"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-07-30",
+        "end_date": "2021-02-15"
+      },
+      {
+        "nct_id": "NCT06489457",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Semaglutide",
+          "Testosterone Undecanoate"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-09-20",
+        "end_date": "2023-06-30"
+      },
+      {
+        "nct_id": "NCT04537923",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide",
+          "Insulin Lispro (U100)"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-10-19",
+        "end_date": "2022-11-01"
+      },
+      {
+        "nct_id": "NCT04660643",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-03-29",
+        "end_date": "2023-05-18"
+      },
+      {
+        "nct_id": "NCT05260021",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide Dose 1",
+          "Tirzepatide Dose 2"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-04-13",
+        "end_date": "2025-01-28"
+      },
+      {
+        "nct_id": "NCT05691712",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-02-05",
+        "end_date": "2024-07-01"
+      },
+      {
+        "nct_id": "NCT06534411",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Cagrilintide",
+          "Semaglutide",
+          "Tirzepatide"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-11-05",
+        "end_date": "2026-07-09"
+      },
+      {
+        "nct_id": "NCT07064486",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "drugs": [
+          "BGM0504",
+          "BGM0504",
+          "Semaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-07-04",
+        "end_date": "2026-07-31"
+      },
+      {
+        "nct_id": "NCT00845182",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Pioglitazone",
+          "Exenatide",
+          "Pioglitazone and Exenatide"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2007-06",
+        "end_date": "2010-07"
+      },
+      {
+        "nct_id": "NCT02292290",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Liraglutide",
+          "Liraglutide",
+          "Sulfonylurea or Pioglitazone",
+          "Maintain dual therapy (Sulf/Pio) as comparator to Liraglutide"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-04",
+        "end_date": "2012-12"
+      },
+      {
+        "nct_id": "NCT01654120",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Liraglutide",
+          "Insulin"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-12",
+        "end_date": "2013-11"
+      },
+      {
+        "nct_id": "NCT03068065",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Liraglutide",
+          "Metformin",
+          "Gliclazide"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-05",
+        "end_date": "2015-10"
+      },
+      {
+        "nct_id": "NCT02660047",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Liraglutide",
+          "Liraglutide - Placebo"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-08",
+        "end_date": "2018-03-09"
+      },
+      {
+        "nct_id": "NCT03331289",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Exenatide",
+          "Dapagliflozin",
+          "Exenatide and Dapagliflozin"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-02-28",
+        "end_date": "2022-11-04"
+      },
+      {
+        "nct_id": "NCT04135287",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "GLP-1 receptor agonist"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-03-01",
+        "end_date": "2023-07-15"
+      },
+      {
+        "nct_id": "NCT05140694",
+        "phase": "PHASE4",
+        "status": "UNKNOWN",
+        "drugs": [
+          "Empagliflozin",
+          "Dulaglutide",
+          "Empagliflozin and Dulaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-12-01",
+        "end_date": "2025-12-31"
+      },
+      {
+        "nct_id": "NCT06042153",
+        "phase": "PHASE4",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "drugs": [
+          "Semaglutide"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2023-12-05",
+        "end_date": "2028-09"
+      },
+      {
+        "nct_id": "NCT06657209",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Insulin resistance testing",
+          "OGTT",
+          "Fat biopsy",
+          "DXA scan",
+          "MRI",
+          "1H-MRS",
+          "Tirzepatide",
+          "Pioglitazone"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "INSR",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-01-13",
+        "end_date": "2027-12-15"
+      },
+      {
+        "nct_id": "NCT06851962",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Metformin",
+          "Dulaglutide",
+          "Semaglutide 1.0 mg",
+          "Empagliflozin (BI 10773)",
+          "Canagliflozin",
+          "Dapagliflozin",
+          "pioglitazone",
+          "Sitagliptin",
+          "Vildagliptin (Galvus)",
+          "linagliptin"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-05-26",
+        "end_date": "2026-06-30"
+      },
+      {
+        "nct_id": "NCT07547878",
+        "phase": "PHASE4",
+        "status": "NOT_YET_RECRUITING",
+        "drugs": [
+          "Finerenone",
+          "Semaglutide",
+          "Lotensin",
+          "Capoten",
+          "Enalapril",
+          "Monopril",
+          "Lisinopril",
+          "Univasc",
+          "Aceon",
+          "Accupril",
+          "Altace",
+          "Mavik",
+          "Edarbi",
+          "Atacand",
+          "Avapro",
+          "Cozaar",
+          "Benicar",
+          "Micardis",
+          "Diovan",
+          "Invokana",
+          "Farxiga",
+          "Jardiance",
+          "Ertugliflozin",
+          "Brenzavvy",
+          "Sotagliflozin"
+        ],
+        "target_genes": [
+          "GLP1R"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2026-04-30",
+        "end_date": "2029-03-31"
+      }
+    ],
+    "ENSG00000109501": [],
+    "ENSG00000163581": [],
+    "ENSG00000106331": [],
+    "ENSG00000164756": [],
+    "ENSG00000105221": [],
+    "ENSG00000115159": [
+      {
+        "nct_id": "NCT02846233",
+        "phase": "NA",
+        "status": "COMPLETED",
+        "drugs": [
+          "GLP1 receptor agonist",
+          "basal insulin",
+          "SGLT2 inhibitor",
+          "Metformin"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2016-08",
+        "end_date": "2018-12"
+      },
+      {
+        "nct_id": "NCT01786707",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Autologous stem cells",
+          "Hyperbaric oxygen therapy",
+          "Insulin",
+          "Metformin"
+        ],
+        "target_genes": [
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-07",
+        "end_date": "2013-03"
+      },
+      {
+        "nct_id": "NCT01292993",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "400 mg LX4211",
+          "1000 mg metformin"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-02",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT01535677",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dapagliflozin + Glucophage tablet fasted",
+          "Dapagliflozin/metformin IR FDC tablet fasted",
+          "Dapagliflozin + Glucophage tablet fed",
+          "Dapagliflozin/metformin IR FDC tablet fed"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2013-04",
+        "end_date": "2013-07"
+      },
+      {
+        "nct_id": "NCT02039245",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "CANA/MET XR FDC"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-01",
+        "end_date": "2014-03"
+      },
+      {
+        "nct_id": "NCT02073227",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Canagliflozin, 300 mg",
+          "Metformin XR, 500 mg",
+          "CANA/MET XR FDC, Formulation 1, 150 mg/1,000 mg",
+          "CANA/MET XR FDC, Formulation 2, 150 mg/1,000 mg"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-02",
+        "end_date": "2014-06"
+      },
+      {
+        "nct_id": "NCT02813863",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "SP2086",
+          "Metformin"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-12",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT05549583",
+        "phase": "PHASE1",
+        "status": "COMPLETED",
+        "drugs": [
+          "Sitagliptin/metformin hydrochloride (HCl) 50/1000 mg film-coated tablet"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2018-04-15",
+        "end_date": "2018-04-25"
+      },
+      {
+        "nct_id": "NCT00814372",
+        "phase": "PHASE2",
+        "status": "TERMINATED",
+        "drugs": [
+          "MBX-102",
+          "Actos",
+          "Metformin"
+        ],
+        "target_genes": [
+          "GPD2",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "MBX-102 did not meet the target efficacy profile of HbA1c change.",
+        "quote_verified": false,
+        "start_date": "2008-12",
+        "end_date": "2010-02"
+      },
+      {
+        "nct_id": "NCT03279263",
+        "phase": "PHASE2",
+        "status": "UNKNOWN",
+        "drugs": [
+          "MLR-1023"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2017-09-01",
+        "end_date": "2019-09"
+      },
+      {
+        "nct_id": "NCT00004992",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Intensive lifestyle",
+          "Metformin"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "1996-07",
+        "end_date": "2001-04"
+      },
+      {
+        "nct_id": "NCT00106340",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "vildagliptin",
+          "glimepiride",
+          "Metformin",
+          "Vildagliptin matching placebo",
+          "Glimepiride matching placebo"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2005-03",
+        "end_date": "2008-05-20"
+      },
+      {
+        "nct_id": "NCT00627445",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "biphasic insulin aspart 30",
+          "metformin",
+          "biphasic insulin aspart 50"
+        ],
+        "target_genes": [
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-02",
+        "end_date": "2009-01"
+      },
+      {
+        "nct_id": "NCT00666458",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "saxagliptin",
+          "sitagliptin"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-04",
+        "end_date": "2009-03"
+      },
+      {
+        "nct_id": "NCT00754988",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Metformin",
+          "Placebo (matching sitagliptin)",
+          "Placebo (matching taspoglutide)",
+          "Sitagliptin",
+          "Taspoglutide"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2008-10",
+        "end_date": "2011-03"
+      },
+      {
+        "nct_id": "NCT00839527",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "placebo to match albiglutide",
+          "albiglutide",
+          "metformin",
+          "glimepiride",
+          "pioglitazone",
+          "placebo to match pioglitazone"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "GPD2",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-02",
+        "end_date": "2013-04"
+      },
+      {
+        "nct_id": "NCT00885352",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Sitagliptin",
+          "Comparator: Placebo",
+          "Pioglitazone",
+          "Metformin",
+          "Glipizide"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "KCNJ11",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-04-15",
+        "end_date": "2010-11-10"
+      },
+      {
+        "nct_id": "NCT01106690",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Canagliflozin",
+          "Sitagliptin",
+          "Metformin",
+          "Pioglitazone"
+        ],
+        "target_genes": [
+          "GPD2",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2010-06",
+        "end_date": "2012-07"
+      },
+      {
+        "nct_id": "NCT01296412",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "sitagliptin",
+          "liraglutide",
+          "glimepiride",
+          "metformin"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2011-03-11",
+        "end_date": "2012-02-29"
+      },
+      {
+        "nct_id": "NCT02100475",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "insulin degludec/liraglutide",
+          "insulin aspart"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-04",
+        "end_date": "2015-04"
+      },
+      {
+        "nct_id": "NCT02099110",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Matching Placebo to Ertugliflozin 5 mg",
+          "Matching Placebo to Ertugliflozin 10 mg",
+          "Matching Placebo to sitagliptin 100 mg",
+          "Ertugliflozin 5 mg",
+          "Ertugliflozin 10 mg",
+          "Sitagliptin 100 mg",
+          "Metformin >= 1500 mg/day",
+          "Insulin Glargine Rescue Medication",
+          "Glimepiride Rescue Medication"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "INSR",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-04-22",
+        "end_date": "2016-05-26"
+      },
+      {
+        "nct_id": "NCT02597049",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Dulaglutide",
+          "SGLT2 inhibitor",
+          "Metformin"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-11",
+        "end_date": "2017-02"
+      },
+      {
+        "nct_id": "NCT03987919",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide",
+          "Semaglutide"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2019-07-30",
+        "end_date": "2021-02-15"
+      },
+      {
+        "nct_id": "NCT04537923",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide",
+          "Insulin Lispro (U100)"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2020-10-19",
+        "end_date": "2022-11-01"
+      },
+      {
+        "nct_id": "NCT05260021",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Tirzepatide Dose 1",
+          "Tirzepatide Dose 2"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2022-04-13",
+        "end_date": "2025-01-28"
+      },
+      {
+        "nct_id": "NCT06534411",
+        "phase": "PHASE3",
+        "status": "COMPLETED",
+        "drugs": [
+          "Cagrilintide",
+          "Semaglutide",
+          "Tirzepatide"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2024-11-05",
+        "end_date": "2026-07-09"
+      },
+      {
+        "nct_id": "NCT00035568",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Glucovance (metformin HCl/glyburide)",
+          "or Metformin HCl alone",
+          "or Glyburide alone."
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2002-02",
+        "end_date": "2003-06"
+      },
+      {
+        "nct_id": "NCT00241605",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "rosiglitazone/metformin"
+        ],
+        "target_genes": [
+          "GPD2",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2003-06-25",
+        "end_date": "2005-12-16"
+      },
+      {
+        "nct_id": "NCT00347100",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Insulin Glargine",
+          "Glyburide",
+          "Glyclazide",
+          "Glimiperide",
+          "Glipizide",
+          "Metformin"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GPD2",
+          "INSR",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2006-06",
+        "end_date": null
+      },
+      {
+        "nct_id": "NCT00820573",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Sitagliptin",
+          "Metformin",
+          "Sitagliptin + Metformin"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2009-10",
+        "end_date": "2012-10"
+      },
+      {
+        "nct_id": "NCT00588172",
+        "phase": "PHASE4",
+        "status": "WITHDRAWN",
+        "drugs": [
+          "Metformin"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": "No funding",
+        "quote_verified": false,
+        "start_date": "2010-06",
+        "end_date": "2011-06"
+      },
+      {
+        "nct_id": "NCT03068065",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Liraglutide",
+          "Metformin",
+          "Gliclazide"
+        ],
+        "target_genes": [
+          "ABCC8",
+          "GLP1R",
+          "GPD2",
+          "KCNJ11"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2014-05",
+        "end_date": "2015-10"
+      },
+      {
+        "nct_id": "NCT02561130",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "insulin glargine",
+          "metformin",
+          "Forxiga",
+          "Lifestyle therapy"
+        ],
+        "target_genes": [
+          "GPD2",
+          "INSR"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2015-12",
+        "end_date": "2018-12-31"
+      },
+      {
+        "nct_id": "NCT05164263",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "Empagliflozin"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2021-04-01",
+        "end_date": "2027-08-31"
+      },
+      {
+        "nct_id": "NCT06851962",
+        "phase": "PHASE4",
+        "status": "COMPLETED",
+        "drugs": [
+          "Metformin",
+          "Dulaglutide",
+          "Semaglutide 1.0 mg",
+          "Empagliflozin (BI 10773)",
+          "Canagliflozin",
+          "Dapagliflozin",
+          "pioglitazone",
+          "Sitagliptin",
+          "Vildagliptin (Galvus)",
+          "linagliptin"
+        ],
+        "target_genes": [
+          "GLP1R",
+          "GPD2",
+          "PPARG"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-05-26",
+        "end_date": "2026-06-30"
+      },
+      {
+        "nct_id": "NCT07019012",
+        "phase": "PHASE4",
+        "status": "RECRUITING",
+        "drugs": [
+          "SGLT2i+Metformin+Cofrogliptin",
+          "SGLT2i+Metformin+Linagliptin"
+        ],
+        "target_genes": [
+          "GPD2"
+        ],
+        "stop_reason_category": null,
+        "stop_reason_quote": null,
+        "quote_verified": false,
+        "start_date": "2025-07-30",
+        "end_date": "2026-12-30"
+      }
+    ]
+  }
+}
